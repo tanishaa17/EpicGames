@@ -1,26 +1,37 @@
 import React, { useState } from "react";
+import axios from "axios";
 
 export const Login = () => {
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
+    const [userData, setUserData] = useState("");
     const handleChange = (e) => {
-        setEmail(e.target.value);
+        setUserData(e.target.value);
     }
     const handleSubmit = (e) => {
-        setPassword(e.target.value);
+        e.preventDefault();
+        axios.post("http://localhost:8080/users", userData).then((res) => {
+            alert("Logged in Successfully")
+        })
     }
     return (
         <>
             <div className="LoginBox">
+                <h2>Sign in with an Epic Games Account</h2>
                 <form action="">
                     <div>
-                        <input type="text" name="email" id="email" placeholder="Email Address" value={handleChange} />
+                        <input type="text" name="email" id="email" placeholder="Email Address" onChange={(e) => { handleChange(e) }} />
                     </div>
                     <div>
-                        <input type="text" name="password" id="password" placeholder="Password" value={handleChange} />
+                        <input type="text" name="password" id="password" placeholder="Password" onChange={(e) => { handleChange(e) }} />
                     </div>
-                    <button type="submit" onSubmit={() => { handleSubmit }}>LOG IN NOW</button>
+                    <div>
+                        <input type="checkbox" name="RememberMe" id="remember" /> 
+                        <label htmlFor="remember">Remember me</label>
+                        <span><u>Forget Your Password</u></span>
+                    </div>
+                    <button type="submit" onSubmit={(e) => { handleSubmit(e) }}>LOG IN NOW</button>
                 </form>
+                <p><u>Privacy Policy</u></p>
+                <p>Don't have an Epic Games Account? <u>Sign Up</u></p>
             </div>
         </>
     )

@@ -1,0 +1,43 @@
+#rcart{
+    width: 74%;
+    margin: auto;
+    margin-top:5%;
+    display: flex;
+    color: white;
+    background-color:black
+}
+
+#rgamesList{
+    border: 1px solid black;
+    width: 70%;
+    margin-right: 5%;
+}
+
+#rgamesPrice{
+    width: 35%;
+}
+.rGamesandSummary{
+    font-size: 25px;
+}
+.rline{
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border-top: .5px solid rgba(128, 128, 128, 0.432);
+}
+#rshowPrice{
+    display: flex;
+    justify-content: space-between;
+    margin: -5% 3%;
+}
+
+.rcheckoutButton{
+    width: 98%;
+    margin: auto;
+    margin-top: 5%;
+    height: 16%;
+    border-radius: 5px;
+    border: none;
+    color:white;
+    background-color:#0074e4;
+}
