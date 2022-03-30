@@ -126,3 +126,31 @@
 #logos > img:hover {
   cursor: pointer;
 }
+@media only screen and (max-width: 667px) and (min-width: 375px) {
+  .details {
+    display: block;
+  }
+  .head {
+    margin-left: 7%;
+  }
+  #terms {
+    display: block;
+  }
+  #policy {
+    display: block;
+    margin-left: 7%;
+  }
+  #policy > p {
+    text-align: left;
+  }
+  #icons {
+    margin-left: 7%;
+  }
+  #copyright {
+    margin-left: 7%;
+  }
+  #logos {
+    width: 100%;
+    justify-content: center;
+  }
+}
