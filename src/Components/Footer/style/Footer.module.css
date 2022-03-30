@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:wght@401");
+
+.container {
+  background-color: #202020;
+  color: white;
+  padding: 2% 6%;
+  margin-top: 10%;
+}
+#icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3%;
+}
+#social {
+  width: 11%;
+  display: flex;
+  justify-content: space-between;
+}
+/* #udiv {
+  width: 3%;
+  height: 10px;
+  border: 2px solid rgb(182, 180, 180);
+  border-radius: 15%;
+} */
+#upicon {
+  font-size: 30px;
+  color: rgb(182, 180, 180);
+  border: 2px solid rgb(182, 180, 180);
+  border-radius: 10%;
+}
+#fbicon {
+  font-size: 35px;
+  color: rgb(182, 180, 180);
+}
+#twicon {
+  font-size: 35px;
+  color: rgb(182, 180, 180);
+}
+#yticon {
+  font-size: 35px;
+  color: rgb(182, 180, 180);
+}
+#fbicon:hover {
+  color: rgb(36, 130, 238);
+  transition: color 0.5s;
+  cursor: pointer;
+}
+#yticon:hover {
+  color: rgb(36, 130, 238);
+  transition: color 0.5s;
+  cursor: pointer;
+}
+#twicon:hover {
+  color: rgb(36, 130, 238);
+  transition: color 0.5s;
+  cursor: pointer;
+}
+#upicon:hover {
+  color: rgb(36, 130, 238);
+  border: 2px solid rgb(36, 130, 238);
+  transition: color 0.5s;
+  transition: border 0.5s;
+  cursor: pointer;
+}
+#resources {
+  text-align: left;
+}
+.head {
+  color: rgb(116, 114, 114);
+  font-weight: 600;
+  line-height: 0px;
+}
+.details {
+  display: flex;
+  margin-left: -3.5%;
+  margin-top: -1%;
+}
+#resources li {
+  line-height: 150%;
+  color: rgb(233, 229, 229);
+  font-size: 15px;
+}
+#resources li:hover {
+  color: rgb(36, 130, 238);
+  transition: color 0.5s;
+  cursor: pointer;
+}
+#line {
+  width: 100%;
+  margin: auto;
+  border: 0.05px solid rgb(116, 114, 114);
+  margin-top: 1%;
+  margin-bottom: 4%;
+}
+#copyright {
+  width: 49%;
+  text-align: left;
+  font-size: 12px;
+  line-height: 200%;
+}
+#terms {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#policy {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+#policy > p:hover {
+  color: rgb(36, 130, 238);
+  transition: color 0.5s;
+  cursor: pointer;
+}
+#logos {
+  width: 20%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+#logos > img:hover {
+  cursor: pointer;
+}
