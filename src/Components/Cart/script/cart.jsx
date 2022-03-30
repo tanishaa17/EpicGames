@@ -26,7 +26,7 @@ export const GameCart = () => {
                             <p className="rsale">Sale Ends 4/7/2022 at 8:30pm</p>
                         </span>
                         <span className="rdetail3flex">
-                            <img src="Images/icons8-windows-10-50.png"></img>
+                            <img src="/icons8-windows-10-50.png"></img>
                             <div className="rpricedetail2">
                                 {/*<p className = "rgap2 raddsymbol"></p>*/}
                                 <p className = "rgap2 rwishlist">+ Move to Wishlist</p>
