@@ -1,3 +1,5 @@
+import React, {Component} from 'react'
+import { render } from 'react-dom';
 import { Routes, Route } from "react-router";
 import { GameCart } from '../Components/Cart/script/cart';
 import { Footer } from "../Components/Footer/script/Footer"
@@ -9,7 +11,6 @@ import { Signup } from "../Components/Signup/script/Signup";
 export const AllRoutes = () => {
   return (
     <>
-
       <Routes>
         {/*<Route exact path="/" element={<HomepageU />} />
   <Route exact path="/products" element={<ProductsPage />} />*/}
