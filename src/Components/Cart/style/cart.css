@@ -94,19 +94,21 @@
 }
 
 .rdetail3flex{
-    margin-top:10%;
+    margin-top:12%;
     display:flex;
+    justify-content: space-between;
 }
 .rdetail3flex img{
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
+    margin-top: 7%;
 }
 .rpricedetail2{
     display:flex;
     margin-left: 52%;
 }
 .rgap2{
-    margin-right: 1%;
+    margin-right: 5%;
 }
 .rwishlist, .rremove{
     color:  #838282;
@@ -114,13 +116,8 @@
     font-size: 14px;
     text-decoration: underline;
 }
-.raddsymbol{
-    color:  #838282;
-    font-weight: bold;
-    font-size: 18px;
-}
 
-.raddsymbol:hover,.rwishlist:hover, .rremove:hover{
+.rwishlist:hover, .rremove:hover{
     cursor: pointer;
     color:white;
     transition: .5s;
