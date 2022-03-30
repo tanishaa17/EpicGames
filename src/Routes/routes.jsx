@@ -7,6 +7,7 @@ import { Footer } from "../Components/Footer/script/Footer"
 // import {ProductsPage} from "../Components/Games/script/ProductPage";
 import { Login } from "../Components/Login/script/Login";
 import { Signup } from "../Components/Signup/script/Signup";
+import {IndividualGame} from "../Components/IndividualGame/script/IndividualGame";
 
 export const AllRoutes = () => {
   return (
@@ -17,6 +18,7 @@ export const AllRoutes = () => {
         <Route exact path="/cart" element={<GameCart />} />
         <Route exact path="/login" element={<Login />} />
         <Route exact path="/signup" element={<Signup />} />
+        <Route exact path="/individualgame" element={<IndividualGame />} />
       </Routes>
       <Footer />
     </>

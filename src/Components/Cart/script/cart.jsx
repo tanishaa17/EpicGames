@@ -41,11 +41,11 @@ export const GameCart = () => {
                 <br/>
                 <span className="rshowPrice">
                     <p>Price</p>
-                    <p>6184</p>
+                    <p>₹6184</p>
                 </span>
                 <span className="rshowPrice">
                     <p>Sale Discount</p>
-                    <p>-3099</p>
+                    <p>-₹3099</p>
                 </span>
                 <span className="rshowPrice">
                     <p>Taxes</p>
@@ -54,7 +54,7 @@ export const GameCart = () => {
                 <div className="rline"></div>
                 <span className="rshowPrice">
                     <p>Subtotal</p>
-                    <p>NA</p>
+                    <p>₹NA</p>
                 </span>
                 <button className="rcheckoutButton">Check Out</button>
             </div>

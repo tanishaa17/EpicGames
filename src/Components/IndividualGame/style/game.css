@@ -1,0 +1,95 @@
+/* body{
+    background-color: #1c1c1c;
+} */
+
+.rcontainer{
+    /* border: 1px solid red; */
+    width: 80%;
+    margin: auto;
+}
+.rLine{
+    margin-top:5%;
+    width:100%;
+    border-top: 1px solid rgba(128, 128, 128, 0.432);
+}
+.rmaintitle{
+    font-size: 25px;
+    color:black;
+    text-align: left;
+}
+
+.rmainDiv{
+    border:1px solid red;
+    display:flex;
+}
+
+.rleftmainDiv{
+    flex:4;
+    border:1px solid pink;
+}
+.rgamevideo{
+    border: 1px solid orange;
+    width: 90%;
+    height: 350px;
+}
+/* Description */
+
+.rgenrefeature{
+    /* border: 1px solid red; */
+    width: 90%;
+    height: 100px;
+    display: flex;
+}
+.rgenre, .rfeature{
+    flex: 1;
+    border-left: 1px solid rgba(128, 128, 128, 0.432);
+    height: 80%;
+    margin-left:2%;
+    text-align: left;
+}
+
+
+
+
+.rrightmainDiv{
+    flex:2;
+    border:1px solid blue;
+}
+.rlogoImage{
+    margin: auto;
+    margin-top:5%;
+    width: 90%;
+    height: 170px;
+    border: 1px solid aqua;
+}
+
+.ralldetailprice{
+    text-align: left;
+}
+.rdpap{
+    display: flex;
+    margin-top:-6%;
+}
+.rdpap>p{
+    margin-right:3%;
+}
+
+.rsaledate{
+    font-size:12px;
+    margin-top:-3%;
+}
+#raddcart,#raddwishlist{
+    width: 100%;
+    height: 50px;
+    font-size: 14px;
+    font-weight:bold;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    background-color:none;
+    margin-bottom:4%;
+}
+#raddcart:hover,#raddwishlist:hover{
+    background-color:lightgrey;
+    transition:.8s;
+    cursor:pointer;
+}
