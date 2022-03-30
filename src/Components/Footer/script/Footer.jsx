@@ -1,3 +1,4 @@
+import React, {Component} from 'react'
 import styles from "../style/Footer.module.css";
 import {MdOutlineExpandLess} from "react-icons/md"
 import {AiFillFacebook} from "react-icons/ai"
