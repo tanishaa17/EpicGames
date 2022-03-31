@@ -19,13 +19,13 @@ export const Login = () => {
         <div className="loginContainer">
             <div className="loginBox">
                 <SiEpicgames className="logo"></SiEpicgames>
-                <h3>Sign in with an Epic Games Account</h3>
+                <h4>Sign in with an Epic Games Account</h4>
                 <form action="" className="loginForm">
                     <div>
                         <input type="text" className="textBox" name="email" id="email" placeholder="Email Address" onChange={(e) => { handleChange(e) }} />
                     </div>
                     <div>
-                        <input type="text" className="textBox" name="password" id="password" placeholder="Password" onChange={(e) => { handleChange(e) }} />
+                        <input type="password" className="textBox" name="password" id="password" placeholder="Password" onChange={(e) => { handleChange(e) }} />
                     </div>
                     <div className="options">
                         <label className="rememberme" htmlFor="remember">
@@ -33,13 +33,13 @@ export const Login = () => {
                                 <input type="checkbox" className="checked" />
                             </span>
                             Remember me</label>
-                        <a href="">Forgot Your Password</a>
+                        <span className="forgotPass">Forgot Your Password</span>
                     </div>
                     <button className="loginbtn" type="submit" onSubmit={(e) => { handleSubmit(e) }}>LOG IN NOW</button>
                     <div className="privacy">Privacy Policy</div>
                 </form>
-                <div className="dontHaveAcnt">Don't have an Epic Games Account? <a>Sign up</a></div>
-                <div className="dontHaveAcnt">Back to <u><a href="">all sign up options</a></u></div>
+                <div className="dontHaveAcnt">Don't have an Epic Games Account? <span className="under">Sign up</span></div>
+                <div className="dontHaveAcnt">Back to <span className="under">all sign up options</span></div>
             </div>
         </div>
     )
