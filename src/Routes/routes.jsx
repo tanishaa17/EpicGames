@@ -6,6 +6,7 @@ import { Footer } from "../Components/Footer/script/Footer"
 import { Login } from "../Components/Login/script/Login";
 import { Signup } from "../Components/Signup/script/Signup";
 import {IndividualGame} from "../Components/IndividualGame/script/IndividualGame";
+import {SignupOptions} from "../Components/SignupOptions/SignupOptions"
 export const AllRoutes = () => {
   return (
     <>
