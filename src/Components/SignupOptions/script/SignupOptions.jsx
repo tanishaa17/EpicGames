@@ -13,7 +13,7 @@ export const SignupOptions = () => {
         <div className="signupOptionsContainer">
             <div className="optionContainer">
                 <div className="icon">
-                    <SiEpicgames className="logo"></SiEpicgames>
+                    <SiEpicgames className="logos"></SiEpicgames>
                 </div>
 
                 <p className="heading">
@@ -22,35 +22,35 @@ export const SignupOptions = () => {
 
                 <div className="optionsName">
                     <div className="allowedOption">
-                        <SiEpicgames className="epic"></SiEpicgames>
+                        <SiEpicgames className="epics"></SiEpicgames>
                         <p className="text">SIGN IN WITH EPIC GAMES</p>
                     </div>
                     <div className="option">
-                        <RiFacebookCircleLine className="fb"></RiFacebookCircleLine>
+                        <RiFacebookCircleLine className="fbs"></RiFacebookCircleLine>
                         <p className="text">SIGN IN WITH FACEBOOK</p>
                     </div>
                     <div className="allowedOption">
-                        <FcGoogle className="google"></FcGoogle>
+                        <FcGoogle className="googles"></FcGoogle>
                         <p className="text">SIGN IN WITH GOOGLE</p>
                     </div>
                     <div className="option">
-                        <IoLogoXbox className="xbox"></IoLogoXbox>
+                        <IoLogoXbox className="xboxs"></IoLogoXbox>
                         <p className="text">SIGN IN WITH XBOX LIVE</p>
                     </div>
                     <div className="option">
-                        <SiPlaystation className="psn"></SiPlaystation>
+                        <SiPlaystation className="psns"></SiPlaystation>
                         <p className="text">SIGN IN WITH PLAYSTATION NETWORK</p>
                     </div>
                     <div className="option">
-                        <SiNintendonetwork className="ninten"></SiNintendonetwork>
+                        <SiNintendonetwork className="nintens"></SiNintendonetwork>
                         <p className="text">SIGN IN WITH NINTENDO ACCOUNT</p>
                     </div>
                     <div className="option">
-                        <FaSteam className="steam"></FaSteam>
+                        <FaSteam className="steams"></FaSteam>
                         <p className="text">SIGN IN WITH STEAM</p>
                     </div>
                     <div className="option">
-                        <BsApple className="apple"></BsApple>
+                        <BsApple className="apples"></BsApple>
                         <p className="text">SIGN IN WITH APPLE</p>
                     </div>
                 </div>

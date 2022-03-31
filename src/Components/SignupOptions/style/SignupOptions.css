@@ -24,50 +24,74 @@
   height: 100%;
 }
 
-.logo {
+.logos {
   font-size: 50px;
   color: #FFFFFF;
 }
 
-.epic {
+.epics {
   background-color: #353535;
-  font-size: 55px;
+  font-size: 25px;
+  padding: 10px 15px;
+  width: 25%;
+  border-radius: 4px;
 }
 
-.fb {
+.fbs {
   background-color: #3261A3;
-  font-size: 55px;
+  font-size: 25px;
+  padding: 10px 15px;
+  width: 25%;
+  border-radius: 4px;
 }
 
-.google {
+.googles {
   background-color: #FFFFFF;
-  font-size: 55px;
+  font-size: 25px;
+  padding: 10px 15px;
+  width: 25%;
+  border-radius: 4px;
 }
 
-.xbox {
+.xboxs {
   background-color: #027D00;
-  font-size: 55px;
+  font-size: 25px;
+  padding: 10px 15px;
+  width: 25%;
+  border-radius: 4px;
 }
 
-.psn {
+.psns {
   background-color: #0063C5;
-  font-size: 55px;
+  font-size: 25px;
+  padding: 10px 15px;
+  width: 25%;
+  border-radius: 4px;
 }
 
-.ninten {
+.nintens {
   background-color: #E90000;
-  font-size: 55px;
+  font-size: 25px;
+  padding: 10px 15px;
+  width: 25%;
+  border-radius: 4px;
 }
 
-.steam {
+.steams {
   background-color: #145C8F;
-  font-size: 55px;
+  font-size: 25px;
+  padding: 10px 15px;
+  width: 25%;
+  border-radius: 4px;
 }
 
-.apple {
+.apples {
   background-color: #FFFFFF;
   color: #121212;
-  font-size: 55px;
+  font-size: 25px;
+  padding: 10px 15px;
+  width: 25%;
+  border-radius: 4px;
 }
 
 h4 {
@@ -82,6 +106,7 @@ h4 {
   background-color: #484848;
   border-radius: 4px;
 }
+
 .allowedOption>p {
   margin: 15px;
 }
@@ -114,6 +139,7 @@ h4 {
 .optionsName {
   display: flex;
   flex-direction: column;
+  width: 100%;
   gap: 12px;
 }
 
