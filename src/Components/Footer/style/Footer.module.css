@@ -70,10 +70,11 @@
   color: rgb(116, 114, 114);
   font-weight: 600;
   line-height: 0px;
+  margin-bottom: 3%;
 }
 .details {
   display: flex;
-  margin-left: -3.5%;
+  margin-left: -2.9%;
   margin-top: -1%;
 }
 #resources li {
@@ -129,6 +130,7 @@
 @media only screen and (max-width: 667px) and (min-width: 375px) {
   .details {
     display: block;
+    margin-left: -0.2%;
   }
   .head {
     margin-left: 7%;
