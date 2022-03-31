@@ -5,7 +5,7 @@ import { GameCart } from '../Components/Cart/script/cart';
 import { Footer } from "../Components/Footer/script/Footer"
 import { Login } from "../Components/Login/script/Login";
 import { Signup } from "../Components/Signup/script/Signup";
-import { LoginOptions } from '../Components/LoginOptions/LoginOptions';
+import { LoginOptions } from '../Components/LoginOptions/script/LoginOptions';
 import { SignupOptions } from "../Components/SignupOptions/script/SignupOptions";
 import {IndividualGame} from "../Components/IndividualGame/script/IndividualGame";
 import { Navbar } from '../Components/Navbar/script/Navbar';
