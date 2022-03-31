@@ -23,21 +23,227 @@ export const GamesPage = () => {
 
   return (
     <>
+
+
     <div style={{
-      backgroundColor:"black",
-      border:"none"
+      backgroundColor:"black"
+    }}>
+      <div style={{
+        height: "60px",
+        backgroundColor:"black",
+        display: "flex",
+        // border: "1px solid red"
+      }}>
+        <div >
+      <p style={{
+        marginLeft:"170px",
+        fontSize:"25px",
+        fontWeight:"400",
+        color: "white",
+        marginTop:"19px",
+        // border: "1px solid blue"
+        // lineHeight:"25px"
+
+      }}> Popular Genres</p>
+      
+      </div>
+      </div>
+      <div style={{
+        width: "74%",
+        height: "300px",
+        // border: "1px solid red",
+        display: "flex",
+        marginLeft:"11%"
+        // backgroundColor:"black"
+        
+      }}> 
+<div style={{
+  width: "25%",
+  height: "300px",
+  // border: "1px solid blue"
+}}>
+  <div style={{
+     height: "250px",
+    //  border: "1px solid red",
+     backgroundColor:"black"
+
+  }}>
+    <img src="/head3.jpg" alt="image not found" style={{
+      width:"245px",
+      height: "208px",
+      marginTop:"20px",
+      // marginRight:"5px"
+      borderRadius:"10px"
+
+    }} />
+  </div>
+  <div style={{
+    height: "50px",
+    // border: "1px solid red",
+    
+  }}>
+    <p style={{
+      color:"white",
+      textAlign:"center",
+      fontFamily:"Brutal, sans-serif",
+      fontSize:"22px",
+      fontWeight:"400",
+      // paddingTop:"2%"
+
+
+
+      
+    }}> Sports Games</p>
+  </div>
+</div>
+<div style={{
+  width: "25%",
+  height: "300px",
+  // border: "1px solid blue"
+}}>
+  <div style={{
+     height: "250px",
+    //  border: "1px solid red",
+     backgroundColor:"black",
+     borderRadius:"5px"
+
+  }}>
+    <img src="/head4.jpg" alt="image not found" style={{
+      width:"245px",
+      height: "208px",
+      marginTop:"20px",
+      // marginRight:"5px"
+      borderRadius:"10px"
+
+    }} />
+  </div>
+  <div style={{
+    height: "50px",
+    // border: "1px solid red",
+    
+  }}>
+    <p style={{
+      color:"white",
+      textAlign:"center",
+      fontFamily:"Brutal, sans-serif",
+      fontSize:"22px",
+      fontWeight:"400",
+      // paddingTop:"2%"
+
+
+
+      
+    }}> Strategy Games</p>
+  </div>
+</div>
+
+<div style={{
+  width: "25%",
+  height: "300px",
+  // border: "1px solid blue"
+}}>
+  <div style={{
+     height: "250px",
+    //  border: "1px solid red",
+     backgroundColor:"black"
+
+  }}>
+    <img src="/head5.jpg" alt="image not found" style={{
+      width:"245px",
+      height: "208px",
+      marginTop:"20px",
+      // marginRight:"5px"
+      borderRadius:"10px"
+
+    }} />
+  </div>
+  <div style={{
+    height: "50px",
+    // border: "1px solid red",
+    
+  }}>
+    <p style={{
+      color:"white",
+      textAlign:"center",
+      fontFamily:"Brutal, sans-serif",
+      fontSize:"22px",
+      fontWeight:"400",
+      // paddingTop:"2%"
+
+
+
+      
+    }}> Survival Games</p>
+  </div>
+</div>
+
+<div style={{
+  width: "25%",
+  height: "300px",
+  // border: "1px solid blue"
+}}>
+  <div style={{
+     height: "250px",
+    //  border: "1px solid red",
+     backgroundColor:"black"
+
+  }}>
+    <img src="/head6.jpg" alt="image not found" style={{
+      width:"245px",
+      height: "208px",
+      marginTop:"20px",
+      // marginRight:"5px"
+      borderRadius:"10px"
+
+    }} />
+  </div>
+  <div style={{
+    height: "50px",
+    // border: "1px solid red",
+    
+  }}>
+    <p style={{
+      color:"white",
+      textAlign:"center",
+      fontFamily:"Brutal, sans-serif",
+      fontSize:"22px",
+      fontWeight:"400",
+      // paddingTop:"2%"
+
+
+
+      
+    }}> Tower Defense Games</p>
+  </div>
+</div>
+
+      </div>
+    </div>
+    <div style={{
+      // backgroundColor:"red",
+      border:"none",
+      display:"flex",
+      justifyContent:"space-between",
+      backgroundColor:"black"
+      
 
     }}>
-      <Dropdown>
+      <Dropdown style={{
+        border: "1px solid black",
+        marginLeft:"11% "
+      }}>
         <Dropdown.Toggle variant="success" id="dropdown-basic" style={{
           color: "white",
-          width:"100px",
+          width:"200px",
           height:"50px",
           backgroundColor:"black",
-          marginLeft:"11%"
+          // marginRight:"50%",
+          border: "none",
+          // paddingLeft:"50%"
+          
         }}>
           
-          Sort By:
+          Sort By:New Release
         </Dropdown.Toggle>
 
         <Dropdown.Menu style={{
@@ -48,7 +254,21 @@ export const GamesPage = () => {
           <Dropdown.Item href="#/action-2">Square Enix Sales</Dropdown.Item>
           </div>
         </Dropdown.Menu>
+        
       </Dropdown>
+     <div style={{
+       marginRight:"23.5%",
+       color:"white",
+      //  border:"1px solid red" ,
+       paddingTop:"10px",
+       
+       
+     }}>
+      <span style={{
+        textAlign:"center",
+        color: "white"
+      }}> Filters</span>
+     </div>
       </div>
       <div className="main" style={{
         width: "1500px",
@@ -113,24 +333,27 @@ export const GamesPage = () => {
           </>
         </div>
         <div className="aj" style={{
-          width: "250px",
+          width: "200px",
           height: "500px",
           // border: "1px solid blue"
         }}>
           <div>
-            <p style={{
+            {/* <p style={{
               color:"white",
               // padding:"10px",
-              paddingLeft:"10px",
+              // paddingLeft:"10px",
+              marginRight:"62%"
               
             
 
-            }}>Filters</p>
+            }}>Filters</p> */}
             <input type="text" placeholder="Keywords" style={{
               marginBottom:"10px",
-              padding:"10px",
+              // padding:"10px",
               color: "white",
-              backgroundColor:"gray"
+              backgroundColor:"gray",
+              // paddingLeft:"20px",
+              width:"80%" 
             }} />
           </div>
           <div>
