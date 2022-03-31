@@ -137,7 +137,7 @@ h4 {
 .optionsName {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 110%;
   gap: 12px;
 }
 

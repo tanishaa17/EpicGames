@@ -39,11 +39,11 @@ export const SignupOptions = () => {
                     </div>
                     <div className="option">
                         <SiPlaystation className="psn"></SiPlaystation>
-                        <p className="text">SIGN UP WITH PLAYSTATION NETWORK</p>
+                        <p className="text">SIGN UP WITH PLAYSTATION</p>
                     </div>
                     <div className="option">
                         <SiNintendonetwork className="ninten"></SiNintendonetwork>
-                        <p className="text">SIGN UP WITH NINTENDO ACCOUNT</p>
+                        <p className="text">SIGN UP WITH NINTENDO</p>
                     </div>
                     <div className="option">
                         <FaSteam className="steam"></FaSteam>
