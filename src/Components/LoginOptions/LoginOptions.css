@@ -1,9 +1,9 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     font-family: "brutal",sans-serif;
     text-decoration: none;
-  }
+  } */
   .loginOptionsContainer{
     background: #121212;
     min-height: 100vh;
