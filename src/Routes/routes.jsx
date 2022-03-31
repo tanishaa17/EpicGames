@@ -9,7 +9,7 @@ import { LoginOptions } from '../Components/LoginOptions/LoginOptions';
 import { SignupOptions } from "../Components/SignupOptions/script/SignupOptions";
 import {IndividualGame} from "../Components/IndividualGame/script/IndividualGame";
 import { Navbar } from '../Components/Navbar/script/Navbar';
-
+import { GamesPage } from "../Components/Games/script/GamesPage";
 
 export const AllRoutes = () => {
   return (
@@ -22,6 +22,7 @@ export const AllRoutes = () => {
         <Route exact path="/signupoptions" element={<SignupOptions />} />
         <Route exact path="/individualgame" element={<IndividualGame />} />
         <Route exact path="/loginoptions" element={<LoginOptions />} />
+        <Route exact path="/products" element={<GamesPage />} />
       </Routes>
       <Footer />
     </>

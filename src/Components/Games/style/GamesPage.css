@@ -1,0 +1,45 @@
+body{
+    background-color: black;
+    
+  }
+  
+  .main{
+    /* margin: auto; */
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  #dropdown-basic{
+    color: white;
+    background-color: black;
+    border:1px solid white;
+    width: 100%;
+    height: 83px;
+    
+  }
+  .amenu{
+  background-color: black;
+  }
+  .main{
+    background-color: black;
+  }
+  #aitem{
+    color: red;
+  }
+  .aright{
+    width: 100%;
+    border: none;
+    
+  }
+  .ablack{
+    background-color: black;
+    color: white;
+    /* border: 1px solid red; */
+  }
+  .asort{
+    background-color: black;
+  }
+  .aborderRemove{
+    border:"none";
+   text-align:"left";
+    padding: "20px"
+  }
