@@ -1,3 +1,7 @@
+/* body{
+    background-color: #1c1c1c;
+} */
+
 .rmyCart{
     font-size:30px;
     margin-right: 66%;
@@ -9,11 +13,11 @@
     margin-top:5%;
     display: flex;
     color: white;
-    background-color:black
+    background-color: #1c1c1c;
 }
 
 #rgamesList{
-    border: 1px solid black;
+    border: 1px solid #1c1c1c;
     width: 70%;
     margin-right: 4%;
 }
