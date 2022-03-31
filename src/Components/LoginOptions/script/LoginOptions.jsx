@@ -1,9 +1,5 @@
 import React from "react";
-<<<<<<< HEAD:src/Components/LoginOptions/LoginOptions.jsx
 import "../style/LoginOptions.css"
-=======
-import "../style/LoginOptions.css";
->>>>>>> 8aa44dfe4a5169f3da99271441dbfa59a9f68966:src/Components/LoginOptions/script/LoginOptions.jsx
 import { SiEpicgames } from "react-icons/si";
 import { RiFacebookCircleLine } from "react-icons/ri";
 import { FcGoogle } from "react-icons/fc";

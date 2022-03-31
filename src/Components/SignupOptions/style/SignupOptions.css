@@ -24,12 +24,12 @@
   height: 100%;
 }
 
-.logos {
+.logo {
   font-size: 50px;
   color: #FFFFFF;
 }
 
-.epics {
+.epic {
   background-color: #353535;
   font-size: 25px;
   padding: 10px 15px;
@@ -37,7 +37,7 @@
   border-radius: 4px;
 }
 
-.fbs {
+.fb {
   background-color: #3261A3;
   font-size: 25px;
   padding: 10px 15px;
@@ -45,7 +45,7 @@
   border-radius: 4px;
 }
 
-.googles {
+.google {
   background-color: #FFFFFF;
   font-size: 25px;
   padding: 10px 15px;
@@ -53,7 +53,7 @@
   border-radius: 4px;
 }
 
-.xboxs {
+.xbox {
   background-color: #027D00;
   font-size: 25px;
   padding: 10px 15px;
@@ -61,7 +61,7 @@
   border-radius: 4px;
 }
 
-.psns {
+.psn {
   background-color: #0063C5;
   font-size: 25px;
   padding: 10px 15px;
@@ -69,15 +69,12 @@
   border-radius: 4px;
 }
 
-.nintens {
+.ninten {
   background-color: #E90000;
-  font-size: 25px;
-  padding: 10px 15px;
-  width: 25%;
-  border-radius: 4px;
+  
 }
 
-.steams {
+.steam {
   background-color: #145C8F;
   font-size: 25px;
   padding: 10px 15px;
@@ -85,7 +82,7 @@
   border-radius: 4px;
 }
 
-.apples {
+.apple {
   background-color: #FFFFFF;
   color: #121212;
   font-size: 25px;
