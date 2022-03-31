@@ -13,11 +13,14 @@
     margin-top:5%;
     display: flex;
     color: white;
-    background-color: #1c1c1c;
+    /* background-color: #1c1c1c; */
+    /* border: 1px solid red; */
+    height: 300px;
 }
 
 #rgamesList{
-    border: 1px solid #1c1c1c;
+    /* border: 1px solid #1c1c1c; */
+    /* border: 1px solid blue; */
     width: 70%;
     margin-right: 4%;
 }
@@ -26,9 +29,10 @@
     width: 100%;
     background-color: #202020;
     margin: auto;
-    height:70%;
+    height:75%;
     display: flex;
     border-radius: 5px;
+    /* border: 1px solid aqua; */
 }
 .rbuygameimage{
     margin:3% 2% 3% 5%;
@@ -43,7 +47,9 @@
 }
 
 .rdetaildiv{
+    /* border: 1px solid green; */
     width: 100%;
+    margin-top: 3%;
 }
 
 .rdetailflex{
@@ -81,6 +87,7 @@
 .rdetail2flex{
     display:flex;
     justify-content: space-between;
+    margin-top:-2%;
 }
 .rtitle{
     margin-top: 0%;
@@ -92,7 +99,7 @@
     text-decoration: underline;
 }
 .rsale{
-    margin-top: 0%;
+    margin-top: .5%;
     font-size:12px;
     margin-right: 5%;
 }
@@ -108,12 +115,34 @@
     margin-top: 7%;
 }
 .rpricedetail2{
+    /* border:1px solid red; */
+    width: 100%;
     display:flex;
-    margin-left: 52%;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+.rgraddcircle{
+    font-size:40px;
+    color:  #838282;
+    margin-top:-7%;
+    /* margin-left: 5%; */
+    /* color: red; */
+}
+.rwindowLogo{
+    font-size:22px;
+    color:  #838282;
+}
+.rspanwish{
+    display: flex;
+    padding-right: 25px;
 }
 .rgap2{
-    margin-right: 5%;
+    margin-right: 10%;
 }
+.rgap23{
+    margin-right:3%;
+}
+
 .rwishlist, .rremove{
     color:  #838282;
     font-weight: bold;
@@ -136,6 +165,7 @@
 
 #rgamesPrice{
     width: 35%;
+    /* border: 1px solid orange; */
 }
 .rGamesandSummary{
     font-size: 25px;
@@ -149,7 +179,7 @@
 .rshowPrice{
     display: flex;
     justify-content: space-between;
-    margin: -5% 3%;
+    margin: 0% 3%;
 }
 
 .rcheckoutButton{

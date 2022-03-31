@@ -9,6 +9,11 @@ export const IndividualGame =()=>{
         <div className="rcontainer">
             <div className="rLine"></div>
             <p className="rmaintitle">Title</p>
+            <div className="roverviewDiv">
+                <p className="roverview">Overview</p>
+                <p className="rrgap">Add Ons</p>
+                <p className="rrgap">Achievements</p>
+            </div>
             <div className="rmainDiv">
                 <div className="rleftmainDiv">
                     <div className="rgamevideo"></div>

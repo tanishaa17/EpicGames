@@ -18,6 +18,31 @@
     text-align: left;
 }
 
+.roverviewDiv{
+    font-size:18px;
+    margin-top:3%;
+    display: flex;
+    color: grey;
+}
+.roverview{
+    color: white;
+    text-align: left;
+    /* text-decoration: underline; */
+    border-bottom: 2px solid white;
+}
+.roverview:hover{
+    cursor: pointer;
+}
+
+.rrgap{
+    margin-left:4%;
+}
+.rrgap:hover{
+    cursor: pointer;
+    transition:1s;
+    border-bottom: 2px solid;
+}
+
 .rmainDiv{
     border:1px solid red;
     display:flex;

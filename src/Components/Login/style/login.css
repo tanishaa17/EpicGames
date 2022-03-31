@@ -18,15 +18,18 @@
       margin-bottom: 20px;
   }
   .loginBox{
-    height: 550px;
+    height: 600px;
     width: 450px;
     background: #202020;
     padding: 40px 60px;
   }
   
   .logo{
-    height: 50px;
+    /* height: 50px; */
+    font-size: 50px;
     text-align: center;
+    color: #f1f1f1;
+    margin-bottom: 10px;
   }
   
   .logo img{

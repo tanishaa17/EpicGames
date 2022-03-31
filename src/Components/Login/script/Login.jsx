@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "../style/login.css"
+import { SiEpicgames } from "react-icons/si";
 
 export const Login = () => {
     const [userData, setUserData] = useState("");
@@ -17,7 +18,7 @@ export const Login = () => {
     return (
         <div className="loginContainer">
             <div className="loginBox">
-                <img src="../public/logo.png" alt="" className="logo" />
+                <SiEpicgames className="logo"></SiEpicgames>
                 <h3>Sign in with an Epic Games Account</h3>
                 <form action="" className="loginForm">
                     <div>
