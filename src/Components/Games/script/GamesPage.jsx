@@ -11,7 +11,7 @@ export const GamesPage = () => {
   const [products, setProducts] = useState([]);
 
   const getProducts = () => {
-    axios.get(`https://5e9623dc5b19f10016b5e31f.mockapi.io/api/v1/products?page=1&limit=16`).then((res) => {
+    axios.get(`https://5e9623dc5b19f10016b5e31f.mockapi.io/api/v1/products?page=1&limit=20`).then((res) => {
       console.log("res", res.data);
       setProducts(res.data);
     })
@@ -25,253 +25,253 @@ export const GamesPage = () => {
     <>
 
 
-    <div style={{
-      backgroundColor:"black"
-    }}>
       <div style={{
-        height: "60px",
-        backgroundColor:"black",
-        display: "flex",
-        // border: "1px solid red"
+        backgroundColor: "black"
       }}>
-        <div >
-      <p style={{
-        marginLeft:"190px",
-        fontSize:"25px",
-        fontWeight:"400",
-        color: "white",
-        marginTop:"19px",
-        // border: "1px solid blue"
-        // lineHeight:"25px"
-
-      }}> Popular Genres</p>
-      
-      </div>
-      </div>
-      <div style={{
-        width: "74%",
-        height: "300px",
-        // border: "1px solid red",
-        display: "flex",
-        marginLeft:"11%"
-        // backgroundColor:"black"
-        
-      }}> 
-<div style={{
-  width: "25%",
-  height: "300px",
-  // border: "1px solid blue"
-}}>
-  <div style={{
-     height: "250px",
-    //  border: "1px solid red",
-     backgroundColor:"black"
-
-  }}>
-    <img src="/head3.jpg" alt="image not found" style={{
-      width:"245px",
-      height: "208px",
-      marginTop:"20px",
-      // marginRight:"5px"
-      borderRadius:"10px"
-
-    }} />
-  </div>
-  <div style={{
-    height: "50px",
-    // border: "1px solid red",
-    
-  }}>
-    <p style={{
-      color:"white",
-      textAlign:"center",
-      fontFamily:"Brutal, sans-serif",
-      fontSize:"22px",
-      fontWeight:"400",
-      // paddingTop:"2%"
-
-
-
-      
-    }}> Sports Games</p>
-  </div>
-</div>
-<div style={{
-  width: "25%",
-  height: "300px",
-  // border: "1px solid blue"
-}}>
-  <div style={{
-     height: "250px",
-    //  border: "1px solid red",
-     backgroundColor:"black",
-     borderRadius:"5px"
-
-  }}>
-    <img src="/head4.jpg" alt="image not found" style={{
-      width:"245px",
-      height: "208px",
-      marginTop:"20px",
-      // marginRight:"5px"
-      borderRadius:"10px"
-
-    }} />
-  </div>
-  <div style={{
-    height: "50px",
-    // border: "1px solid red",
-    
-  }}>
-    <p style={{
-      color:"white",
-      textAlign:"center",
-      fontFamily:"Brutal, sans-serif",
-      fontSize:"22px",
-      fontWeight:"400",
-      // paddingTop:"2%"
-
-
-
-      
-    }}> Strategy Games</p>
-  </div>
-</div>
-
-<div style={{
-  width: "25%",
-  height: "300px",
-  // border: "1px solid blue"
-}}>
-  <div style={{
-     height: "250px",
-    //  border: "1px solid red",
-     backgroundColor:"black"
-
-  }}>
-    <img src="/head5.jpg" alt="image not found" style={{
-      width:"245px",
-      height: "208px",
-      marginTop:"20px",
-      // marginRight:"5px"
-      borderRadius:"10px"
-
-    }} />
-  </div>
-  <div style={{
-    height: "50px",
-    // border: "1px solid red",
-    
-  }}>
-    <p style={{
-      color:"white",
-      textAlign:"center",
-      fontFamily:"Brutal, sans-serif",
-      fontSize:"22px",
-      fontWeight:"400",
-      // paddingTop:"2%"
-
-
-
-      
-    }}> Survival Games</p>
-  </div>
-</div>
-
-<div style={{
-  width: "25%",
-  height: "300px",
-  // border: "1px solid blue"
-}}>
-  <div style={{
-     height: "250px",
-    //  border: "1px solid red",
-     backgroundColor:"black"
-
-  }}>
-    <img src="/head6.jpg" alt="image not found" style={{
-      width:"245px",
-      height: "208px",
-      marginTop:"20px",
-      // marginRight:"5px"
-      borderRadius:"10px"
-
-    }} />
-  </div>
-  <div style={{
-    height: "50px",
-    // border: "1px solid red",
-    
-  }}>
-    <p style={{
-      color:"white",
-      textAlign:"center",
-      fontFamily:"Brutal, sans-serif",
-      fontSize:"22px",
-      fontWeight:"400",
-      // paddingTop:"2%"
-
-
-
-      
-    }}> Tower Defense Games</p>
-  </div>
-</div>
-
-      </div>
-    </div>
-    <div style={{
-      // backgroundColor:"red",
-      border:"none",
-      display:"flex",
-      justifyContent:"space-between",
-      backgroundColor:"black"
-      
-
-    }}>
-      <Dropdown style={{
-        border: "1px solid black",
-        marginLeft:"11% "
-      }}>
-        <Dropdown.Toggle variant="success" id="dropdown-basic" style={{
-          color: "white",
-          width:"200px",
-          height:"50px",
-          backgroundColor:"black",
-          // marginRight:"50%",
-          border: "none",
-          // paddingLeft:"50%"
-          
+        <div style={{
+          height: "60px",
+          backgroundColor: "black",
+          display: "flex",
+          // border: "1px solid red"
         }}>
-          
-          Sort By:New Release
-        </Dropdown.Toggle>
+          <div >
+            <p style={{
+              marginLeft: "190px",
+              fontSize: "25px",
+              fontWeight: "400",
+              color: "white",
+              marginTop: "19px",
+              // border: "1px solid blue"
+              // lineHeight:"25px"
 
-        <Dropdown.Menu style={{
-          backgroungColor:"black"
-        }}>
-          <div className="ablack">
-          <Dropdown.Item  href="#/action-1"> Spring Sales</Dropdown.Item>
-          <Dropdown.Item href="#/action-2">Square Enix Sales</Dropdown.Item>
+            }}> Popular Genres</p>
+
           </div>
-        </Dropdown.Menu>
-        
-      </Dropdown>
-     <div style={{
-       marginRight:"23.5%",
-       color:"white",
-      //  border:"1px solid red" ,
-       paddingTop:"10px",
-       
-       
-     }}>
-      <span style={{
-        textAlign:"center",
-        color: "white"
-      }}> Filters</span>
-     </div>
+        </div>
+        <div style={{
+          width: "74%",
+          height: "300px",
+          // border: "1px solid red",
+          display: "flex",
+          marginLeft: "11%"
+          // backgroundColor:"black"
+
+        }}>
+          <div style={{
+            width: "25%",
+            height: "300px",
+            // border: "1px solid blue"
+          }}>
+            <div style={{
+              height: "250px",
+              //  border: "1px solid red",
+              backgroundColor: "black"
+
+            }}>
+              <img src="/head3.jpg" alt="image not found" style={{
+                width: "245px",
+                height: "208px",
+                marginTop: "20px",
+                // marginRight:"5px"
+                borderRadius: "10px"
+
+              }} />
+            </div>
+            <div style={{
+              height: "50px",
+              // border: "1px solid red",
+
+            }}>
+              <p style={{
+                color: "white",
+                textAlign: "center",
+                fontFamily: "Brutal, sans-serif",
+                fontSize: "22px",
+                fontWeight: "400",
+                // paddingTop:"2%"
+
+
+
+
+              }}> Sports Games</p>
+            </div>
+          </div>
+          <div style={{
+            width: "25%",
+            height: "300px",
+            // border: "1px solid blue"
+          }}>
+            <div style={{
+              height: "250px",
+              //  border: "1px solid red",
+              backgroundColor: "black",
+              borderRadius: "5px"
+
+            }}>
+              <img src="/head4.jpg" alt="image not found" style={{
+                width: "245px",
+                height: "208px",
+                marginTop: "20px",
+                // marginRight:"5px"
+                borderRadius: "10px"
+
+              }} />
+            </div>
+            <div style={{
+              height: "50px",
+              // border: "1px solid red",
+
+            }}>
+              <p style={{
+                color: "white",
+                textAlign: "center",
+                fontFamily: "Brutal, sans-serif",
+                fontSize: "22px",
+                fontWeight: "400",
+                // paddingTop:"2%"
+
+
+
+
+              }}> Strategy Games</p>
+            </div>
+          </div>
+
+          <div style={{
+            width: "25%",
+            height: "300px",
+            // border: "1px solid blue"
+          }}>
+            <div style={{
+              height: "250px",
+              //  border: "1px solid red",
+              backgroundColor: "black"
+
+            }}>
+              <img src="/head5.jpg" alt="image not found" style={{
+                width: "245px",
+                height: "208px",
+                marginTop: "20px",
+                // marginRight:"5px"
+                borderRadius: "10px"
+
+              }} />
+            </div>
+            <div style={{
+              height: "50px",
+              // border: "1px solid red",
+
+            }}>
+              <p style={{
+                color: "white",
+                textAlign: "center",
+                fontFamily: "Brutal, sans-serif",
+                fontSize: "22px",
+                fontWeight: "400",
+                // paddingTop:"2%"
+
+
+
+
+              }}> Survival Games</p>
+            </div>
+          </div>
+
+          <div style={{
+            width: "25%",
+            height: "300px",
+            // border: "1px solid blue"
+          }}>
+            <div style={{
+              height: "250px",
+              //  border: "1px solid red",
+              backgroundColor: "black"
+
+            }}>
+              <img src="/head6.jpg" alt="image not found" style={{
+                width: "245px",
+                height: "208px",
+                marginTop: "20px",
+                // marginRight:"5px"
+                borderRadius: "10px"
+
+              }} />
+            </div>
+            <div style={{
+              height: "50px",
+              // border: "1px solid red",
+
+            }}>
+              <p style={{
+                color: "white",
+                textAlign: "center",
+                fontFamily: "Brutal, sans-serif",
+                fontSize: "22px",
+                fontWeight: "400",
+                // paddingTop:"2%"
+
+
+
+
+              }}> Tower Defense Games</p>
+            </div>
+          </div>
+
+        </div>
       </div>
-      <div className="main" style={{
-        width: "1500px",
+      <div style={{
+        // backgroundColor:"red",
+        border: "none",
+        display: "flex",
+        justifyContent: "space-between",
+        backgroundColor: "black"
+
+
+      }}>
+        <Dropdown style={{
+          border: "1px solid black",
+          marginLeft: "11% "
+        }}>
+          <Dropdown.Toggle variant="success" id="dropdown-basic" style={{
+            color: "white",
+            width: "200px",
+            height: "50px",
+            backgroundColor: "black",
+            // marginRight:"50%",
+            border: "none",
+            // paddingLeft:"50%"
+
+          }}>
+
+            Sort By:New Release
+          </Dropdown.Toggle>
+
+          <Dropdown.Menu style={{
+            backgroungColor: "black"
+          }}>
+            <div className="ablack">
+              <Dropdown.Item href="#/action-1"> Spring Sales</Dropdown.Item>
+              <Dropdown.Item href="#/action-2">Square Enix Sales</Dropdown.Item>
+            </div>
+          </Dropdown.Menu>
+
+        </Dropdown>
+        <div style={{
+          marginRight: "23.5%",
+          color: "white",
+          //  border:"1px solid red" ,
+          paddingTop: "10px",
+
+
+        }}>
+          <span style={{
+            textAlign: "center",
+            color: "white"
+          }}> Filters</span>
+        </div>
+      </div>
+      <div className="amain" style={{
+        width: "1518px",
         height: "100%",
         display: "flex",
         // border: "1px solid red"
@@ -279,7 +279,7 @@ export const GamesPage = () => {
       }}>
         <div className="games" style={{
           width: "950px",
-          height: "1500px",
+          height: "100%",
           // border: "1px solid blue",
           display: "grid",
 
@@ -311,6 +311,7 @@ export const GamesPage = () => {
                     color: "white",
                     marginTop: "10px",
                     // border: "1px solid yellow"
+                    textAlign:"left"
 
                   }}>
                   <div className="aimg" style={{
@@ -322,7 +323,7 @@ export const GamesPage = () => {
                     <img src={el.images[0].imageUrl} alt="err" height="300px" width="100%" />
                   </div>
                   {el.name}
-                 <p> {el.price}</p>
+                  <p> {el.price}</p>
 
 
 
@@ -337,31 +338,42 @@ export const GamesPage = () => {
           height: "500px",
           // border: "1px solid blue"
         }}>
-          <div>
+          <div style={{
+            // border: "1px solid red",
+            display: "flex"
             
+          }}>
+            
+              <img src="/magni1.png" alt="" style={{
+                width: "20px",
+                height: "20px"
+              }} />
+            
+            <div>
             <input type="text" placeholder="Keywords" style={{
-              marginBottom:"10px",
+              marginBottom: "10px",
               color: "white",
-              backgroundColor:"gray",
+              backgroundColor: "black",
               // paddingLeft:"20px",
-              width:"80%" ,
-              border: "1px solid red"
+              width: "80%",
+              border: "none"
             }} />
+            </div>
           </div>
           <div>
-        <div className="aline" style={{
-          borderTop:"0.5px solid gray",
-        }}>
+            <div className="aline" style={{
+              borderTop: "0.5px solid gray",
+            }}>
 
-        </div>
+            </div>
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic" style={{
-                border:"none",
-                textAlign:"left",
+                border: "none",
+                textAlign: "left",
                 padding: "20px",
-                fontFamily:"Brutal, sans-serif",
-                fontSize:"12px",
-                fontWeight:"500",
+                fontFamily: "Brutal, sans-serif",
+                fontSize: "12px",
+                fontWeight: "500",
                 color: "rgb(245, 245, 245)"
               }}>
                 EVENTS
@@ -373,20 +385,20 @@ export const GamesPage = () => {
               </Dropdown.Menu>
             </Dropdown>
             <div className="aline" style={{
-          borderTop:"0.5px solid gray",
-        }}>
+              borderTop: "0.5px solid gray",
+            }}>
 
-        </div>
-        
-        
+            </div>
+
+
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic" style={{
-                border:"none",
-                textAlign:"left",
+                border: "none",
+                textAlign: "left",
                 padding: "20px",
-                fontFamily:"Brutal, sans-serif",
-                fontSize:"12px",
-                fontWeight:"500",
+                fontFamily: "Brutal, sans-serif",
+                fontSize: "12px",
+                fontWeight: "500",
                 color: "rgb(245, 245, 245)"
               }}>
                 PRICE
@@ -402,18 +414,18 @@ export const GamesPage = () => {
             </Dropdown>
 
             <div className="aline" style={{
-          borderTop:"0.5px solid gray",
-        }}>
+              borderTop: "0.5px solid gray",
+            }}>
 
-        </div>
+            </div>
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic" style={{
-                border:"none",
-                textAlign:"left",
+                border: "none",
+                textAlign: "left",
                 padding: "20px",
-                fontFamily:"Brutal, sans-serif",
-                fontSize:"12px",
-                fontWeight:"500",
+                fontFamily: "Brutal, sans-serif",
+                fontSize: "12px",
+                fontWeight: "500",
                 color: "rgb(245, 245, 245)"
               }}>
                 GENRE
@@ -431,20 +443,20 @@ export const GamesPage = () => {
               </Dropdown.Menu>
             </Dropdown>
             <div className="aline" style={{
-          borderTop:"0.5px solid gray",
-        }}>
+              borderTop: "0.5px solid gray",
+            }}>
 
-        </div>
+            </div>
 
 
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic" style={{
-                border:"none",
-                textAlign:"left",
+                border: "none",
+                textAlign: "left",
                 padding: "20px",
-                fontFamily:"Brutal, sans-serif",
-                fontSize:"12px",
-                fontWeight:"500",
+                fontFamily: "Brutal, sans-serif",
+                fontSize: "12px",
+                fontWeight: "500",
                 color: "rgb(245, 245, 245)"
               }}>
                 FEATURES
@@ -461,18 +473,18 @@ export const GamesPage = () => {
             </Dropdown>
 
             <div className="aline" style={{
-          borderTop:"0.5px solid gray",
-        }}>
+              borderTop: "0.5px solid gray",
+            }}>
 
-        </div>
+            </div>
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic" style={{
-                border:"none",
-                textAlign:"left",
+                border: "none",
+                textAlign: "left",
                 padding: "20px",
-                fontFamily:"Brutal, sans-serif",
-                fontSize:"12px",
-                fontWeight:"500",
+                fontFamily: "Brutal, sans-serif",
+                fontSize: "12px",
+                fontWeight: "500",
                 color: "rgb(245, 245, 245)"
               }}>
                 TYPES
@@ -487,19 +499,19 @@ export const GamesPage = () => {
               </Dropdown.Menu>
             </Dropdown>
             <div className="aline" style={{
-          borderTop:"0.5px solid gray",
-        }}>
+              borderTop: "0.5px solid gray",
+            }}>
 
-        </div>
+            </div>
 
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic" style={{
-                border:"none",
-                textAlign:"left",
+                border: "none",
+                textAlign: "left",
                 padding: "20px",
-                fontFamily:"Brutal, sans-serif",
-                fontSize:"12px",
-                fontWeight:"500",
+                fontFamily: "Brutal, sans-serif",
+                fontSize: "12px",
+                fontWeight: "500",
                 color: "rgb(245, 245, 245)"
               }}>
                 PLATFORM
@@ -507,7 +519,7 @@ export const GamesPage = () => {
 
               <Dropdown.Menu className="aright" style={{
                 border: "none",
-                
+
               }}>
                 <Dropdown.Item href="#/action-1">Windows</Dropdown.Item>
                 <Dropdown.Item href="#/action-2">Mac OS</Dropdown.Item>
@@ -515,10 +527,10 @@ export const GamesPage = () => {
               </Dropdown.Menu>
             </Dropdown>
             <div className="aline" style={{
-          borderTop:"0.5px solid gray",
-        }}>
+              borderTop: "0.5px solid gray",
+            }}>
 
-        </div>
+            </div>
 
           </div>
         </div>
@@ -527,7 +539,7 @@ export const GamesPage = () => {
 
 
 
-      
+
 
     </>
   );

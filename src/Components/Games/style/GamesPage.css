@@ -3,10 +3,11 @@
     
   } */
   
-  .main{
+  .amain{
     /* margin: auto; */
     padding-left: 10%;
     padding-right: 10%;
+    background-color: black;
   }
   #dropdown-basic{
     color: white;
