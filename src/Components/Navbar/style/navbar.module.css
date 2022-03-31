@@ -1,0 +1,152 @@
+
+.navbar {
+    background-color: RGBA(0, 0, 0, 0.78);
+    color: white;
+    min-height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 0px 2px 18px;
+}
+
+.listSection {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    gap: 30px;
+}
+
+.navMenu {
+    display: flex;
+    min-height: 45px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.one {
+    border-bottom: 5px inset dodgerblue;
+    width: 70px;
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.onemore {
+
+    margin-bottom: 5px;
+    width: 70px;
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.onemore:nth-child(4) {
+    margin-bottom: 5px;
+    width: 100px;
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.onemore:hover {
+    border-bottom: 5px inset dodgerblue;
+    margin-bottom: 0px;
+}
+
+
+.branding {
+    font-size: 2.5rem;
+}
+
+.listItem {
+    list-style-type: none;
+}
+.link {
+    transition: 0.5s ease;
+    color: #aca9a9;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: white;
+}
+
+.Alignment{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+
+}
+.rightNav {
+    min-height: 40px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items:center;
+}
+
+.avatar{
+    font-size: 10px;
+    padding: 30px;
+}
+.hamburger {
+    display: none;
+    cursor: pointer;
+
+}
+
+
+
+
+.hamIcon{
+    font-size: larger;
+}
+
+
+@media(max-width:768px) {
+    .hamburger {
+        display: block;
+    }
+    .hamburger.active .bar:nth-last-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-last-child(1) {
+        transform: translateY(8px) rotate((45deg));
+    }
+    .hamburger.active .bar:nth-last-child(3) {
+        transform: translateY(-8px) rotate((-45deg));
+    }
+    .navMenu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #2a2a2a;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s
+    }
+    .listItem {
+        margin: 16px 0;
+    }
+    .listItem.active {
+        left: 0;
+    }
+     .downloadbtn{
+     display: none;
+ }
+ .rightNav{
+     display: none;
+ }
+}
+

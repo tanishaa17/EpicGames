@@ -1,0 +1,62 @@
+.Offcanvas{
+    background-color: #2a2a2a;
+    color: #fff;
+}
+
+.hamburgerIconDiv{
+     width: 40px;
+     min-height: 40px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: dodgerblue;
+     color: #fff;
+    
+}
+.OffsetDiv{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+.link {
+    transition: 0.5s ease;
+    color: #aca9a9;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: white;
+}
+.hamList{
+    display: flex  ;
+    flex-direction: column;
+    padding: 20px 40px ;
+    gap: 20px ; 
+  
+}
+
+
+.offcanDownlBtn{
+    width: 100%;
+}
+.Alignment{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+
+}
+.offcanDownlBtn{
+    width: 100%;
+}
+.hamBtns{
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;  
+    cursor: pointer;
+}

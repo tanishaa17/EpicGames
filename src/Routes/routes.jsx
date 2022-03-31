@@ -8,11 +8,13 @@ import { Signup } from "../Components/Signup/script/Signup";
 import { LoginOptions } from '../Components/LoginOptions/LoginOptions';
 import { SignupOptions } from "../Components/SignupOptions/script/SignupOptions";
 import {IndividualGame} from "../Components/IndividualGame/script/IndividualGame";
+import { Navbar } from '../Components/Navbar/script/Navbar';
 
 
 export const AllRoutes = () => {
   return (
     <>
+      <Navbar/>
       <Routes>
         <Route exact path="/cart" element={<GameCart />} />
         <Route exact path="/login" element={<Login />} />
