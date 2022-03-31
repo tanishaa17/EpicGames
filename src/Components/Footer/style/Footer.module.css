@@ -1,18 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:wght@401");
 
-.container {
+.sicontainer {
   background-color: #202020;
   color: white;
   padding: 2% 6%;
   margin-top: 10%;
 }
-#icons {
+#siicons {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 3%;
 }
-#social {
+#sisocial {
   width: 11%;
   display: flex;
   justify-content: space-between;
@@ -23,135 +23,135 @@
   border: 2px solid rgb(182, 180, 180);
   border-radius: 15%;
 } */
-#upicon {
+#siupicon {
   font-size: 30px;
   color: rgb(182, 180, 180);
   border: 2px solid rgb(182, 180, 180);
   border-radius: 10%;
 }
-#fbicon {
+#sifbicon {
   font-size: 35px;
   color: rgb(182, 180, 180);
 }
-#twicon {
+#sitwicon {
   font-size: 35px;
   color: rgb(182, 180, 180);
 }
-#yticon {
+#siyticon {
   font-size: 35px;
   color: rgb(182, 180, 180);
 }
-#fbicon:hover {
+#sifbicon:hover {
   color: rgb(36, 130, 238);
   transition: color 0.5s;
   cursor: pointer;
 }
-#yticon:hover {
+#siyticon:hover {
   color: rgb(36, 130, 238);
   transition: color 0.5s;
   cursor: pointer;
 }
-#twicon:hover {
+#sitwicon:hover {
   color: rgb(36, 130, 238);
   transition: color 0.5s;
   cursor: pointer;
 }
-#upicon:hover {
+#siupicon:hover {
   color: rgb(36, 130, 238);
   border: 2px solid rgb(36, 130, 238);
   transition: color 0.5s;
   transition: border 0.5s;
   cursor: pointer;
 }
-#resources {
+#siresources {
   text-align: left;
 }
-.head {
+.sihead {
   color: rgb(116, 114, 114);
   font-weight: 600;
   line-height: 0px;
   margin-bottom: 3%;
 }
-.details {
+.sidetails {
   display: flex;
-  margin-left: -2.8%;
+  margin-left: -2.5%;
   margin-top: -1%;
+  margin-bottom: 2%;
 }
-#resources li {
+#siresources li {
   line-height: 150%;
   color: rgb(233, 229, 229);
   font-size: 15px;
 }
-#resources li:hover {
+#siresources li:hover {
   color: rgb(36, 130, 238);
   transition: color 0.5s;
   cursor: pointer;
 }
-#line {
+#siline {
   width: 100%;
   margin: auto;
   border: 0.05px solid rgb(116, 114, 114);
-  margin-top: 1%;
   margin-bottom: 4%;
 }
-#copyright {
+#sicopyright {
   width: 49%;
   text-align: left;
   font-size: 12px;
   line-height: 200%;
 }
-#terms {
+#siterms {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#policy {
+#sipolicy {
   width: 30%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 14px;
 }
-#policy > p:hover {
+#sipolicy > p:hover {
   color: rgb(36, 130, 238);
   transition: color 0.5s;
   cursor: pointer;
 }
-#logos {
+#silogos {
   width: 20%;
   display: flex;
   justify-content: end;
   align-items: center;
 }
-#logos > img:hover {
+#silogos > img:hover {
   cursor: pointer;
 }
 @media only screen and (max-width: 667px) and (min-width: 375px) {
-  .details {
+  .sidetails {
     display: block;
     margin-left: -0.2%;
   }
-  .head {
+  .sihead {
     margin-left: 7%;
   }
-  #terms {
+  #siterms {
     display: block;
   }
-  #policy {
+  #sipolicy {
     display: block;
     margin-left: 7%;
   }
-  #policy > p {
+  #sipolicy > p {
     text-align: left;
   }
-  #icons {
+  #siicons {
     margin-left: 7%;
   }
-  #copyright {
+  #sicopyright {
     margin-left: 7%;
   }
-  #logos {
+  #silogos {
     width: 100%;
     justify-content: center;
   }
