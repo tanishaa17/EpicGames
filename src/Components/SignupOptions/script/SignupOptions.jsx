@@ -17,46 +17,46 @@ export const SignupOptions = () => {
                 </div>
 
                 <p className="heading">
-                    CHOOSE HOW TO SIGN IN TO YOUR EPIC ACCOUNT
+                    Choose how you would like to sign up
                 </p>
 
                 <div className="optionsName">
                     <div className="allowedOption">
                         <SiEpicgames className="epic"></SiEpicgames>
-                        <p className="text">SIGN IN WITH EPIC GAMES</p>
+                        <p className="text">SIGN UP WITH EPIC GAMES</p>
                     </div>
                     <div className="option">
                         <RiFacebookCircleLine className="fb"></RiFacebookCircleLine>
-                        <p className="text">SIGN IN WITH FACEBOOK</p>
+                        <p className="text">SIGN UP WITH FACEBOOK</p>
                     </div>
                     <div className="allowedOption">
                         <FcGoogle className="google"></FcGoogle>
-                        <p className="text">SIGN IN WITH GOOGLE</p>
+                        <p className="text">SIGN UP WITH GOOGLE</p>
                     </div>
                     <div className="option">
                         <IoLogoXbox className="xbox"></IoLogoXbox>
-                        <p className="text">SIGN IN WITH XBOX LIVE</p>
+                        <p className="text">SIGN UP WITH XBOX LIVE</p>
                     </div>
                     <div className="option">
                         <SiPlaystation className="psn"></SiPlaystation>
-                        <p className="text">SIGN IN WITH PLAYSTATION NETWORK</p>
+                        <p className="text">SIGN UP WITH PLAYSTATION NETWORK</p>
                     </div>
                     <div className="option">
                         <SiNintendonetwork className="ninten"></SiNintendonetwork>
-                        <p className="text">SIGN IN WITH NINTENDO ACCOUNT</p>
+                        <p className="text">SIGN UP WITH NINTENDO ACCOUNT</p>
                     </div>
                     <div className="option">
                         <FaSteam className="steam"></FaSteam>
-                        <p className="text">SIGN IN WITH STEAM</p>
+                        <p className="text">SIGN UP WITH STEAM</p>
                     </div>
                     <div className="option">
                         <BsApple className="apple"></BsApple>
-                        <p className="text">SIGN IN WITH APPLE</p>
+                        <p className="text">SIGN UP WITH APPLE</p>
                     </div>
                 </div>
                 <p className="tfooter">
-                    Don't have an Epic Games account?{" "}
-                    <span className="underline">Sign Up</span>
+                    Have an Epic Games account?{" "}
+                    <span className="underline">Sign In</span>
                 </p>
             </div>
         </div>

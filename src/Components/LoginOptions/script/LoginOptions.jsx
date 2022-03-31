@@ -15,8 +15,7 @@ export const LoginOptions = () => {
                 <div className="icon">
                     <SiEpicgames className="logo"></SiEpicgames>
                 </div>
-
-                <h4>CHOOSE HOW YOU WOULD LIKE TO SIGN UP</h4>
+                <h4>Choose how to sign in to your Epic Account</h4>
 
                 <div className="loginOptionsName">
                     <div className="allowedOptionLogin">
@@ -53,8 +52,8 @@ export const LoginOptions = () => {
                     </div>
                 </div>
                 <p className="logFooter">
-                    Have an Epic Games account?{" "}
-                    <span className="underline">Sign In</span>
+                    Don't have an Epic Games account?{" "}
+                    <span className="underline">Sign Up</span>
                 </p>
             </div>
         </div>
