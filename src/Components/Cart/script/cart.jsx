@@ -3,6 +3,8 @@ import {useState, useEffect} from 'react'
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import "../style/cart.css";
+import {AiFillWindows} from "react-icons/ai";
+import {RiAddCircleLine} from "react-icons/ri";
 
 export const GameCart = () => {
 
@@ -27,10 +29,14 @@ export const GameCart = () => {
                             <p className="rsale">Sale Ends 4/7/2022 at 8:30pm</p>
                         </span>
                         <span className="rdetail3flex">
-                            <img src="/icons8-windows-10-50.png"></img>
+                            
                             <div className="rpricedetail2">
-                                <p className = "rgap2 rwishlist">+Wishlist</p>
-                                <p className = "rremove rgap2">Remove</p>
+                                <AiFillWindows className="rwindowLogo"/>
+                                <span className="rspanwish">
+                                    <RiAddCircleLine className = "rgap23 rgraddcircle"/>
+                                    <p className = "rgap2 rwishlist">Wishlist</p>
+                                    <p className = "rremove">Remove</p>
+                                </span>
                             </div>
                         </span>
                     </div>
