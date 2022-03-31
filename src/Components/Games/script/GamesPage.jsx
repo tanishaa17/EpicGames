@@ -36,7 +36,7 @@ export const GamesPage = () => {
       }}>
         <div >
       <p style={{
-        marginLeft:"170px",
+        marginLeft:"190px",
         fontSize:"25px",
         fontWeight:"400",
         color: "white",
@@ -338,22 +338,14 @@ export const GamesPage = () => {
           // border: "1px solid blue"
         }}>
           <div>
-            {/* <p style={{
-              color:"white",
-              // padding:"10px",
-              // paddingLeft:"10px",
-              marginRight:"62%"
-              
             
-
-            }}>Filters</p> */}
             <input type="text" placeholder="Keywords" style={{
               marginBottom:"10px",
-              // padding:"10px",
               color: "white",
               backgroundColor:"gray",
               // paddingLeft:"20px",
-              width:"80%" 
+              width:"80%" ,
+              border: "1px solid red"
             }} />
           </div>
           <div>
