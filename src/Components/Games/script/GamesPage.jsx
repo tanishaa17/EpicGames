@@ -11,7 +11,7 @@ export const GamesPage = () => {
   const [products, setProducts] = useState([]);
 
   const getProducts = () => {
-    axios.get(`https://5e9623dc5b19f10016b5e31f.mockapi.io/api/v1/products?page=1&limit=20`).then((res) => {
+    axios.get(`https://5e9623dc5b19f10016b5e31f.mockapi.io/api/v1/products?page=1&limit=36`).then((res) => {
       console.log("res", res.data);
       setProducts(res.data);
     })
@@ -50,7 +50,7 @@ export const GamesPage = () => {
         </div>
         <div style={{
           width: "74%",
-          height: "300px",
+          height: "277px",
           // border: "1px solid red",
           display: "flex",
           marginLeft: "11%"
@@ -58,28 +58,36 @@ export const GamesPage = () => {
 
         }}>
           <div style={{
-            width: "25%",
-            height: "300px",
-            // border: "1px solid blue"
+            width: "24%",
+            height: "270px",
+            // border: "1px solid blue",
+            // paddingRight:"10px"
+            marginRight:"2%",
+            backgroundColor:"#1f1f1f",
+            borderRadius:"10px",
+            
+            
           }}>
             <div style={{
-              height: "250px",
+              height: "210px",
               //  border: "1px solid red",
-              backgroundColor: "black"
+              backgroundColor: "#1f1f1f"
 
             }}>
               <img src="/head3.jpg" alt="image not found" style={{
-                width: "245px",
-                height: "208px",
+                width: "230px",
+                height: "180px",
                 marginTop: "20px",
                 // marginRight:"5px"
-                borderRadius: "10px"
+                borderRadius: "10px",
+                // border: "1px solid yellow"
 
               }} />
             </div>
             <div style={{
               height: "50px",
               // border: "1px solid red",
+              backgroundColor:"#1f1f1f",
 
             }}>
               <p style={{
@@ -88,7 +96,9 @@ export const GamesPage = () => {
                 fontFamily: "Brutal, sans-serif",
                 fontSize: "22px",
                 fontWeight: "400",
-                // paddingTop:"2%"
+                // backgroundColor:"#1f1f1f",
+
+                paddingTop:"4%"
 
 
 
@@ -97,29 +107,35 @@ export const GamesPage = () => {
             </div>
           </div>
           <div style={{
-            width: "25%",
-            height: "300px",
-            // border: "1px solid blue"
+            width: "24%",
+            height: "270px",
+            // border: "1px solid blue",
+            // paddingRight:"10px"
+            marginRight:"2%",
+            backgroundColor:"#1f1f1f",
+            borderRadius:"10px",
+            
           }}>
             <div style={{
-              height: "250px",
+              height: "210px",
               //  border: "1px solid red",
-              backgroundColor: "black",
-              borderRadius: "5px"
+              backgroundColor: "#1f1f1f"
 
             }}>
               <img src="/head4.jpg" alt="image not found" style={{
-                width: "245px",
-                height: "208px",
+                width: "230px",
+                height: "180px",
                 marginTop: "20px",
                 // marginRight:"5px"
-                borderRadius: "10px"
+                borderRadius: "10px",
+                // border: "1px solid yellow"
 
               }} />
             </div>
             <div style={{
               height: "50px",
               // border: "1px solid red",
+              backgroundColor:"#1f1f1f",
 
             }}>
               <p style={{
@@ -128,7 +144,9 @@ export const GamesPage = () => {
                 fontFamily: "Brutal, sans-serif",
                 fontSize: "22px",
                 fontWeight: "400",
-                // paddingTop:"2%"
+                // backgroundColor:"#1f1f1f",
+
+                paddingTop:"4%"
 
 
 
@@ -138,28 +156,35 @@ export const GamesPage = () => {
           </div>
 
           <div style={{
-            width: "25%",
-            height: "300px",
-            // border: "1px solid blue"
+            width: "24%",
+            height: "270px",
+            // border: "1px solid blue",
+            // paddingRight:"10px"
+            marginRight:"2%",
+            backgroundColor:"#1f1f1f",
+            borderRadius:"10px",
+            
           }}>
             <div style={{
-              height: "250px",
+              height: "210px",
               //  border: "1px solid red",
-              backgroundColor: "black"
+              backgroundColor: "#1f1f1f"
 
             }}>
               <img src="/head5.jpg" alt="image not found" style={{
-                width: "245px",
-                height: "208px",
+                width: "220px",
+                height: "180px",
                 marginTop: "20px",
                 // marginRight:"5px"
-                borderRadius: "10px"
+                borderRadius: "10px",
+                // border: "1px solid yellow"
 
               }} />
             </div>
             <div style={{
               height: "50px",
               // border: "1px solid red",
+              backgroundColor:"#1f1f1f",
 
             }}>
               <p style={{
@@ -168,7 +193,9 @@ export const GamesPage = () => {
                 fontFamily: "Brutal, sans-serif",
                 fontSize: "22px",
                 fontWeight: "400",
-                // paddingTop:"2%"
+                // backgroundColor:"#1f1f1f",
+
+                paddingTop:"4%"
 
 
 
@@ -178,28 +205,35 @@ export const GamesPage = () => {
           </div>
 
           <div style={{
-            width: "25%",
-            height: "300px",
-            // border: "1px solid blue"
+            width: "23%",
+            height: "270px",
+            // border: "1px solid blue",
+            // paddingRight:"10px"
+            // marginRight:"3%",
+            backgroundColor:"#1f1f1f",
+            borderRadius:"10px",
+            
           }}>
             <div style={{
-              height: "250px",
+              height: "210px",
               //  border: "1px solid red",
-              backgroundColor: "black"
+              backgroundColor: "#1f1f1f"
 
             }}>
               <img src="/head6.jpg" alt="image not found" style={{
-                width: "245px",
-                height: "208px",
+                width: "220px",
+                height: "180px",
                 marginTop: "20px",
                 // marginRight:"5px"
-                borderRadius: "10px"
+                borderRadius: "10px",
+                // border: "1px solid yellow"
 
               }} />
             </div>
             <div style={{
               height: "50px",
               // border: "1px solid red",
+              backgroundColor:"#1f1f1f",
 
             }}>
               <p style={{
@@ -208,7 +242,9 @@ export const GamesPage = () => {
                 fontFamily: "Brutal, sans-serif",
                 fontSize: "22px",
                 fontWeight: "400",
-                // paddingTop:"2%"
+                // backgroundColor:"#1f1f1f",
+
+                paddingTop:"4%"
 
 
 
@@ -216,7 +252,6 @@ export const GamesPage = () => {
               }}> Tower Defense Games</p>
             </div>
           </div>
-
         </div>
       </div>
       <div style={{

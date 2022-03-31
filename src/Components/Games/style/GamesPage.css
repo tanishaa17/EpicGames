@@ -8,6 +8,8 @@
     padding-left: 10%;
     padding-right: 10%;
     background-color: black;
+    /* padding-bottom: 300px; */
+    /* background-color: #1f1f1f; */
   }
   #dropdown-basic{
     color: white;
@@ -45,9 +47,11 @@
   }
   .asort{
     background-color: black;
+
   }
   .aborderRemove{
     border:"none";
    text-align:"left";
-    padding: "20px"
+    padding: "20px";
+    background-color:#1f1f1ff0;
   }
