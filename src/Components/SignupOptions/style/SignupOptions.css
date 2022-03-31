@@ -31,64 +31,65 @@
 
 .epic {
   background-color: #353535;
-  font-size: 25px;
-  padding: 10px 15px;
+  font-size: 55px;
+  /* padding: 10px 15px;
   width: 25%;
-  border-radius: 4px;
+  border-radius: 4px; */
 }
 
 .fb {
   background-color: #3261A3;
-  font-size: 25px;
-  padding: 10px 15px;
+  font-size: 55px;
+  /* padding: 10px 15px;
   width: 25%;
-  border-radius: 4px;
+  border-radius: 4px; */
 }
 
 .google {
   background-color: #FFFFFF;
-  font-size: 25px;
-  padding: 10px 15px;
+  font-size: 55px;
+  /* padding: 10px 15px;
   width: 25%;
-  border-radius: 4px;
+  border-radius: 4px; */
 }
 
 .xbox {
   background-color: #027D00;
-  font-size: 25px;
-  padding: 10px 15px;
+  font-size: 55px;
+  /* padding: 10px 15px;
   width: 25%;
-  border-radius: 4px;
+  border-radius: 4px; */
 }
 
 .psn {
   background-color: #0063C5;
-  font-size: 25px;
-  padding: 10px 15px;
+  font-size: 55px;
+  /* padding: 10px 15px;
   width: 25%;
-  border-radius: 4px;
+  border-radius: 4px; */
 }
 
 .ninten {
   background-color: #E90000;
+  font-size: 55px;
   
 }
 
 .steam {
   background-color: #145C8F;
-  font-size: 25px;
-  padding: 10px 15px;
+  font-size: 55px;
+  /* padding: 10px 15px;
   width: 25%;
-  border-radius: 4px;
+  border-radius: 4px; */
 }
 
 .apple {
   background-color: #FFFFFF;
   color: #121212;
-  font-size: 25px;
-  padding: 10px 15px;
+  font-size: 55px;
+  /* padding: 10px 15px;
   width: 25%;
-  border-radius: 4px;
+  border-radius: 4px; */
 }
 
 h4 {
