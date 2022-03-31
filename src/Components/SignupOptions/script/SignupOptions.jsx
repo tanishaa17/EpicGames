@@ -1,5 +1,5 @@
 import React from "react";
-import "./SignupOptions.css";
+import "../style/SignupOptions.css";
 export const SignupOptions = () => {
     return (
         <div className="signupOptionsContainer">
