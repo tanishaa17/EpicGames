@@ -37,7 +37,7 @@ export const GamesPage = () => {
           <div >
             <p style={{
               marginLeft: "190px",
-              fontSize: "25px",
+              fontSize: "22px",
               fontWeight: "400",
               color: "white",
               marginTop: "19px",
