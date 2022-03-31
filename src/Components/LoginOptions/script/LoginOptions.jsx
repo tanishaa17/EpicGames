@@ -1,5 +1,5 @@
 import React from "react";
-import "./LoginOptions.css";
+import "../style/LoginOptions.css";
 import { SiEpicgames } from "react-icons/si";
 import { RiFacebookCircleLine } from "react-icons/ri";
 import { FcGoogle } from "react-icons/fc";
