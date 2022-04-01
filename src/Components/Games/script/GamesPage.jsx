@@ -285,8 +285,9 @@ export const GamesPage = () => {
             backgroungColor: "black"
           }}>
             <div className="ablack">
-              <Dropdown.Item href="#/action-1"> Spring Sales</Dropdown.Item>
-              <Dropdown.Item href="#/action-2">Square Enix Sales</Dropdown.Item>
+              <Dropdown.Item href="#/action-1"> Price:Low to High</Dropdown.Item>
+              <Dropdown.Item href="#/action-2">Price:High to Low</Dropdown.Item>
+              {/* <Dropdown.Item ><button>Price:High to Low</button> </Dropdown.Item> */}
             </div>
           </Dropdown.Menu>
 
