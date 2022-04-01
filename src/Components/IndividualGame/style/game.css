@@ -65,6 +65,14 @@
     height: 100px;
     display: flex;
 }
+.rgfleftgap{
+    margin-left:5%;
+}
+.rrgf{
+    font-size:14px;
+    font-weight:bold;
+    color: #616161;
+}
 .rgenre, .rfeature{
     flex: 1;
     border-left: 1px solid rgba(128, 128, 128, 0.432);
@@ -72,10 +80,23 @@
     margin-left:2%;
     text-align: left;
 }
+.rgfdetails{
+    display: flex;
+    margin-top:-5%;
+    font-size:13.5px;
+    /* color: white; */
+}
+.rgfdetails>p{
+    margin-right:2%;
+    text-decoration: underline;
+}
 
 
 
 
+
+
+/* RIGHT MAIN DIV */
 .rrightmainDiv{
     flex:2;
     border:1px solid blue;
@@ -90,13 +111,45 @@
 
 .ralldetailprice{
     text-align: left;
+    border: 1px solid red;
+    margin-top:4%;
+}
+.rrbasegame{
+    font-size:10px;
+    border: none;
+    padding: 10px;
+    background-color:#373737;
+    border-radius:5px;
+    max-width:fit-content;
+    color: white;
+    font-weight: bold;
 }
 .rdpap{
     display: flex;
-    margin-top:-6%;
+    margin-top:-4%;
 }
 .rdpap>p{
     margin-right:3%;
+}
+.rrdiscount{
+    font-size:11px;
+    font-weight: bold;
+    border: none;
+    padding: 5px 9px 0px 9px;
+    background-color:#0074e4;
+    border-radius:5px;
+}
+.rractual{
+    font-size:15px;
+    font-weight: bold;
+    padding-top: 4px;
+    text-decoration: line-through;
+    color: #838282;
+}
+.rbuyprice{
+    font-size:15px;
+    font-weight: bold;
+    padding-top: 4px;
 }
 
 .rsaledate{
@@ -117,4 +170,36 @@
     background-color:lightgrey;
     transition:.8s;
     cursor:pointer;
+}
+#raddwishlist{
+    font-size: 12px;
+}
+.rrwishcircle{
+    font-size: 25px;
+    margin-top:-1%;
+    margin-right: 1.5%;
+}
+
+.rcompanypublisher{
+    display: flex;
+    justify-content:space-between;
+    margin-top:2%;
+}
+.rrLine{
+    width:100%;
+    border-top: 1px solid rgba(128, 128, 128, 0.432);
+    margin-top: -2%;
+}
+.rleftlight{
+    font-size:14px;
+    color: #616161;
+}
+.rrightlight{
+    font-size:14px;
+    font-weight:bold;
+    /* color: white; */
+}
+.rwindowlight{
+    font-size:25px;
+    /* color: white; */
 }

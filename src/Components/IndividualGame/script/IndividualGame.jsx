@@ -3,6 +3,9 @@ import {useState, useEffect} from 'react'
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import "../style/game.css";
+import {RiAddCircleLine} from "react-icons/ri";
+import {AiFillWindows} from "react-icons/ai";
+
 
 export const IndividualGame =()=>{
     return(
@@ -22,18 +25,34 @@ export const IndividualGame =()=>{
                     </div>
                     <div className="rgenrefeature">
                         <div className="rgenre">
-                            <p>Genre</p>
-                            <span>
-                                <p></p>
-                                <p></p>
-                            </span>
+                            <div className="rgfleftgap">
+                                <p className="rrgf">Genre</p>
+                                <span className="rgfdetails">
+                                    <p>Action,</p>
+                                    <p>RPG,</p>
+                                    <p>Open World,</p>
+                                    <p>Stealth,</p>
+                                </span>
+                                <span className="rgfdetails">
+                                    <p>Narration,</p>
+                                    <p>Adventure,</p>
+                                    <p>Puzzle</p>
+                                </span>
+                            </div>
                         </div>
                         <div className="rfeature">
-                            <p>Features</p>
-                            <span>
-                                <p></p>
-                                <p></p>
-                            </span>
+                            <div className="rgfleftgap">
+                                <p className="rrgf">Features</p>
+                                <span className="rgfdetails">
+                                    <p>Controller Support,</p>
+                                    <p>Single Player,</p>
+                                    <p>Multiplayer,</p>
+                                </span>
+                                <span className="rgfdetails">
+                                    <p>Online,</p>
+                                    <p>Co-op</p>
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -42,11 +61,11 @@ export const IndividualGame =()=>{
                 <div className="rrightmainDiv">
                     <div className="rlogoImage"></div>
                     <div className="ralldetailprice">
-                        <p>BASE GAME</p>
+                        <p className="rrbasegame">BASE GAME</p>
                         <div className="rdpap">
-                            <p>-50%</p>
-                            <p>₹2,199</p>
-                            <p>₹1,499</p>
+                            <p className="rrdiscount">-50%</p>
+                            <p className="rractual">₹2,199</p>
+                            <p className="rbuyprice">₹1,499</p>
                         </div>
                         <p className="rsaledate">Sale ends in 4/7/2022 at 8:30 PM</p>
                     </div>
@@ -55,9 +74,30 @@ export const IndividualGame =()=>{
                         </button>
                         <br/>
                         <button id="raddwishlist">
-                            ADD TO WISHLIST
+                            <RiAddCircleLine className="rrwishcircle"/>ADD TO WISHLIST
                         </button>
-                    
+                        <div>
+                            <span className="rcompanypublisher">
+                                <p className="rleftlight">Developer</p>
+                                <p className="rrightlight">UBISOFT</p>
+                            </span>
+                            <div className="rrLine"/>
+                            <span className="rcompanypublisher">
+                                <p className="rleftlight">Publisher</p>
+                                <p className="rrightlight">UBISOFT</p>
+                            </span>
+                            <div className="rrLine"/>
+                            <span className="rcompanypublisher">
+                                <p className="rleftlight">Release Date</p>
+                                <p className="rrightlight"></p>
+                            </span>
+                            <div className="rrLine"/>
+                            <span className="rcompanypublisher">
+                                <p className="rleftlight">Platform</p>
+                                <AiFillWindows className="rwindowlight"/>
+                            </span>
+                            <div className="rrLine"/>
+                        </div>
                 </div>
             </div>
         </div>
