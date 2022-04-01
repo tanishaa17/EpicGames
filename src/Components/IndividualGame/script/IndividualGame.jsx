@@ -26,7 +26,6 @@ export const IndividualGame =()=>{
     }
     console.log("hey hey",game);
 
-
     return(
         <div className="rcontainer">
             <div className="rLine"></div>
@@ -38,8 +37,8 @@ export const IndividualGame =()=>{
             </div>
             <div className="rmainDiv">
                 <div className="rleftmainDiv">
-                    <div className="rgamevideo">
-                        <iframe src={`${game.videoUrl}?autoplay=1`} height="100%" width="100%"></iframe>
+                    <div id="rgametrailer" className="rgamevideo">
+                        <iframe src={game.videoUrl} autoPlay={true} height="100%" width="100%"></iframe>
                     </div>
                     <div>
                         <p>{game.description}</p>
