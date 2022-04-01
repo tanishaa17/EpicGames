@@ -1,5 +1,6 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 // import { Validation } from "./SignupValidation";
 import axios from "axios";
 import "../style/Signup.css"
@@ -25,10 +26,10 @@ export const Signup = () => {
         console.log(form)
         e.preventDefault();
         axios.post(`https://quiet-fortress-03621.herokuapp.com/register`, form).then((res) => {
-            
-            console.log("hello",res.data.user_data._id)
+
+            console.log("hello", res.data.user_data._id)
             alert("User registered")
-            
+
             setForm({
                 first_name: "",
                 last_name: "",
@@ -85,12 +86,12 @@ export const Signup = () => {
                             I have read and agree to the <span className="underline">terms of service</span></label></span>
                     </div>
                     {/* <button className="signupBtn" onSubmit={handleSubmit}>CONTINUE</button> */}
-                    <input type="submit" value="Submit data" className="signupBtn" />
+                    <input type="submit" value="CONTINUE" className="signupBtn" />
                     <p className="pripolicy">Privacy Policy</p>
                 </form>
-                <p className="haveacnt">Have an Epic Games Account?<span className="underline">Sign In</span></p>
-                <p className="haveacnt">Back to <span className="underline">all sign up options</span></p>
+                <p className="haveacnt">Have an Epic Games Account?<Link to='/login'> <span className="underline">Sign In</span></Link></p>
+                <p className="haveacnt">Back to <Link to='/signupoptions'><span className="underline">all sign up options</span></Link></p>
             </div>
-        </div>
+        </div >
     )
 }

@@ -94,6 +94,7 @@ label {
     font-size: 12px;
     text-decoration: underline;
     margin-top: 25px;
+    cursor: pointer;
 }
 
 .haveacnt {

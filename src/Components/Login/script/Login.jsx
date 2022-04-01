@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "@chakra-ui/react";
 import axios from "axios";
 import "../style/login.css"
 import { SiEpicgames } from "react-icons/si";
@@ -18,9 +19,9 @@ export const Login = () => {
         axios.post("https://quiet-fortress-03621.herokuapp.com/login", userData).then((res) => {
             alert("Logged in Successfully");
             console.log(res.data.user_data._id);
-            var user =  res.data.user_data;
+            var user = res.data.user_data;
             localStorage.setItem("userData", JSON.stringify(user));
-        }).catch((error)=>{
+        }).catch((error) => {
             alert("Invalid Credentials. Try Again")
         })
     }
@@ -44,11 +45,11 @@ export const Login = () => {
                             Remember me</label>
                         <span className="forgotPass">Forgot Your Password</span>
                     </div>
-                    <input className="loginbtn" type="submit" value="Login Now"/>
+                    <input className="loginbtn" type="submit" value="LOG IN NOW" />
                     <div className="privacy">Privacy Policy</div>
                 </form>
-                <div className="dontHaveAcnt">Don't have an Epic Games Account? <span className="under">Sign up</span></div>
-                <div className="dontHaveAcnt">Back to <span className="under">all sign up options</span></div>
+                <div className="dontHaveAcnt">Don't have an Epic Games Account? <Link to="signup"><span className="under">Sign up</span></Link></div>
+                <div className="dontHaveAcnt">Back to <Link to="/signupoptions"><span className="under">all sign up options</span></Link> </div>
             </div>
         </div>
     )

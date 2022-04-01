@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../style/LoginOptions.css"
 import { SiEpicgames } from "react-icons/si";
 import { RiFacebookCircleLine } from "react-icons/ri";
@@ -20,7 +21,7 @@ export const LoginOptions = () => {
                 <div className="loginOptionsName">
                     <div className="allowedOptionLogin">
                         <SiEpicgames className="epic"></SiEpicgames>
-                        <p className="text">SIGN IN WITH EPIC GAMES</p>
+                        <Link to="/login"><p className="text">SIGN IN WITH EPIC GAMES</p></Link>
                     </div>
                     <div className="logOption">
                         <RiFacebookCircleLine className="fb"></RiFacebookCircleLine>
@@ -53,7 +54,7 @@ export const LoginOptions = () => {
                 </div>
                 <p className="logFooter">
                     Don't have an Epic Games account?{" "}
-                    <span className="underline">Sign Up</span>
+                    <Link to="/signupoptions"><span className="underline">Sign Up</span></Link>
                 </p>
             </div>
         </div>
