@@ -11,7 +11,7 @@ export const GameCart = () => {
   
   var currentUser = JSON.parse(localStorage.getItem('userData'))
   var final=[]||JSON.parse(localStorage.getItem("finalprice"));
-  console.log(currentUser);
+//   console.log(currentUser);
 
   const [game,setGame] = useState([])
 
@@ -21,7 +21,7 @@ export const GameCart = () => {
   
   const getData=()=>{
       axios.get(`https://quiet-fortress-03621.herokuapp.com/cart/${currentUser._id}`).then((res)=>{
-          console.log(res.data)
+          console.log("hello hello",res.data)
           setGame([...res.data])
       })
   }
@@ -29,13 +29,21 @@ export const GameCart = () => {
 
   const handleDelete=(id)=>{
     axios.delete(`https://quiet-fortress-03621.herokuapp.com/cart/${id}`).then((res)=>{
-          console.log(res.data)
+          console.log("hey hey",res.data)
         //   setGame([...res.data])
           getData();
     })
   }
+var sum=0;
+var discount=0
+game.forEach((e)=>{
+    sum+=+e.game_id.price
+})
+game.forEach((e)=>{
+    discount += +e.game_id.price*((+e.game_id.discount)/100) 
+})
 
-  console.log("hey hello",game)
+//   console.log("hey hello",game)
 
   return(
     <div className="rcartcontainer">
@@ -43,7 +51,7 @@ export const GameCart = () => {
             <p className="rmyCart">My Cart</p>
             <div id="rcart" className="rgame-cart">
                 <div id="rgamesList">{game.map((ele)=>{
-                    return(
+                    return( 
                         <div>
                             <div className="rtobuygames">
                                 <img className="rbuygameimage" src={ele.game_id.image}></img>
@@ -53,7 +61,7 @@ export const GameCart = () => {
                                         <div className="rpricedetail">
                                             <p className="rblueDiscount">-{ele.game_id.discount}%</p>
                                             <p className = "rgap rlineprice">₹{ele.game_id.price}</p>
-                                            <p className = "rgap ractualporice">₹{ele.game_id.price- ele.game_id.price*((ele.game_id.discount)/100)}</p>
+                                            <p className = "rgap ractualporice">₹{`${Math.floor(ele.game_id.price- ele.game_id.price*((ele.game_id.discount)/100))}`}</p>
                                         </div>
                                     </span>
                                     <span className="rdetail2flex">
@@ -67,7 +75,9 @@ export const GameCart = () => {
                                             <span className="rspanwish">
                                                 <RiAddCircleLine className = "rgap23 rgraddcircle"/>
                                                 <p className = "rgap2 rwishlist">Wishlist</p>
-                                                <p className = "rremove" onClick={handleDelete(ele.game_id._id)}>Remove</p>
+                                                <p className = "rremove" onClick={()=>{
+                                                    handleDelete(ele._id)
+                                                }}>Remove</p>
                                             </span>
                                         </div>
                                     </span>
@@ -81,11 +91,11 @@ export const GameCart = () => {
                     <br/>
                     <span className="rshowPrice">
                         <p>Price</p>
-                        <p>₹6184</p>
+                        <p>₹{Math.floor(sum)}</p>
                     </span>
                     <span className="rshowPrice">
                         <p>Sale Discount</p>
-                        <p>-₹3099</p>
+                        <p>-₹{Math.floor(discount)}</p>
                     </span>
                     <span className="rshowPrice">
                         <p>Taxes</p>
@@ -94,7 +104,7 @@ export const GameCart = () => {
                     <div className="rline"></div>
                     <span className="rshowPrice">
                         <p>Subtotal</p>
-                        <p>₹NA</p>
+                        <p>₹{Math.floor(sum-discount)}</p>
                     </span>
                     <button className="rcheckoutButton">Check Out</button>
                 </div>

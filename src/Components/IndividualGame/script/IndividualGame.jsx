@@ -23,7 +23,7 @@ export const IndividualGame =()=>{
     },[id])
 
     const getData=()=>{
-            axios.get(`https://quiet-fortress-03621.herokuapp.com/games/${id}`).then((res) => {
+            axios.get(`https://apple-cupcake-41384.herokuapp.com/games/${id}`).then((res) => {
             // console.log("res", res.data);
             setGame(res.data);
         });
@@ -36,7 +36,7 @@ export const IndividualGame =()=>{
             user_id:currentUser._id,
             game_id: id
         };
-        axios.post(`https://quiet-fortress-03621.herokuapp.com/cart/additem/${currentUser._id}`,cart_data).then((res)=>{
+        axios.post(`https://apple-cupcake-41384.herokuapp.com/cart/additem/${currentUser._id}`,cart_data).then((res)=>{
             console.log(res);
             console.log(res.data)
         })

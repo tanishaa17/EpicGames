@@ -7,7 +7,7 @@
   /* margin: auto; */
   padding-left: 10%;
   padding-right: 10%;
-  background-color: black;
+  background-color: #121212;
   /* padding-bottom: 300px; */
   /* background-color: #1f1f1f; */
 
@@ -23,11 +23,11 @@
 }
 
 .amenu {
-  background-color: black;
+  background-color: #121212;
 }
 
 .main {
-  background-color: black;
+  background-color: #121212;
 }
 
 #aitem {
@@ -37,27 +37,48 @@
 .aright {
   width: 100%;
   border: none;
+  color: #838282;
 
 }
+
+.arigh:hover {
+  color: white;
+}
+
+.aeventhover:hover {
+  color: red;
+}
+
+/* .ahoverhead {  
+  background-color: #0074e4;
+} */
 
 .adiscount {
   background-color: #0074e4;
   width: 40px;
   height: 22px;
-  font-size: 9px;
+  font-size: 9.5px;
   color: white;
   border-radius: 5px;
   font-weight: 700;
   border: none;
 }
 
+
+
 .atitle {
   font-size: 15px;
-  text-decoration: none;
+  /* text-decoration: none; */
+  margin-top: 10px;
+  /* border: 1px solid red; */
 }
 
 .aprice {
   font-size: 15px;
+  /* border: 1px solid red; */
+  margin-left: 6%;
+  margin-top: 1%;
+
 }
 
 
@@ -65,15 +86,16 @@
   height: 100px;
   border: 1px solid red;
   color: white;
-  background-color: black;
+  background-color: #121212;
   text-align: center;
 }
 
-/* .ablack{ */
-/* background-color: black; */
-/* color: white; */
-/* border: 1px solid red; */
-/* } */
+.ablack {
+  background-color: #121212;
+  color: white;
+  border: 1px solid red;
+}
+
 .asort {
   background-color: black;
 
