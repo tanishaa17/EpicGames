@@ -4,7 +4,8 @@
 .rcartcontainer{
     background-color: #1c1c1c;
     border:1px solid red;
-    height:auto;
+    /* overflow-y: auto; */
+    height:inherit;
 }
 
 .rmyCart{
@@ -26,7 +27,7 @@
 
 #rgamesList{
     /* border: 1px solid #1c1c1c; */
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
     width: 70%;
     margin-right: 4%;
 }

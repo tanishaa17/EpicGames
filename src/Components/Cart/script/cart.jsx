@@ -34,6 +34,14 @@ export const GameCart = () => {
           getData();
     })
   }
+var sum=0;
+var discount=0
+game.forEach((e)=>{
+    sum+=+e.game_id.price
+})
+game.forEach((e)=>{
+    discount += +e.game_id.price*((+e.game_id.discount)/100) 
+})
 
 //   console.log("hey hello",game)
 
@@ -83,11 +91,11 @@ export const GameCart = () => {
                     <br/>
                     <span className="rshowPrice">
                         <p>Price</p>
-                        <p>₹6184</p>
+                        <p>₹{Math.floor(sum)}</p>
                     </span>
                     <span className="rshowPrice">
                         <p>Sale Discount</p>
-                        <p>-₹3099</p>
+                        <p>-₹{Math.floor(discount)}</p>
                     </span>
                     <span className="rshowPrice">
                         <p>Taxes</p>
@@ -96,7 +104,7 @@ export const GameCart = () => {
                     <div className="rline"></div>
                     <span className="rshowPrice">
                         <p>Subtotal</p>
-                        <p>₹NA</p>
+                        <p>₹{Math.floor(sum-discount)}</p>
                     </span>
                     <button className="rcheckoutButton">Check Out</button>
                 </div>
