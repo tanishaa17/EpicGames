@@ -5,13 +5,32 @@ import styled from "styled-components";
 import "../style/game.css";
 import {RiAddCircleLine} from "react-icons/ri";
 import {AiFillWindows} from "react-icons/ai";
-
+import { useParams } from "react-router-dom";
+import axios from 'axios';
 
 export const IndividualGame =()=>{
+
+    const {id} =useParams();
+
+    const [game,setGame] = useState({})
+
+    useEffect(()=>{
+        getData();
+    },[id])
+
+    const getData=()=>{
+            axios.get(`https://quiet-fortress-03621.herokuapp.com/games/${id}`).then((res) => {
+            // console.log("res", res.data);
+            setGame(res.data);
+        });
+    }
+    console.log("hey hey",game);
+
+
     return(
         <div className="rcontainer">
             <div className="rLine"></div>
-            <p className="rmaintitle">Title</p>
+            <p className="rmaintitle">{game.title}</p>
             <div className="roverviewDiv">
                 <p className="roverview">Overview</p>
                 <p className="rrgap">Add Ons</p>
@@ -19,9 +38,11 @@ export const IndividualGame =()=>{
             </div>
             <div className="rmainDiv">
                 <div className="rleftmainDiv">
-                    <div className="rgamevideo"></div>
+                    <div className="rgamevideo">
+                        <iframe src={`${game.videoUrl}?autoplay=1`} height="100%" width="100%"></iframe>
+                    </div>
                     <div>
-                        <p>Description</p>
+                        <p>{game.description}</p>
                     </div>
                     <div className="rgenrefeature">
                         <div className="rgenre">
@@ -59,12 +80,14 @@ export const IndividualGame =()=>{
 
 
                 <div className="rrightmainDiv">
-                    <div className="rlogoImage"></div>
+                    <div className="rlogoImage">
+                        <img src={game.logo}></img>
+                    </div>
                     <div className="ralldetailprice">
                         <p className="rrbasegame">BASE GAME</p>
                         <div className="rdpap">
-                            <p className="rrdiscount">-50%</p>
-                            <p className="rractual">₹2,199</p>
+                            <p className="rrdiscount">-{game.discount}%</p>
+                            <p className="rractual">₹{game.price}</p>
                             <p className="rbuyprice">₹1,499</p>
                         </div>
                         <p className="rsaledate">Sale ends in 4/7/2022 at 8:30 PM</p>

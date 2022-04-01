@@ -22,7 +22,7 @@ export const AllRoutes = () => {
         <Route exact path="/login" element={<Login />} />
         <Route exact path="/signup" element={<Signup />} />
         <Route exact path="/signupoptions" element={<SignupOptions />} />
-        <Route exact path="/individualgame" element={<IndividualGame />} />
+        <Route exact path="/individualgame/:id" element={<IndividualGame />} />
         <Route exact path="/loginoptions" element={<LoginOptions />} />
         <Route exact path="/products" element={<GamesPage />} />
       </Routes>

@@ -1,25 +1,27 @@
 import React from "react";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import "../style/GamesPage.css";
 
 import Dropdown from 'react-bootstrap/Dropdown'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {IndividualGame} from "../../IndividualGame/script/IndividualGame";
+
 
 export const GamesPage = () => {
   const [products, setProducts] = useState([]);
 
+  useEffect((() => {
+    getProducts();
+  }), [])
+
   const getProducts = () => {
-    axios.get(`https://5e9623dc5b19f10016b5e31f.mockapi.io/api/v1/products?page=1&limit=36`).then((res) => {
+    axios.get(`https://quiet-fortress-03621.herokuapp.com/games`).then((res) => {
       console.log("res", res.data);
       setProducts(res.data);
     })
   }
-
-  useEffect((() => {
-    getProducts();
-  }), [])
 
   return (
     <>
@@ -339,31 +341,29 @@ export const GamesPage = () => {
 
 
             {products.map((el) => {
+              
               return (
+                    <Link to={`/individualgame/${el._id}`} key={el._id}>
+                        <div key={el._id} id="agamespage"
+                          className="container" style={{
+                            backgroundColor: "black",
+                            color: "white",
+                            marginTop: "10px",
+                            // border: "1px solid yellow"
+                            textAlign:"left"
+                          }}>
+                          <div className="aimg" style={{
+                            width: "100%",
+                            height: "300px",
+                            // border: "1px solid red"
+                          }}>
 
-                <div key={el.id}
-                  className="container" style={{
-                    backgroundColor: "black",
-                    color: "white",
-                    marginTop: "10px",
-                    // border: "1px solid yellow"
-                    textAlign:"left"
-
-                  }}>
-                  <div className="aimg" style={{
-                    width: "100%",
-                    height: "300px",
-                    // border: "1px solid red"
-                  }}>
-
-                    <img src={el.images[0].imageUrl} alt="err" height="300px" width="100%" />
-                  </div>
-                  {el.name}
-                  <p> {el.price}</p>
-
-
-
-                </div>
+                            <img src={el.image} alt="err" height="300px" width="100%" />
+                          </div>
+                          <p>{el.title}</p>
+                          <p> {el.price}</p>
+                        </div>
+                    </Link>
 
               );
             })}
