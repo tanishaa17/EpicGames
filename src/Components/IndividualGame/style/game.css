@@ -68,12 +68,27 @@
 .rgfleftgap{
     margin-left:5%;
 }
+.rrgf{
+    font-size:14px;
+    font-weight:bold;
+    color: #616161;
+}
 .rgenre, .rfeature{
     flex: 1;
     border-left: 1px solid rgba(128, 128, 128, 0.432);
     height: 80%;
     margin-left:2%;
     text-align: left;
+}
+.rgfdetails{
+    display: flex;
+    margin-top:-5%;
+    font-size:13.5px;
+    /* color: white; */
+}
+.rgfdetails>p{
+    margin-right:2%;
+    text-decoration: underline;
 }
 
 

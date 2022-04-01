@@ -26,19 +26,31 @@ export const IndividualGame =()=>{
                     <div className="rgenrefeature">
                         <div className="rgenre">
                             <div className="rgfleftgap">
-                                <p>Genre</p>
-                                <span>
-                                    <p></p>
-                                    <p></p>
+                                <p className="rrgf">Genre</p>
+                                <span className="rgfdetails">
+                                    <p>Action,</p>
+                                    <p>RPG,</p>
+                                    <p>Open World,</p>
+                                    <p>Stealth,</p>
+                                </span>
+                                <span className="rgfdetails">
+                                    <p>Narration,</p>
+                                    <p>Adventure,</p>
+                                    <p>Puzzle</p>
                                 </span>
                             </div>
                         </div>
                         <div className="rfeature">
                             <div className="rgfleftgap">
-                                <p>Features</p>
-                                <span>
-                                    <p></p>
-                                    <p></p>
+                                <p className="rrgf">Features</p>
+                                <span className="rgfdetails">
+                                    <p>Controller Support,</p>
+                                    <p>Single Player,</p>
+                                    <p>Multiplayer,</p>
+                                </span>
+                                <span className="rgfdetails">
+                                    <p>Online,</p>
+                                    <p>Co-op</p>
                                 </span>
                             </div>
                         </div>
