@@ -24,7 +24,7 @@ export const Signup = () => {
     const handleSubmit = (e) => {
         console.log(form)
         e.preventDefault();
-        axios.post(`https://quiet-fortress-03621.herokuapp.com/register`, form).then((res) => {
+        axios.post(`https://apple-cupcake-41384.herokuapp.com/register`, form).then((res) => {
             
             console.log("hello",res.data.user_data._id)
             alert("User registered")

@@ -15,7 +15,7 @@ export const Login = () => {
     }
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post("https://quiet-fortress-03621.herokuapp.com/login", userData).then((res) => {
+        axios.post("https://apple-cupcake-41384.herokuapp.com/login", userData).then((res) => {
             alert("Logged in Successfully");
             console.log(res.data.user_data._id);
             var user =  res.data.user_data;
