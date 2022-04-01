@@ -5,8 +5,9 @@ import { Link, Navigate } from "react-router-dom";
 import "../style/GamesPage.css";
 
 import Dropdown from 'react-bootstrap/Dropdown'
+// import { Button } from "bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {IndividualGame} from "../../IndividualGame/script/IndividualGame";
+import { IndividualGame } from "../../IndividualGame/script/IndividualGame";
 
 
 export const GamesPage = () => {
@@ -39,7 +40,7 @@ export const GamesPage = () => {
           <div >
             <p style={{
               marginLeft: "190px",
-              fontSize: "22px",
+              fontSize: "21px",
               fontWeight: "400",
               color: "white",
               marginTop: "19px",
@@ -55,7 +56,9 @@ export const GamesPage = () => {
           height: "277px",
           // border: "1px solid red",
           display: "flex",
-          marginLeft: "11%"
+          marginLeft: "11%",
+          paddingBottom: "20%"
+
           // backgroundColor:"black"
 
         }}>
@@ -64,11 +67,11 @@ export const GamesPage = () => {
             height: "270px",
             // border: "1px solid blue",
             // paddingRight:"10px"
-            marginRight:"2%",
-            backgroundColor:"#1f1f1f",
-            borderRadius:"10px",
-            
-            
+            marginRight: "2%",
+            backgroundColor: "#1f1f1f",
+            borderRadius: "10px",
+
+
           }}>
             <div style={{
               height: "210px",
@@ -80,6 +83,7 @@ export const GamesPage = () => {
                 width: "230px",
                 height: "180px",
                 marginTop: "20px",
+
                 // marginRight:"5px"
                 borderRadius: "10px",
                 // border: "1px solid yellow"
@@ -89,18 +93,18 @@ export const GamesPage = () => {
             <div style={{
               height: "50px",
               // border: "1px solid red",
-              backgroundColor:"#1f1f1f",
+              backgroundColor: "#1f1f1f",
 
             }}>
               <p style={{
                 color: "white",
                 textAlign: "center",
                 fontFamily: "Brutal, sans-serif",
-                fontSize: "22px",
+                fontSize: "21px",
                 fontWeight: "400",
                 // backgroundColor:"#1f1f1f",
 
-                paddingTop:"4%"
+                paddingTop: "4%"
 
 
 
@@ -113,10 +117,10 @@ export const GamesPage = () => {
             height: "270px",
             // border: "1px solid blue",
             // paddingRight:"10px"
-            marginRight:"2%",
-            backgroundColor:"#1f1f1f",
-            borderRadius:"10px",
-            
+            marginRight: "2%",
+            backgroundColor: "#1f1f1f",
+            borderRadius: "10px",
+
           }}>
             <div style={{
               height: "210px",
@@ -137,18 +141,18 @@ export const GamesPage = () => {
             <div style={{
               height: "50px",
               // border: "1px solid red",
-              backgroundColor:"#1f1f1f",
+              backgroundColor: "#1f1f1f",
 
             }}>
               <p style={{
                 color: "white",
                 textAlign: "center",
                 fontFamily: "Brutal, sans-serif",
-                fontSize: "22px",
+                fontSize: "21px",
                 fontWeight: "400",
                 // backgroundColor:"#1f1f1f",
 
-                paddingTop:"4%"
+                paddingTop: "4%"
 
 
 
@@ -162,10 +166,10 @@ export const GamesPage = () => {
             height: "270px",
             // border: "1px solid blue",
             // paddingRight:"10px"
-            marginRight:"2%",
-            backgroundColor:"#1f1f1f",
-            borderRadius:"10px",
-            
+            marginRight: "2%",
+            backgroundColor: "#1f1f1f",
+            borderRadius: "10px",
+
           }}>
             <div style={{
               height: "210px",
@@ -186,7 +190,7 @@ export const GamesPage = () => {
             <div style={{
               height: "50px",
               // border: "1px solid red",
-              backgroundColor:"#1f1f1f",
+              backgroundColor: "#1f1f1f",
 
             }}>
               <p style={{
@@ -197,7 +201,7 @@ export const GamesPage = () => {
                 fontWeight: "400",
                 // backgroundColor:"#1f1f1f",
 
-                paddingTop:"4%"
+                paddingTop: "4%"
 
 
 
@@ -212,9 +216,9 @@ export const GamesPage = () => {
             // border: "1px solid blue",
             // paddingRight:"10px"
             // marginRight:"3%",
-            backgroundColor:"#1f1f1f",
-            borderRadius:"10px",
-            
+            backgroundColor: "#1f1f1f",
+            borderRadius: "10px",
+
           }}>
             <div style={{
               height: "210px",
@@ -235,18 +239,18 @@ export const GamesPage = () => {
             <div style={{
               height: "50px",
               // border: "1px solid red",
-              backgroundColor:"#1f1f1f",
+              backgroundColor: "#1f1f1f",
 
             }}>
               <p style={{
                 color: "white",
                 textAlign: "center",
                 fontFamily: "Brutal, sans-serif",
-                fontSize: "22px",
+                fontSize: "21px",
                 fontWeight: "400",
                 // backgroundColor:"#1f1f1f",
 
-                paddingTop:"4%"
+                paddingTop: "4%"
 
 
 
@@ -258,15 +262,16 @@ export const GamesPage = () => {
       </div>
       <div style={{
         // backgroundColor:"red",
-        border: "none",
+        // border: "1px solid red",
         display: "flex",
         justifyContent: "space-between",
         backgroundColor: "black"
 
 
+
       }}>
         <Dropdown style={{
-          border: "1px solid black",
+          // border: "1px solid red",
           marginLeft: "11% "
         }}>
           <Dropdown.Toggle variant="success" id="dropdown-basic" style={{
@@ -276,6 +281,7 @@ export const GamesPage = () => {
             backgroundColor: "black",
             // marginRight:"50%",
             border: "none",
+            fontSize: "14px"
             // paddingLeft:"50%"
 
           }}>
@@ -297,19 +303,28 @@ export const GamesPage = () => {
         <div style={{
           marginRight: "23.5%",
           color: "white",
-          //  border:"1px solid red" ,
-          paddingTop: "10px",
+          // border: "1px solid red",
+          // paddingTop: "10px",
+          width: "10%",
+          marginRight: "21%"
 
 
         }}>
-          <span style={{
+          <p style={{
             textAlign: "center",
-            color: "white"
-          }}> Filters</span>
+            color: "white",
+            fontSize: "15px",
+            // border: "1px solid blue",
+            marginTop: "10%",
+            // width: "100%",
+            // height: "100%"
+
+
+          }}> Filters</p>
         </div>
       </div>
       <div className="amain" style={{
-        width: "1518px",
+        width: "100%",
         height: "100%",
         display: "flex",
         // border: "1px solid red"
@@ -324,6 +339,7 @@ export const GamesPage = () => {
           gridTemplateColumns: "repeat(4, 1fr)",
           gridTemplateRows: "repeat(4, 1fr)",
           gridGap: "5px",
+
           // backgroundColor:"blue"
 
 
@@ -341,29 +357,32 @@ export const GamesPage = () => {
 
 
             {products.map((el) => {
-              
-              return (
-                    <Link to={`/individualgame/${el._id}`} key={el._id}>
-                        <div key={el._id} id="agamespage"
-                          className="container" style={{
-                            backgroundColor: "black",
-                            color: "white",
-                            marginTop: "10px",
-                            // border: "1px solid yellow"
-                            textAlign:"left"
-                          }}>
-                          <div className="aimg" style={{
-                            width: "100%",
-                            height: "300px",
-                            // border: "1px solid red"
-                          }}>
 
-                            <img src={el.image} alt="err" height="300px" width="100%" />
-                          </div>
-                          <p>{el.title}</p>
-                          <p> {el.price}</p>
-                        </div>
-                    </Link>
+              return (
+                <Link to={`/individualgame/${el._id}`} key={el._id} >
+                  <div key={el._id} id="agamespage"
+                    className="container" style={{
+                      backgroundColor: "black",
+                      color: "white",
+                      marginTop: "10px",
+                      // border: "1px solid yellow",
+                      paddingBottom: "30px",
+                      textAlign: "left",
+                      textDecoration: "none"
+                    }}>
+                    <div className="aimg" style={{
+                      width: "100%",
+                      height: "300px",
+                      // border: "1px solid red"
+                    }}>
+
+                      <img src={el.image} alt="err" height="300px" width="100%" />
+                    </div>
+                    <p className="atitle">{el.title}</p>
+                    <span ><button className="adiscount">{el.discount}%</button> </span>
+                    <span className="aprice">₹ {el.price}</span>
+                  </div>
+                </Link>
 
               );
             })}
@@ -377,23 +396,28 @@ export const GamesPage = () => {
           <div style={{
             // border: "1px solid red",
             display: "flex"
-            
+
           }}>
-            
-              <img src="/magni1.png" alt="" style={{
-                width: "20px",
-                height: "20px"
-              }} />
-            
-            <div>
-            <input type="text" placeholder="Keywords" style={{
-              marginBottom: "10px",
-              color: "white",
-              backgroundColor: "black",
-              // paddingLeft:"20px",
-              width: "80%",
-              border: "none"
+
+            <img src="/magni1.png" alt="" style={{
+              width: "20px",
+              height: "15px",
+              // border: "1px solid blue",
+              // paddingTop: "10px",
+              marginTop: "14px",
+              // marginLeft: "10px"
+
             }} />
+
+            <div>
+              <input type="text" placeholder="Keywords" style={{
+                marginBottom: "10px",
+                color: "white",
+                backgroundColor: "black",
+                // paddingLeft:"20px",
+                width: "80%",
+                border: "none"
+              }} />
             </div>
           </div>
           <div>
