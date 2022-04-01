@@ -10,12 +10,14 @@ import { SignupOptions } from "../Components/SignupOptions/script/SignupOptions"
 import {IndividualGame} from "../Components/IndividualGame/script/IndividualGame";
 import { Navbar } from '../Components/Navbar/script/Navbar';
 import { GamesPage } from "../Components/Games/script/GamesPage";
+import { HomepageU } from '../Components/Homepage/script/Homepage_U';
 
 export const AllRoutes = () => {
   return (
     <>
       <Navbar/>
       <Routes>
+        <Route exect path="/" element={<HomepageU/>} />
         <Route exact path="/cart" element={<GameCart />} />
         <Route exact path="/login" element={<Login />} />
         <Route exact path="/signup" element={<Signup />} />

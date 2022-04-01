@@ -1,0 +1,20 @@
+.ProductPageUdit{
+    width: 80%;
+    padding: 20px;
+    margin: auto;
+    background-color: #121212;
+}
+#poster1Udit{
+    background-color: #121212;
+    color: gray;
+}
+#poster2Udit{
+    background-color: #121212;
+    color: gray;    
+}
+
+@media(max-width:768px){
+  .ProductPageUdit{
+      width: 100%;
+  }
+}

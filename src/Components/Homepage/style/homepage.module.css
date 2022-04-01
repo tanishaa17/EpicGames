@@ -1,7 +1,98 @@
-/* #121212 */
-
-.container{
-    background-color: #121212 ;
-    color: grey;
- 
+.mainDiv_U{
+    background-color: #121212;
 }
+.nav2Div_U{
+    width: 80%;
+    padding: 20px;
+    margin: auto;
+   
+}
+#searchBoxDiv_U{
+   border: 1px solid rgb(67, 66, 66);
+}
+#searchLogo_U{
+   width: 20%;
+   padding: 8px; 
+    border-radius: 20px 0px 0px 20px;
+    cursor: pointer;
+}
+#searchBox2_U{
+     width: 80%;
+     padding: 8px;
+     background-color: #121212;
+     color: gray;
+     padding-left: 5px;
+     border: none;
+     outline: none;
+     border-radius: 0px 20px 20px 0px;
+}
+#navList2_U{
+    display: flex;
+    justify-content: flex-start ;
+    align-items: center;
+    
+}
+#navList2Cart_U{
+    display: flex;
+    justify-content:space-around ;
+    align-items: center;
+    
+}
+#link1_U{
+   color :gray;
+   transition: 0.5s ease;
+}
+#link1_U:hover{
+    color:#fff;
+}
+#link2_U{
+   color :gray;
+   transition: 0.5s ease;
+}
+#link2_U:hover{
+    color:#fff;
+}
+#link3_U{
+   color :gray;
+   transition: 0.5s ease;
+}
+#link3_U:hover{
+    color:#fff;
+}
+#link4_U{
+   color :gray;
+   transition: 0.5s ease;
+}
+#link4_U:hover{
+    color:#fff;
+}
+#link5_U{
+   color :gray;
+   transition: 0.5s ease;
+}
+#link5_U:hover{
+    color:#fff;
+}
+#link6_U{
+   color :gray;
+   transition: 0.5s ease;
+   
+}
+#link6_U:hover{
+    color:#fff;
+}
+@media(max-width:768px){
+   .nav2Div_U{
+    width: 100%;
+   } 
+   #searchBoxDiv_U{
+   border: none;
+    }
+    #navList2_U{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+}
+

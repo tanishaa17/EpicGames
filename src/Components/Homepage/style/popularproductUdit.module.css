@@ -1,0 +1,68 @@
+.ProductPageUdit{
+    width: 80%;
+    padding: 20px;
+    margin: auto;
+    background-color: #121212;
+}
+
+.ProductPageUdit>div{
+ border: none;  
+}
+.productpricingUdit{
+    display: flex;
+    gap: 10px;
+    align-items:baseline; 
+    justify-content: space-between;
+}
+
+.popularProductGrid{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+}
+#popularCardmain{
+    background-color: #121212;
+}
+#CardImg_Udit{
+    transition: all 0.3s ease-in-out;
+}
+#CardImg_Udit:hover{
+     opacity: 0.8;
+}
+
+@media(max-width:1200px){
+   .popularProductGrid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+}
+@media(max-width:992px){
+   .popularProductGrid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+}
+@media(max-width:768px){
+    .ProductPageUdit{
+    width: 100%;
+    padding: 10px;
+}
+.popularProductGrid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+}
+@media(max-width:576px){
+    .popularProductGrid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+}
+@media(max-width:378px){
+    .popularProductGrid{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+}
+
+

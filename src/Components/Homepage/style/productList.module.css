@@ -1,0 +1,26 @@
+#ProductPageUdit{
+    width: 80%;
+    padding: 20px;
+    margin: auto;
+    background-color: #121212;
+}
+@media(max-width:768px){
+  #ProductPageUdit{
+      width: 100%;
+  }
+}
+#productListGrpUdit{
+ 
+ 
+  display: flex;
+  gap: 2px;
+  text-align: start;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  
+}
+.listtags{
+align-items: center;
+font-size: 10px;
+}

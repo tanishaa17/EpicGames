@@ -18,7 +18,10 @@ export const Navbar = () => {
       <header>
         <nav className={styles.navbar}>
           <div className={styles.listSection}>
-            <SiEpicgames className={styles.branding} />
+            <Link className="text-light" to={"/"}>
+              
+              <SiEpicgames className={styles.branding} />
+            </Link>
             <div className={styles.navMenu}>
               <div className={styles.one}>
                 <li className={styles.listItem}>
