@@ -14,9 +14,8 @@ export const Login = () => {
     }
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post("http://localhost:8080/users", userData).then((res) => {
+        axios.post("https://quiet-fortress-03621.herokuapp.com/login", userData).then((res) => {
             alert("Logged in Successfully");
-
         })
     }
     return (
