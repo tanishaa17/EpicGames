@@ -8,8 +8,12 @@ import {AiFillWindows} from "react-icons/ai";
 import { useParams } from "react-router-dom";
 import axios from 'axios';
 
+
+
 export const IndividualGame =()=>{
 
+    var currentUser = JSON.parse(localStorage.getItem('userData'))
+    
     const {id} =useParams();
 
     const [game,setGame] = useState({})
@@ -19,12 +23,24 @@ export const IndividualGame =()=>{
     },[id])
 
     const getData=()=>{
-            axios.get(`https://quiet-fortress-03621.herokuapp.com/games/${id}`).then((res) => {
+            axios.get(`https://apple-cupcake-41384.herokuapp.com/games/${id}`).then((res) => {
             // console.log("res", res.data);
             setGame(res.data);
         });
     }
     // console.log("hey hey",typeof(game.discount));
+
+
+    const addToCart=(id)=>{
+        var cart_data={
+            user_id:currentUser._id,
+            game_id: id
+        };
+        axios.post(`https://apple-cupcake-41384.herokuapp.com/cart/additem/${currentUser._id}`,cart_data).then((res)=>{
+            console.log(res);
+            console.log(res.data)
+        })
+    }
 
     var buyprice = Math.floor(game.price-game.price*((game.discount)/100));
     console.log("hey hey",buyprice);
@@ -96,7 +112,9 @@ export const IndividualGame =()=>{
                             </div>
                             <p className="rsaledate">Sale ends in 4/7/2022 at 8:30 PM</p>
                         </div>
-                            <button id="raddcart">
+                            <button id="raddcart" onClick={()=>{
+                                addToCart(game._id)
+                            }}>
                                 ADD TO CART
                             </button>
                             <br/>

@@ -18,7 +18,7 @@ export const GamesPage = () => {
   }), [])
 
   const getProducts = () => {
-    axios.get(`https://quiet-fortress-03621.herokuapp.com/games`).then((res) => {
+    axios.get(`https://apple-cupcake-41384.herokuapp.com/games`).then((res) => {
       console.log("res", res.data);
       setProducts(res.data);
     })

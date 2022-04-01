@@ -8,14 +8,20 @@ export const Login = () => {
         email: "",
         password: "",
     });
+
     const handleChange = (e) => {
         let { id, value } = e.target;
         setUserData({ ...userData, [id]: value });
     }
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post("https://quiet-fortress-03621.herokuapp.com/login", userData).then((res) => {
+        axios.post("https://apple-cupcake-41384.herokuapp.com/login", userData).then((res) => {
             alert("Logged in Successfully");
+            console.log(res.data.user_data._id);
+            var user =  res.data.user_data;
+            localStorage.setItem("userData", JSON.stringify(user));
+        }).catch((error)=>{
+            alert("Invalid Credentials. Try Again")
         })
     }
     return (
@@ -38,7 +44,7 @@ export const Login = () => {
                             Remember me</label>
                         <span className="forgotPass">Forgot Your Password</span>
                     </div>
-                    <button className="loginbtn" type="submit" >LOG IN NOW</button>
+                    <input className="loginbtn" type="submit" value="Login Now"/>
                     <div className="privacy">Privacy Policy</div>
                 </form>
                 <div className="dontHaveAcnt">Don't have an Epic Games Account? <span className="under">Sign up</span></div>
