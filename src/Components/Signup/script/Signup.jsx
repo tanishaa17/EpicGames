@@ -1,13 +1,41 @@
 import React from "react";
+import { useState, useEffect } from "react";
+// import { Validation } from "./SignupValidation";
+import axios from "axios";
 import "../style/Signup.css"
 import { SiEpicgames } from "react-icons/si";
 export const Signup = () => {
+    const [value, setValue] = useState({
+        first_name: "",
+        last_name: "",
+        display_name: "",
+        email: "",
+        password: "",
+    })
+
+    const handleChange = (e) => {
+        let { id, value } = e.target;
+        setValue({ ...value, [id]: value });
+    }
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        axios.post("https://quiet-fortress-03621.herokuapp.com/register", value).then((res) => {
+            alert("user registered")
+            setValue({
+                first_name: "",
+                last_name: "",
+                display_name: "",
+                email: "",
+                password: "",
+            })
+        })
+    }
     return (
         <div className="signupContainer">
             <div className="signupBox">
                 <SiEpicgames className="logo"></SiEpicgames>
                 <h4>Sign Up</h4>
-                <form action="" className="signupForm">
+                <form action="" className="signupForm" onSubmit={handleSubmit}>
                     <div>
                         <select name="country *" id="country" className="signTextbox">
                             <option value="countryName">Bangladesh</option>
@@ -25,17 +53,17 @@ export const Signup = () => {
                         </select>
                     </div>
                     <div>
-                        <input type="text" className="signTextbox" placeholder="First Name *" />
-                        <input type="text" className="signTextbox" placeholder="Last Name *" />
+                        <input type="text" id="first_name" onChange={handleChange} className="signTextbox" placeholder="First Name *" value={value.first_name} />
+                        <input type="text" id="last_name" className="signTextbox" placeholder="Last Name *" value={value.last_name} />
                     </div>
                     <div>
-                        <input type="text" className="signTextbox" placeholder="Display Name *" />
+                        <input type="text" id="display_name" onChange={handleChange} className="signTextbox" placeholder="Display Name *" value={value.display_name} />
                     </div>
                     <div>
-                        <input type="email" className="signTextbox" placeholder="Email Address *" />
+                        <input type="email" id="email" onChange={handleChange} className="signTextbox" placeholder="Email Address *" value={value.email} />
                     </div>
                     <div>
-                        <input type="password" className="signTextbox" placeholder="Password *" />
+                        <input type="password" id="password" onChange={handleChange} className="signTextbox" placeholder="Password *" value={value.password} />
                     </div>
                     <div className="tncCheck">
                         <input type="checkbox" className="tncCheckbox1" />
@@ -47,7 +75,8 @@ export const Signup = () => {
                         <span><label htmlFor="tncs">
                             I have read and agree to the <span className="underline">terms of service</span></label></span>
                     </div>
-                    <button className="signupBtn">CONTINUE</button>
+                    {/* <button className="signupBtn" onSubmit={handleSubmit}>CONTINUE</button> */}
+                    <input type="button" value="Continue" className="signupBtn" />
                     <p className="pripolicy">Privacy Policy</p>
                 </form>
                 <p className="haveacnt">Have an Epic Games Account?<span className="underline">Sign In</span></p>
