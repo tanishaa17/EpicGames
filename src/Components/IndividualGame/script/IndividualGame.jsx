@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {useState, useEffect} from 'react'
-import { Link, Navigate } from "react-router-dom";
+import { Link, Navigate,useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import "../style/game.css";
 import {RiAddCircleLine} from "react-icons/ri";
@@ -19,7 +19,7 @@ export const IndividualGame =()=>{
     const {id} =useParams();
 
     const [game,setGame] = useState({})
-
+    const navigate = useNavigate();
     useEffect(()=>{
         getData();
     },[id])
@@ -36,8 +36,8 @@ export const IndividualGame =()=>{
     const addToCart=(id)=>{
         if(currentUser==null){
             alert("You must be logged in to add to cart")
-            // alert("Do you wish to login?")
-            // return <Navigate to={"/loginoptions"}/>
+            alert("Do you wish to login?")
+            navigate("/login")
         }
         else{
             var cart_data={
