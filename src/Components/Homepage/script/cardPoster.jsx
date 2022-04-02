@@ -7,7 +7,7 @@ export const CardPoster = () => {
       <div className="d-flex gap-5">
         <div
           id={styles.poster1Udit}
-          class="d-none d-md-block d-lg-block d-xlg-block card mb-3"
+          class="d-none d-md-block d-lg-block d-xlg-block card mb-3 mt-2"
         >
           <img
             src="https://cdn2.unrealengine.com/warframe-9th-year-anniversary-wisp-16x9-1920x1080-011ee83ecb83.jpg?h=1080&resize=1&w=1920"

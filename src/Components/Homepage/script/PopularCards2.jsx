@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 import styles from "../style/popularproductUdit.module.css";
 import { HiArrowSmRight } from "react-icons/hi";
-import {  Card, Button } from "react-bootstrap";
+import { Card, Button } from "react-bootstrap";
 import { MdOutlineArrowBackIos } from "react-icons/md";
 import { MdOutlineArrowForwardIos } from "react-icons/md";
 import { Link } from "react-router-dom";
 
-export const PopularCards = () => {
+export const PopularCards2 = () => {
   return (
     <div className={styles.ProductPageUdit}>
       <div className="d-flex   justify-content-between px-2 align-items-center">
         <p className="text-light ">
-          <b>Most Popular</b> <span>{<HiArrowSmRight />}</span>{" "}
+          <b>Spriring Sells Spotlight </b> <span>{<HiArrowSmRight />}</span>{" "}
         </p>
         <div className="d-none gap-3  d-sm-flex   d-xs-none d-md-flex d-lg-flex ">
           <MdOutlineArrowBackIos
@@ -31,11 +31,11 @@ export const PopularCards = () => {
             variant="top"
             type="button"
             className="rounded-3 "
-            src="https://cdn1.epicgames.com/0584d2013f0149a791e7b9bad0eec102/offer/GTAV_EGS_Artwork_1200x1600_Portrait%20Store%20Banner-1200x1600-382243057711adf80322ed2aeea42191.jpg?h=854&resize=1&w=640"
+            src="https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_DEATHLOOP_ArkaneStudios_S2_1200x1600-d062aa01760072626d27af24af05db77?h=854&resize=1&w=640"
           />
           <Card.Body>
             <Card.Title className="h6 text-truncate">
-              Grand Theft Auto V preimium
+              DEATHLOOP ON COMPUTER
             </Card.Title>
 
             <div className="d-flex gap-3 align-items-baseline">
@@ -54,7 +54,7 @@ export const PopularCards = () => {
             variant="top"
             type="button"
             className="rounded-3 "
-            src="https://cdn1.epicgames.com/salesEvent/salesEvent/Daffodil_1P_Awareness_INT_Epic_1200x1600_1200x1600-356dd4965bde4c5dbd1000f9c97ac4b4?h=854&resize=1&w=640"
+            src="https://cdn1.epicgames.com/salesEvent/salesEvent/725818d8-9768-4a6a-a723-3039aaee1e23_1200x1600-3b6116d3fc1b566b71251d04bce27938?h=854&resize=1&w=640"
           />
           <Card.Body>
             <Card.Title className="h6 text-truncate">
@@ -73,14 +73,14 @@ export const PopularCards = () => {
         </Card>{" "}
         <Card
           id={styles.popularCardmain}
-          className="d-none d-lg-block d-md-block d-sm-block  text-light"
+          className="d-none d-lg-block d-md-block d-sm-block   text-light"
         >
           <Card.Img
             id={styles.CardImg_Udit}
             variant="top"
             type="button"
             className="rounded-3 "
-            src="https://cdn1.epicgames.com/offer/cbd5b3d310a54b12bf3fe8c41994174f/EGS_VALORANT_RiotGames_S2_1200x1600-726a3c696c29550e1f926c871cc4bcbe?h=854&resize=1&w=640"
+            src="https://cdn1.epicgames.com/epic/offer/RDR2PC1227_Epic%20Games_860x1148-860x1148-b4c2210ee0c3c3b843a8de399bfe7f5c.jpg?h=854&resize=1&w=640"
           />
           <Card.Body>
             <Card.Title className="h6  text-truncate">
@@ -96,14 +96,14 @@ export const PopularCards = () => {
         </Card>{" "}
         <Card
           id={styles.popularCardmain}
-          className="d-none d-sm-block d-md-none d-lg-none d-xl-block d-xxl-block text-light"
+          className="d-none d-sm-block d-md-none d-lg-none d-xl-block d-xxl-block   text-light"
         >
           <Card.Img
             id={styles.CardImg_Udit}
             variant="top"
             type="button"
             className="rounded-3 "
-            src="https://cdn1.epicgames.com/offer/0c6aee83b9b64372bf44a043001325f2/EGS_NARAKABLADEPOINT_24Entertainment_S2_1200x1600-bf2b70ddd7ad45e44e629809e1b0ad10?h=854&resize=1&w=640"
+            src="https://cdn1.epicgames.com/offer/77f2b98e2cef40c8a7437518bf420e47/EGS_Cyberpunk2077_CDPROJEKTRED_S2_03_1200x1600-b1847981214ac013383111fc457eb9c5?h=854&resize=1&w=640"
           />
           <Card.Body>
             <Card.Title className="h6 text-truncate">
@@ -129,7 +129,7 @@ export const PopularCards = () => {
             variant="top"
             type="button"
             className="rounded-3 "
-            src="https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_DEMONSTILT_WIZNWAR_S2_1200x1600-b2171dcb9b7272a6e654f53a093e682d?h=854&resize=1&w=640"
+            src="https://cdn1.epicgames.com/catnip/offer/BL3Tall_1200x1440-1200x1440-c1200ae70b5e054025e296746d1987a8.jpg?h=854&resize=1&w=640"
           />
           <Card.Body>
             <Card.Title className="h6 text-truncate">

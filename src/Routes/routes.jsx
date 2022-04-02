@@ -27,7 +27,7 @@ export const AllRoutes = () => {
         <Route exact path="/individualgame/:id" element={<IndividualGame />} />
         <Route exact path="/loginoptions" element={<LoginOptions />} />
         <Route exact path="/products" element={<GamesPage />} />
-        <Route exact path="apple-cupcake-41384.herokuapp.com/auth/google"  />
+        <Route exact path="apple-cupcake-41384.herokuapp.com/auth/google" />
       </Routes>
       <Footer />
     </>
