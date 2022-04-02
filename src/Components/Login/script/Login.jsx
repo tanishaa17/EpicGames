@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import "../style/login.css"
 import { SiEpicgames } from "react-icons/si";
