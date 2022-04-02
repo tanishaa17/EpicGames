@@ -52,7 +52,7 @@ export const IndividualGame =()=>{
     return(
         <div className="rmaincontainer">
             <div className="rcontainer">
-                <div className="rLine"><hr/></div>
+                <div className="rLine"></div>
                 <p className="rmaintitle">{game.title}</p>
                 <div className="roverviewDiv">
                     <p className="roverview">Overview</p>

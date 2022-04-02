@@ -6,16 +6,16 @@
 } */
 .rmaincontainer{
     width:100%;
-    background-color: #1c1c1c;
-    /* background-color: #121212; */
+    /* background-color: #1c1c1c; */
+    background-color: #121212;
     /* margin-top: 0%; */
 }
 .rcontainer{
     /* border: 1px solid red; */
     width: 80%;
     margin: auto;
-    background-color: #1c1c1c;
-    /* background-color: #121212; */
+    /* background-color: #1c1c1c; */
+    background-color: #121212;
     /* margin-top:10%; */
 }
 .rLine{
@@ -355,7 +355,8 @@
     font-weight:bold;
     border-radius: 2px;
     border: .5px solid #616161;
-    background-color:#1c1c1c;
+    /* background-color:#1c1c1c; */
+    background-color: #121212;
     color:white;
     margin-bottom:4%;
 }
