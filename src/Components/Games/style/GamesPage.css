@@ -34,11 +34,18 @@
   background-color: black;
   border: none;
   width: 100%;
+  color: #838282;
   /* height: 83px; */
   padding: 40% 0% 40% 5%;
   font-size:11px;
   font-weight: bold;
 }
+#dropdown-basic:hover{
+  transition:1s;
+  color: white;
+  cursor: pointer;
+}
+
 #dropdown-basic2 {
   color: white;
   background-color: black;
@@ -57,10 +64,27 @@
 .main {
   background-color: #121212;
 }
-
+.aimg>img{
+  border-radius: 5px;
+}
+.aimg>img:hover{
+  transform: scale(1.05);
+  transition: 0.8s;
+}
 .aline{
   border-top: 1px solid rgba(128, 128, 128, 0.329);
   width: 100%;
+}
+#rrstaticimage:hover{
+  transform: scale(1.2);
+  transition: 1s;
+  cursor: pointer;  
+}
+#rrstaticwritten:hover{
+  transform: scale(1.05);
+  transition: .8s;
+  cursor: pointer;
+  color: black;
 }
 
 #aitem {
@@ -100,10 +124,17 @@
 
 
 .atitle {
-  font-size: 15px;
+  font-size: 14px;
   /* text-decoration: none; */
   margin-top: 10px;
+  color: white;
   /* border: 1px solid red; */
+}
+.atitle:hover{
+  cursor: pointer;
+  color: #0074e4;
+  transition: 1s;
+  /* transform: scale(1.01); */
 }
 
 .aprice {
@@ -111,9 +142,15 @@
   /* border: 1px solid red; */
   margin-left: 6%;
   margin-top: 1%;
-
 }
 
+.aactualprice {
+  font-size: 15px;
+  color: #838282;
+  margin-left: 6%;
+  margin-top: 1%;
+  text-decoration: line-through;
+}
 
 .aheadname {
   height: 100px;
@@ -137,4 +174,14 @@
   text-align: "left";
   padding: "20px";
   background-color: #1f1f1ff0;
+}
+
+#rnewRelease{
+  color: #d3cbcbe7;
+}
+
+#rnewRelease:hover{
+  color: white;
+  transition:.7s;
+  cursor: pointer;
 }
