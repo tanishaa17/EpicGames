@@ -17,7 +17,7 @@
   display: none;
   position: absolute;
  background-color: #363333;
-  min-width: 160px;
+  min-width: 120px;
   box-shadow: 0px 8px 16px 0px rgba(115, 106, 106, 0.2);
   z-index: 1;
 }

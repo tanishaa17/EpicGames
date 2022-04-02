@@ -1,36 +1,35 @@
 import React, { useState } from "react";
 import styles from "../style/carausel.module.css";
 
-
 import Carousel from "react-bootstrap/Carousel";
 
 export const Carausel = () => {
-    const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(0);
 
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
-  }
+  };
   return (
     <div id={styles.ProductPageUdit}>
       <div id={styles.carausel}>
         <Carousel activeIndex={index} onSelect={handleSelect}>
           <Carousel.Item interval={1000}>
             <img
-              className="d-block w-100"
+              className={styles.image}
               src="https://cdn2.unrealengine.com/ghostwire-egs-carousel-1248x702-03-nologo-1248x702-81c794a4e252.jpg?h=1080&resize=1&w=1920"
               alt="First slide"
             />
           </Carousel.Item>
           <Carousel.Item interval={500}>
             <img
-              className="d-block w-100"
+              className={styles.image}
               src="https://cdn2.unrealengine.com/egs-spring-sale-carousel-desktop-video-still-1248x702-cfc5cea6049f.png?h=1080&resize=1&w=1920"
               alt="Second slide"
             />
           </Carousel.Item>
-          <Carousel.Item intarval={1000} >
+          <Carousel.Item intarval={1000}>
             <img
-              className="d-block w-100"
+              className={styles.image}
               src="https://cdn2.unrealengine.com/20br-zerobuild-1p-egs-fc-1248x702-1248x702-9f768fc7a811.jpg?h=1080&resize=1&w=1920"
               alt="Third slide"
             />
@@ -48,7 +47,7 @@ export const Carausel = () => {
                 />
               </div>
               <div className="d-none  d-md-block d-lg-block d-xl-block align-items-center ">
-                <p>GHOSTWIRE</p>
+                <p className={styles.cardTitle}>GHOSTWIRE</p>
               </div>
               <div className="d-flex d-md-none  "> .</div>
             </div>
@@ -64,7 +63,7 @@ export const Carausel = () => {
                 />
               </div>
               <div className="d-none  d-md-block d-lg-block d-xl-block align-items-center ">
-                <p>Ganshin Impact </p>
+                <p className={styles.cardTitle}>Ganshin Impact </p>
               </div>
               <div className="d-flex d-md-none  "> .</div>
             </div>
@@ -80,7 +79,7 @@ export const Carausel = () => {
                 />
               </div>
               <div className="d-none  d-md-block d-lg-block d-xl-block align-items-center ">
-                <p>Spiring Sale </p>
+                <p className={styles.cardTitle}>Spiring Sale </p>
               </div>
               <div className="d-flex d-md-none  "> .</div>
             </div>
@@ -96,7 +95,7 @@ export const Carausel = () => {
                 />
               </div>
               <div className="d-none  d-md-block d-lg-block d-xl-block  align-items-center ">
-                <p>Fortnite</p>
+                <p className={styles.cardTitle}>Fortnite</p>
               </div>
               <div className="d-flex d-md-none  "> .</div>
             </div>
@@ -112,7 +111,7 @@ export const Carausel = () => {
                 />
               </div>
               <div className="d-none  d-md-block d-lg-block d-xl-block align-items-center ">
-                <p>Stranger of paradise </p>
+                <p className={styles.cardTitle}>Stranger of paradise </p>
               </div>
               <div className="d-flex d-md-none  "> .</div>
             </div>
@@ -128,7 +127,7 @@ export const Carausel = () => {
                 />
               </div>
               <div className="d-none  d-md-block d-lg-block d-xl-block align-items-center ">
-                <p>Weird West </p>
+                <p className={styles.cardTitle}>Weird West </p>
               </div>
               <div className="d-flex d-md-none  "> .</div>
             </div>

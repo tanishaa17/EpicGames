@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "../style/popularproductUdit.module.css";
 import { HiArrowSmRight } from "react-icons/hi";
-import {  Card, Button } from "react-bootstrap";
+import { Card, Button } from "react-bootstrap";
 import { MdOutlineArrowBackIos } from "react-icons/md";
 import { MdOutlineArrowForwardIos } from "react-icons/md";
 import { Link } from "react-router-dom";
@@ -41,7 +41,7 @@ export const PopularCards = () => {
             <div className="d-flex gap-3 align-items-baseline">
               <Button variant="primary btn-sm">-50%</Button>
 
-              <Card.Text className="text-truncate text-decoration-line-through">
+              <Card.Text className="text-truncate text-secondary text-decoration-line-through">
                 ₹2000
               </Card.Text>
               <Card.Text>₹599</Card.Text>
@@ -64,7 +64,7 @@ export const PopularCards = () => {
             <div className="d-flex gap-3 align-items-baseline">
               <Button variant="primary btn-sm">-50%</Button>
 
-              <Card.Text className="text-truncate text-decoration-line-through">
+              <Card.Text className="text-truncate text-secondary text-decoration-line-through">
                 ₹4000
               </Card.Text>
               <Card.Text>₹799</Card.Text>
@@ -113,7 +113,7 @@ export const PopularCards = () => {
             <div className="d-flex gap-3 align-items-baseline">
               <Button variant="primary btn-sm">-50%</Button>
 
-              <Card.Text className="text-truncate text-decoration-line-through">
+              <Card.Text className="text-truncate text-secondary text-decoration-line-through">
                 ₹1899
               </Card.Text>
               <Card.Text>₹499</Card.Text>
@@ -139,7 +139,7 @@ export const PopularCards = () => {
             <div className="d-flex gap-3 align-items-baseline">
               <Button variant="primary btn-sm">-50%</Button>
 
-              <Card.Text className="text-truncate text-decoration-line-through">
+              <Card.Text className="text-truncate  text-secondary text-decoration-line-through">
                 ₹2500
               </Card.Text>
               <Card.Text>₹699</Card.Text>

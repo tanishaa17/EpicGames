@@ -27,10 +27,9 @@ export const PopularCards2 = () => {
       <div className={styles.popularProductGrid}>
         <Card id={styles.popularCardmain} className=" text-light">
           <Card.Img
-            id={styles.CardImg_Udit}
+            className={styles.CardImg_Udit}
             variant="top"
             type="button"
-            className="rounded-3 "
             src="https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_DEATHLOOP_ArkaneStudios_S2_1200x1600-d062aa01760072626d27af24af05db77?h=854&resize=1&w=640"
           />
           <Card.Body>
@@ -41,7 +40,7 @@ export const PopularCards2 = () => {
             <div className="d-flex gap-3 align-items-baseline">
               <Button variant="primary btn-sm">-50%</Button>
 
-              <Card.Text className="text-truncate text-decoration-line-through">
+              <Card.Text className="text-truncate text-secondary text-decoration-line-through">
                 ₹2000
               </Card.Text>
               <Card.Text>₹599</Card.Text>
@@ -50,10 +49,9 @@ export const PopularCards2 = () => {
         </Card>
         <Card id={styles.popularCardmain} className=" text-light">
           <Card.Img
-            id={styles.CardImg_Udit}
+            className={styles.CardImg_Udit}
             variant="top"
             type="button"
-            className="rounded-3 "
             src="https://cdn1.epicgames.com/salesEvent/salesEvent/725818d8-9768-4a6a-a723-3039aaee1e23_1200x1600-3b6116d3fc1b566b71251d04bce27938?h=854&resize=1&w=640"
           />
           <Card.Body>
@@ -64,7 +62,7 @@ export const PopularCards2 = () => {
             <div className="d-flex gap-3 align-items-baseline">
               <Button variant="primary btn-sm">-50%</Button>
 
-              <Card.Text className="text-truncate text-decoration-line-through">
+              <Card.Text className="text-truncate text-secondary text-decoration-line-through">
                 ₹4000
               </Card.Text>
               <Card.Text>₹799</Card.Text>
@@ -76,10 +74,9 @@ export const PopularCards2 = () => {
           className="d-none d-lg-block d-md-block d-sm-block   text-light"
         >
           <Card.Img
-            id={styles.CardImg_Udit}
+            className={styles.CardImg_Udit}
             variant="top"
             type="button"
-            className="rounded-3 "
             src="https://cdn1.epicgames.com/epic/offer/RDR2PC1227_Epic%20Games_860x1148-860x1148-b4c2210ee0c3c3b843a8de399bfe7f5c.jpg?h=854&resize=1&w=640"
           />
           <Card.Body>
@@ -99,10 +96,9 @@ export const PopularCards2 = () => {
           className="d-none d-sm-block d-md-none d-lg-none d-xl-block d-xxl-block   text-light"
         >
           <Card.Img
-            id={styles.CardImg_Udit}
+            className={styles.CardImg_Udit}
             variant="top"
             type="button"
-            className="rounded-3 "
             src="https://cdn1.epicgames.com/offer/77f2b98e2cef40c8a7437518bf420e47/EGS_Cyberpunk2077_CDPROJEKTRED_S2_03_1200x1600-b1847981214ac013383111fc457eb9c5?h=854&resize=1&w=640"
           />
           <Card.Body>
@@ -113,7 +109,7 @@ export const PopularCards2 = () => {
             <div className="d-flex gap-3 align-items-baseline">
               <Button variant="primary btn-sm">-50%</Button>
 
-              <Card.Text className="text-truncate text-decoration-line-through">
+              <Card.Text className="text-truncate text-secondary text-decoration-line-through">
                 ₹1899
               </Card.Text>
               <Card.Text>₹499</Card.Text>
@@ -125,11 +121,10 @@ export const PopularCards2 = () => {
           className="d-none  d-xl-block  text-light"
         >
           <Card.Img
-            id={styles.CardImg_Udit}
+            className={styles.CardImg_Udit}
             variant="top"
             type="button"
-            className="rounded-3 "
-            src="https://cdn1.epicgames.com/catnip/offer/BL3Tall_1200x1440-1200x1440-c1200ae70b5e054025e296746d1987a8.jpg?h=854&resize=1&w=640"
+            src="https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_HOTWHEELSUNLEASHED_MilestoneSrl_S2_1200x1600-30ec276e4019296d3efd50d5b6ffe1bc?h=854&resize=1&w=640"
           />
           <Card.Body>
             <Card.Title className="h6 text-truncate">
@@ -139,7 +134,7 @@ export const PopularCards2 = () => {
             <div className="d-flex gap-3 align-items-baseline">
               <Button variant="primary btn-sm">-50%</Button>
 
-              <Card.Text className="text-truncate text-decoration-line-through">
+              <Card.Text className="text-truncate text-secondary text-decoration-line-through">
                 ₹2500
               </Card.Text>
               <Card.Text>₹699</Card.Text>

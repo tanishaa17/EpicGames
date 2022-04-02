@@ -14,6 +14,9 @@
     align-items:baseline; 
     justify-content: space-between;
 }
+.titleName{
+ font-size: 10px;   
+}
 
 .popularProductGrid{
     display: grid;
@@ -22,9 +25,11 @@
 }
 #popularCardmain{
     background-color: #121212;
+
 }
 #CardImg_Udit{
     transition: all 0.3s ease-in-out;
+    border-radius: 10px;
 }
 #CardImg_Udit:hover{
      opacity: 0.8;
@@ -54,6 +59,7 @@
     padding:20px;
     grid-template-columns: repeat(2,1fr);
 }
+
 }
 @media(max-width:576px){
     .popularProductGrid{
