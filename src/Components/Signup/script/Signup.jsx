@@ -15,7 +15,7 @@ export const Signup = () => {
         email: "",
         password: "",
     })
-}
+
 const handleChange = (e) => {
     let { id, value } = e.target;
     setForm({ ...form, [id]: value });
@@ -25,11 +25,6 @@ const handleChange = (e) => {
 const handleSubmit = (e) => {
     console.log(form)
     e.preventDefault();
-
-    axios.post(`https://quiet-fortress-03621.herokuapp.com/register`, form).then((res) => {
-
-        console.log("hello", res.data.user_data._id)
-
         axios.post(`https://apple-cupcake-41384.herokuapp.com/register`, form).then((res) => {
 
             console.log("hello", res.data.user_data._id)
