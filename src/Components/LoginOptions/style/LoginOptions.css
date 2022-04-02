@@ -35,7 +35,7 @@
   padding: 10px 15px;
   width: 25%;
   border-radius: 4px;
-} 
+}
 
 .fb {
   background-color: #3261A3;
@@ -106,11 +106,18 @@ h4 {
   align-items: center;
   background-color: #484848;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .allowedOptionLogin>p {
   margin: 15px;
 }
+
+.allowedOptionLogin :link {
+  margin: 15px;
+  text-decoration: none;
+}
+
 
 .logOption {
   max-width: 370px;
@@ -132,7 +139,7 @@ h4 {
 
 .text {
   font-weight: 500;
-  font-size: 15px;
+  font-size: 12px;
   line-height: 20px;
   letter-spacing: 0.01em;
 }

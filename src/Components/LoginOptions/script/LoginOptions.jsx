@@ -21,7 +21,7 @@ export const LoginOptions = () => {
                 <div className="loginOptionsName">
                     <div className="allowedOptionLogin">
                         <SiEpicgames className="epic"></SiEpicgames>
-                        <Link to="/login"><p className="text">SIGN IN WITH EPIC GAMES</p></Link>
+                        <Link to="/login" style={{ color: "#FFFFFF" }}><p className="text">SIGN IN WITH EPIC GAMES</p></Link>
                     </div>
                     <div className="logOption">
                         <RiFacebookCircleLine className="fb"></RiFacebookCircleLine>

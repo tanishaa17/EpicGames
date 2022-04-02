@@ -27,14 +27,14 @@ export const SignupOptions = () => {
                     <SiEpicgames className="logo"></SiEpicgames>
                 </div>
 
-                <p className="heading">
+                <h4>
                     Choose how you would like to sign up
-                </p>
+                </h4>
 
                 <div className="optionsName">
                     <div className="allowedOption">
                         <SiEpicgames className="epic"></SiEpicgames>
-                        <Link to="/signup"><p className="text">SIGN UP WITH EPIC GAMES</p></Link>
+                        <Link to="/signup" style={{ color: "#FFFFFF" }}><p className="text">SIGN UP WITH EPIC GAMES</p></Link>
                     </div>
                     <div className="option">
                         <RiFacebookCircleLine className="fb"></RiFacebookCircleLine>

@@ -72,7 +72,7 @@
 .ninten {
   background-color: #E90000;
   font-size: 55px;
-  
+
 }
 
 .steam {
@@ -103,10 +103,16 @@ h4 {
   align-items: center;
   background-color: #484848;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .allowedOption>p {
   margin: 15px;
+}
+
+.allowedOption :link {
+  margin: 15px;
+  text-decoration: none;
 }
 
 .option {
@@ -120,7 +126,7 @@ h4 {
 }
 
 .option>p {
-  margin: 10px;
+  margin: 15px;
 }
 
 .abled {
@@ -137,7 +143,7 @@ h4 {
 .optionsName {
   display: flex;
   flex-direction: column;
-  width: 110%;
+  width: 100%;
   gap: 12px;
 }
 
