@@ -17,9 +17,9 @@ export const SignupOptions = () => {
                     <SiEpicgames className="logo"></SiEpicgames>
                 </div>
 
-                <p className="heading">
+                <h4>
                     Choose how you would like to sign up
-                </p>
+                </h4>
 
                 <div className="optionsName">
                     <div className="allowedOption">
@@ -40,7 +40,7 @@ export const SignupOptions = () => {
                     </div>
                     <div className="option">
                         <SiPlaystation className="psn"></SiPlaystation>
-                        <p className="text">SIGN UP WITH PLAYSTATION</p>
+                        <p className="text">SIGN UP WITH PLAYSTATION NETWORK</p>
                     </div>
                     <div className="option">
                         <SiNintendonetwork className="ninten"></SiNintendonetwork>
