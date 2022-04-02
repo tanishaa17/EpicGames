@@ -24,7 +24,7 @@ export const SignupOptions = () => {
                 <div className="optionsName">
                     <div className="allowedOption">
                         <SiEpicgames className="epic"></SiEpicgames>
-                        <Link to="/signup"><p className="text">SIGN UP WITH EPIC GAMES</p></Link>
+                        <Link to="/signup" style={{ color: "#FFFFFF" }}><p className="text">SIGN UP WITH EPIC GAMES</p></Link>
                     </div>
                     <div className="option">
                         <RiFacebookCircleLine className="fb"></RiFacebookCircleLine>
@@ -40,7 +40,7 @@ export const SignupOptions = () => {
                     </div>
                     <div className="option">
                         <SiPlaystation className="psn"></SiPlaystation>
-                        <p className="text">SIGN UP WITH PLAYSTATION NETWORK</p>
+                        <p className="text">SIGN UP WITH PLAYSTATION</p>
                     </div>
                     <div className="option">
                         <SiNintendonetwork className="ninten"></SiNintendonetwork>
