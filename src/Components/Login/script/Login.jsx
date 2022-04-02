@@ -48,7 +48,7 @@ export const Login = () => {
                     <input className="loginbtn" type="submit" value="LOG IN NOW" />
                     <div className="privacy">Privacy Policy</div>
                 </form>
-                <div className="dontHaveAcnt">Don't have an Epic Games Account? <Link to="signup"><span className="under">Sign up</span></Link></div>
+                <div className="dontHaveAcnt">Don't have an Epic Games Account? <Link to="/signup"><span className="under">Sign up</span></Link></div>
                 <div className="dontHaveAcnt">Back to <Link to="/signupoptions"><span className="under">all sign up options</span></Link> </div>
             </div>
         </div>

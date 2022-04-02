@@ -72,7 +72,7 @@
 .ninten {
   background-color: #E90000;
   font-size: 55px;
-  
+
 }
 
 .steam {
@@ -120,7 +120,7 @@ h4 {
 }
 
 .option>p {
-  margin: 10px;
+  margin: 15px;
 }
 
 .abled {
@@ -129,7 +129,7 @@ h4 {
 
 .text {
   font-weight: 500;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 20px;
   letter-spacing: 0.01em;
 }
@@ -137,7 +137,7 @@ h4 {
 .optionsName {
   display: flex;
   flex-direction: column;
-  width: 110%;
+  width: 100%;
   gap: 12px;
 }
 
