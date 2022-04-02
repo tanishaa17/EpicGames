@@ -7,7 +7,7 @@ import "../style/GamesPage.css";
 import Dropdown from 'react-bootstrap/Dropdown'
 // import { Button } from "bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import {AiOutlineSearch} from 'react-icons/ai';
 
 
 export const GamesPage = () => {
@@ -32,18 +32,17 @@ export const GamesPage = () => {
         backgroundColor: "#121212"
       }}>
         <div style={{
-          height: "60px",
+          width : "100%",
           backgroundColor: "#121212",
-          display: "flex",
-          // border: "1px solid red"
         }}>
           <div >
             <p style={{
-              marginLeft: "170px",
+              textAlign: "left",
+              marginLeft: "11%",
               fontSize: "22px",
               fontWeight: "400",
               color: "white",
-              marginTop: "19px",
+              paddingTop: "2%",
               fontFamily: "Brutal, sans-serif"
               // border: "1px solid blue"
               // lineHeight:"25px"
@@ -53,47 +52,49 @@ export const GamesPage = () => {
           </div>
         </div>
         <div style={{
-          width: "74%",
+          width: "85%",
           height: "277px",
-          // border: "1px solid red",
+          border: "1px solid red",
           display: "flex",
-          marginLeft: "11%",
-          paddingBottom: "20%"
+          marginLeft: "9%",
+          paddingBottom: "5%",
 
           // backgroundColor:"#121212"
 
         }}>
           <div style={{
-            width: "24%",
-            height: "270px",
+            width: "20%",
             // border: "1px solid blue",
             // paddingRight:"10px"
-            marginRight: "2%",
+            margin: "1%",
             backgroundColor: "#1f1f1f",
             borderRadius: "6px",
 
 
           }}>
             <div style={{
-              height: "210px",
+              width: "100%",
+              height: "100%",
               // border: "1px solid red",
               // backgroundColor: "#1f1f1f"
 
             }}>
-              <img src="/head3.jpg" alt="not found" style={{
-                width: "230px",
-                height: "180px",
-                marginTop: "20px",
+              <img src="https://wallpapercave.com/wp/qd2wt0V.jpg" alt="not found" style={{
+                margin: "auto",
+                marginTop: "4%",
+                width: "90%",
+                height: "95%",
 
                 // marginRight:"5px"
-                borderRadius: "10px",
+                borderRadius: "5px",
                 // border: "1px solid yellow"
 
               }} />
             </div>
             <div className="ahoverhead" style={{
-              height: "50px",
-              // border: "1px solid red",
+              height: "40%",
+              // border: "1px solid yellow",
+              paddingTop: "5%",
               backgroundColor: "#1f1f1f",
               "&:hover": {
                 background: "#0b0a0a",
@@ -276,13 +277,13 @@ export const GamesPage = () => {
       }}>
         <Dropdown style={{
           // border: "1px solid red",
-          marginLeft: "11% "
+          marginLeft: "10% "
         }}>
-          <Dropdown.Toggle variant="success" id="dropdown-basic" style={{
+          <Dropdown.Toggle variant="success" id="dropdown-basic2" style={{
             // color: "#838282",
-            width: "200px",
-            height: "50px",
+            // width: "200px",
             backgroundColor: "#121212",
+            
             // marginRight:"50%",
             border: "none",
             fontSize: "14px",
@@ -313,14 +314,13 @@ export const GamesPage = () => {
           // border: "1px solid red",
           // paddingTop: "10px",
           width: "10%",
-          marginRight: "20.5%"
-
-
+          marginRight: "10%"
         }}>
           <p style={{
-            textAlign: "center",
+            textAlign: "left",
             color: "white",
-            fontSize: "15px",
+            fontSize: "16px",
+            fontWeight: "100",
             // border: "1px solid blue",
             marginTop: "10%",
             // width: "100%",
@@ -331,21 +331,19 @@ export const GamesPage = () => {
         </div>
       </div>
       <div className="amain" style={{
-        width: "100%",
-        height: "100%",
-        display: "flex",
+        // width: "100%",
+        // height: "100%",
+        // display: "flex",
         // border: "1px solid red"
 
       }}>
         <div className="games" style={{
-          width: "950px",
-          height: "100%",
+          width: "80%",
           // border: "1px solid blue",
           display: "grid",
-
           gridTemplateColumns: "repeat(4, 1fr)",
           gridTemplateRows: "repeat(4, 1fr)",
-          gridGap: "5px",
+          gridGap: "1%",
 
           // backgroundColor:"blue"
 
@@ -371,9 +369,7 @@ export const GamesPage = () => {
                   className="container" style={{
                     backgroundColor: "#121212",
                     color: "white",
-                    marginTop: "10px",
                     // border: "1px solid yellow",
-                    paddingBottom: "30px",
                     textAlign: "left",
                     textDecoration: "none",
                     fontFamily: "Brutal, sans-serif"
@@ -381,18 +377,17 @@ export const GamesPage = () => {
                   <Link to={`/individualgame/${el._id}`} key={el._id} >
                     <div className="aimg" style={{
                       width: "100%",
-                      height: "300px",
                       // border: "1px solid red"
                     }}>
 
-                      <img src={el.image} alt="err" height="300px" width="100%" />
+                      <img src={el.image} alt="err" width="100%" />
                     </div>
                   </Link>
                   <div className="atitle">
                     <p>{el.title}</p>
                     <div style={{
                       // border: "1px solid red",
-                      height: "40px",
+                      height: "15%",
                       display: "flex"
                     }}>
                       <span ><button className="adiscount">{el.discount}%</button> </span>
@@ -407,9 +402,9 @@ export const GamesPage = () => {
           </>
         </div>
         <div className="aj" style={{
-          width: "200px",
-          height: "500px",
-          // border: "1px solid blue",
+          width: "15%",
+          // height: "500px",
+          // border: "1px solid white",
           // marginLeft: "30px"
         }}>
           <div style={{
@@ -420,42 +415,28 @@ export const GamesPage = () => {
 
           }}>
 
-            <img src="/magni1.png" alt="" style={{
-              width: "20px",
-              height: "15px",
-              backgroundColor: "#202020",
-              // border: "1px solid blue",
-              // paddingTop: "10px",
-              marginTop: "14px",
-              // marginLeft: "10px"
-
-            }} />
+            <AiOutlineSearch className="asearchICON"/>  
 
             <div>
               <input type="text" placeholder="Keywords" style={{
-                marginBottom: "10px",
+                marginBottom: "15px",
                 color: "white",
                 backgroundColor: "#202020",
                 // paddingLeft:"20px",
-                width: "80%",
+                width: "100%",
                 border: "none"
               }} />
             </div>
           </div>
           <div>
-            <div className="aline" style={{
-              borderTop: "0.5px solid gray",
-            }}>
+            <div className="aline">
 
             </div>
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic" className="aeventhover" style={{
                 border: "none",
                 textAlign: "left",
-                padding: "20px",
                 fontFamily: "Brutal, sans-serif",
-                fontSize: "12px",
-                fontWeight: "500",
                 color: "#838282",
                 backgroundColor: "#121212"
               }}>
@@ -467,9 +448,7 @@ export const GamesPage = () => {
                 <Dropdown.Item href="#/action-2">Square Enix Sales</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
-            <div className="aline" style={{
-              borderTop: "0.5px solid gray",
-            }}>
+            <div className="aline">
 
             </div>
 
@@ -478,10 +457,7 @@ export const GamesPage = () => {
               <Dropdown.Toggle variant="success" id="dropdown-basic" style={{
                 border: "none",
                 textAlign: "left",
-                padding: "20px",
                 fontFamily: "Brutal, sans-serif",
-                fontSize: "12px",
-                fontWeight: "500",
                 color: "#838282",
                 backgroundColor: "#121212"
               }}>
@@ -497,19 +473,14 @@ export const GamesPage = () => {
               </Dropdown.Menu>
             </Dropdown>
 
-            <div className="aline" style={{
-              borderTop: "0.5px solid gray",
-            }}>
+            <div className="aline">
 
             </div>
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic" style={{
                 border: "none",
                 textAlign: "left",
-                padding: "20px",
                 fontFamily: "Brutal, sans-serif",
-                fontSize: "12px",
-                fontWeight: "500",
                 color: "#838282",
                 backgroundColor: "#121212"
               }}>
@@ -527,9 +498,7 @@ export const GamesPage = () => {
                 <Dropdown.Item href="#/action-2">Puzzel</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
-            <div className="aline" style={{
-              borderTop: "0.5px solid gray",
-            }}>
+            <div className="aline">
 
             </div>
 
@@ -538,10 +507,7 @@ export const GamesPage = () => {
               <Dropdown.Toggle variant="success" id="dropdown-basic" style={{
                 border: "none",
                 textAlign: "left",
-                padding: "20px",
                 fontFamily: "Brutal, sans-serif",
-                fontSize: "12px",
-                fontWeight: "500",
                 color: "#838282",
                 backgroundColor: "#121212"
               }}>
@@ -558,19 +524,14 @@ export const GamesPage = () => {
               </Dropdown.Menu>
             </Dropdown>
 
-            <div className="aline" style={{
-              borderTop: "0.5px solid gray",
-            }}>
+            <div className="aline">
 
             </div>
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic" style={{
                 border: "none",
                 textAlign: "left",
-                padding: "20px",
                 fontFamily: "Brutal, sans-serif",
-                fontSize: "12px",
-                fontWeight: "500",
                 color: "#838282",
                 backgroundColor: "#121212"
               }}>
@@ -585,9 +546,7 @@ export const GamesPage = () => {
                 <Dropdown.Item href="#/action-2">Game Demo</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
-            <div className="aline" style={{
-              borderTop: "0.5px solid gray",
-            }}>
+            <div className="aline">
 
             </div>
 
@@ -595,10 +554,7 @@ export const GamesPage = () => {
               <Dropdown.Toggle variant="success" id="dropdown-basic" style={{
                 border: "none",
                 textAlign: "left",
-                padding: "20px",
                 fontFamily: "Brutal, sans-serif",
-                fontSize: "12px",
-                fontWeight: "500",
                 color: "#838282",
                 backgroundColor: "#121212"
               }}>
@@ -614,9 +570,7 @@ export const GamesPage = () => {
 
               </Dropdown.Menu>
             </Dropdown>
-            <div className="aline" style={{
-              borderTop: "0.5px solid gray",
-            }}>
+            <div className="aline">
 
             </div>
 

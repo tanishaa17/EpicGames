@@ -5,21 +5,49 @@
 
 .amain {
   /* margin: auto; */
-  padding-left: 10%;
-  padding-right: 10%;
+  width: 100%;
+  /* padding-left: 10%;
+  padding-right: 10%; */
+  /* border: 1px solid red; */
   background-color: #121212;
-  /* padding-bottom: 300px; */
+  display:flex;
+  /* padding-right: 10%; */
+  padding-bottom: 16%;
   /* background-color: #1f1f1f; */
-
 }
 
+.games{
+  padding-left: 10%;
+  padding-right: 2%;
+}
+.aj{
+  text-align: left;
+}
+.asearchICON{
+  padding: 7px 0px 7px 0px;
+  font-size: 44px;
+  background-color: #202020;
+  color: #838282;
+}
 #dropdown-basic {
   color: white;
   background-color: black;
   border: none;
   width: 100%;
-  height: 83px;
-
+  /* height: 83px; */
+  padding: 40% 0% 40% 5%;
+  font-size:11px;
+  font-weight: bold;
+}
+#dropdown-basic2 {
+  color: white;
+  background-color: black;
+  border: none;
+  width: 100%;
+  margin-top: 10%;
+  /* height: 83px; */
+  font-size: 11px;
+  font-weight: bold;
 }
 
 .amenu {
@@ -28,6 +56,11 @@
 
 .main {
   background-color: #121212;
+}
+
+.aline{
+  border-top: 1px solid rgba(128, 128, 128, 0.329);
+  width: 100%;
 }
 
 #aitem {
@@ -91,14 +124,12 @@
 }
 
 .ablack {
-  background-color: #121212;
+  background-color: white;
   color: white;
-  border: 1px solid red;
 }
 
 .asort {
   background-color: black;
-
 }
 
 .aborderRemove {
