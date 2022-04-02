@@ -21,6 +21,7 @@ h4 {
   width: 450px;
   background: #202020;
   padding: 40px 60px;
+  border-radius: 5px;
 }
 
 .logo {
@@ -123,6 +124,7 @@ h4 {
   color: #f1f1f1;
   font-size: 14px;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .dontHaveAcnt {
@@ -135,6 +137,7 @@ h4 {
 .under {
   text-decoration: underline;
   color: #f1f1f1;
+  cursor: pointer;
 }
 
 .checked {

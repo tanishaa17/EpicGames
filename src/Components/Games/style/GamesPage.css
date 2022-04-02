@@ -2,51 +2,108 @@
     background-color: black;
     
   } */
-  
-  .main{
-    /* margin: auto; */
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-  #dropdown-basic{
-    color: white;
-    background-color: black;
-    border:none;
-    width: 100%;
-    height: 83px;
-    
-  }
-  .amenu{
+
+.amain {
+  /* margin: auto; */
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: #121212;
+  /* padding-bottom: 300px; */
+  /* background-color: #1f1f1f; */
+
+}
+
+#dropdown-basic {
+  color: white;
   background-color: black;
-  }
-  .main{
-    background-color: black;
-  }
-  #aitem{
-    color: red;
-  }
-  .aright{
-    width: 100%;
-    border: none;
-    
-  }
-  .aheadname{
-    height :100px;
-    border: 1px solid red;
-    color: white;
-    background-color: black;
-    text-align: center;
-  }
-  .ablack{
-    background-color: black;
-    color: white;
-    /* border: 1px solid red; */
-  }
-  .asort{
-    background-color: black;
-  }
-  .aborderRemove{
-    border:"none";
-   text-align:"left";
-    padding: "20px"
-  }
+  border: none;
+  width: 100%;
+  height: 83px;
+
+}
+
+.amenu {
+  background-color: #121212;
+}
+
+.main {
+  background-color: #121212;
+}
+
+#aitem {
+  color: red;
+}
+
+.aright {
+  width: 100%;
+  border: none;
+  color: #838282;
+
+}
+
+.arigh:hover {
+  color: white;
+}
+
+.aeventhover:hover {
+  color: red;
+}
+
+/* .ahoverhead {  
+  background-color: #0074e4;
+} */
+
+.adiscount {
+  background-color: #0074e4;
+  width: 40px;
+  height: 22px;
+  font-size: 9.5px;
+  color: white;
+  border-radius: 5px;
+  font-weight: 700;
+  border: none;
+}
+
+
+
+.atitle {
+  font-size: 15px;
+  /* text-decoration: none; */
+  margin-top: 10px;
+  /* border: 1px solid red; */
+}
+
+.aprice {
+  font-size: 15px;
+  /* border: 1px solid red; */
+  margin-left: 6%;
+  margin-top: 1%;
+
+}
+
+
+.aheadname {
+  height: 100px;
+  border: 1px solid red;
+  color: white;
+  background-color: #121212;
+  text-align: center;
+}
+
+.ablack {
+  background-color: #121212;
+  color: white;
+  border: 1px solid red;
+}
+
+.asort {
+  background-color: black;
+
+}
+
+.aborderRemove {
+  border: "none";
+  text-align: "left";
+  padding: "20px";
+  background-color: #1f1f1ff0;
+}

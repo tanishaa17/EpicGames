@@ -1,20 +1,36 @@
 /* body{
     background-color: #1c1c1c;
 } */
-
+/* *{
+    background-color: #1c1c1c;
+} */
+.rmaincontainer{
+    width:100%;
+    background-color: #1c1c1c;
+    /* background-color: #121212; */
+    /* margin-top: 0%; */
+}
 .rcontainer{
     /* border: 1px solid red; */
     width: 80%;
     margin: auto;
+    background-color: #1c1c1c;
+    /* background-color: #121212; */
+    /* margin-top:10%; */
 }
 .rLine{
-    margin-top:5%;
+    /* margin-top:5%; */
     width:100%;
     border-top: 1px solid rgba(128, 128, 128, 0.432);
 }
+.rline>hr{
+    color:white;
+    background-color:white;
+}
 .rmaintitle{
-    font-size: 25px;
-    color:black;
+    margin-top: 3%;
+    font-size: 27px;
+    color:white;
     text-align: left;
 }
 
@@ -39,25 +55,38 @@
 }
 .rrgap:hover{
     cursor: pointer;
-    transition:1s;
     border-bottom: 2px solid;
+    transition: 1s ;
+    
 }
 
 .rmainDiv{
-    border:1px solid red;
+    /* border:1px solid red; */
     display:flex;
+    padding-bottom: 5%;
 }
 
 .rleftmainDiv{
     flex:4;
-    border:1px solid pink;
+    /* border:1px solid pink; */
 }
 .rgamevideo{
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
     width: 90%;
     height: 350px;
 }
 /* Description */
+.rdescriptionDiv{
+    width: 90%;
+    text-align: left;
+    margin-top:3%;
+}
+.rdescriptionDiv>p{
+    margin-left: 3%;
+    color: white;
+    font-size: 14px;
+}
+
 
 .rgenrefeature{
     /* border: 1px solid red; */
@@ -84,35 +113,196 @@
     display: flex;
     margin-top:-5%;
     font-size:13.5px;
-    /* color: white; */
+    color: white;
 }
 .rgfdetails>p{
     margin-right:2%;
     text-decoration: underline;
 }
 
+.ropenworld{
+    /* border: 1px solid orange; */
+    text-align:left;
+    width: 90%;
+}
+.ropenworld>p{
+    margin-left: 2%;
+    font-size:14px;
+}
+.rdestitle{
+    color: white;
+}
+.rdesdes{
+    color: #818181;
+    /* font-weight: bold; */
+}
 
+.rfollowDiv{
+    /* border: 1px solid orange; */
+    margin-top: 7%;
+    text-align:left;
+    width: 100%;
+}
+.rfollowDiv>p {
+    margin-left: 2%;
+    font-size: 16px;
+}
+.rfollow{
+    color: white;
+}
+.rfollowicons{
+    margin-left: 2%;
+    width: 90%;
+    background-color:#262626;
+}
+.rfollowicons>div{
+    width: 60%;
+    margin:auto;
+    /* border: 1px solid yellow; */
+    color: rgb(150, 150, 150);    
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.riconshover{
+    font-size:30px;
+}
+.riconshover:hover{
+    cursor: pointer;
+    color:white;
+    padding-bottom:4px;
+    transition:0.5s;
+}
+.rratingDiv{
+    /* border: 1px solid orange; */
+    text-align:left;
+    width: 100%;
+    margin-top: 7%;
+}
 
+.rratingDiv>p {
+    margin-left: 2%;
+    font-size: 16px;
+}
 
+.rrating {
+    color: white;
+}
+.rratingcircle{
+    display: flex;
+}
+.rratingcircle>div{
+    margin-left: 5%;
+    text-align: center;
+}
+.rratingcircle>div>p {
+    color:white
+}
+
+.rspecificationDiv {
+    /* border: 1px solid orange; */
+    margin-top: 3%;
+    text-align: left;
+    width: 100%;
+    background-color: #262626;
+    padding-bottom: 1%;
+    margin-left: 2%;
+}
+
+.rspecificationDiv>p {
+    margin-left: 2%;
+    font-size: 16px;
+}
+
+.rspecification {
+    margin-top: 7%;
+    margin-left: 2%;
+    font-size: 16px;
+    color: white;
+    text-align: left;
+}
+
+.rspecDetails {
+    margin-left: 2%;
+    width: 90%;
+    background-color: #262626;
+    
+}
+.rspecDetails>div{
+    width: 90%;
+    /* border:1px solid purple; */
+    margin: auto;
+    display: flex;
+    column-gap: 10px;
+}
+.rspecDetails>div>div {
+    margin-top: 10%;
+    margin-left: 1%;
+    width: 50%;
+    /* border: 1px solid yellow; */
+    color: rgb(150, 150, 150);
+}
+.rrspeciSpan>p:nth-child(1) {
+    font-weight:bold;
+}
+.rrspeciSpan>p:nth-child(2){
+    margin-top: -6%;
+    /* margin-left: 2%; */
+    color:white;
+    font-size:15px;
+}
+
+.rspecLang{
+    margin-left: 1.5%;
+    width: 90%;
+    background-color: #262626;
+}
+.rspecLang>div {
+    width: 90%;
+    /* border: 1px solid purple; */
+    margin: auto;
+}
+
+.rspeclanguage{
+    margin-top: 10%;
+    margin-left: 1%;
+    width: 100%;
+}
+.rspeclanguage>p {
+    margin-left: 2%;
+}
+.rspeclanguage>p:nth-child(1){
+    margin-top: 5%;
+    font-weight:bold;
+    color: rgb(150, 150, 150);
+}
+.rspeclanguage>p:nth-child(2) {
+    color:white;
+    font-size:15px;
+}
 
 
 /* RIGHT MAIN DIV */
 .rrightmainDiv{
     flex:2;
-    border:1px solid blue;
+    /* border:1px solid blue; */
+    margin-top: 6%;
 }
 .rlogoImage{
     margin: auto;
-    margin-top:5%;
     width: 90%;
-    height: 170px;
-    border: 1px solid aqua;
+    height: auto;
+    /* border: 1px solid aqua; */
+}
+.rlogoImage>img{
+    width: 100%;
+    height: 100%;
 }
 
 .ralldetailprice{
     text-align: left;
-    border: 1px solid red;
-    margin-top:4%;
+    /* border: 1px solid red; */
+    margin-top:20%;
 }
 .rrbasegame{
     font-size:10px;
@@ -126,7 +316,7 @@
 }
 .rdpap{
     display: flex;
-    margin-top:-4%;
+    margin-top:-2%;
 }
 .rdpap>p{
     margin-right:3%;
@@ -150,24 +340,30 @@
     font-size:15px;
     font-weight: bold;
     padding-top: 4px;
+    color: white;
 }
 
 .rsaledate{
     font-size:12px;
     margin-top:-3%;
+    color: white;
 }
 #raddcart,#raddwishlist{
     width: 100%;
     height: 50px;
     font-size: 14px;
     font-weight:bold;
-    border-radius: 5px;
-    border: 1px solid lightgrey;
-    background-color:none;
+    border-radius: 2px;
+    border: .5px solid #616161;
+    background-color:#1c1c1c;
+    color:white;
     margin-bottom:4%;
 }
+#raddwishlist{
+    height: 35px;
+}
 #raddcart:hover,#raddwishlist:hover{
-    background-color:lightgrey;
+    background-color:rgb(58, 57, 57);
     transition:.8s;
     cursor:pointer;
 }
@@ -176,7 +372,6 @@
 }
 .rrwishcircle{
     font-size: 25px;
-    margin-top:-1%;
     margin-right: 1.5%;
 }
 
@@ -193,13 +388,14 @@
 .rleftlight{
     font-size:14px;
     color: #616161;
+    font-weight: bold;
 }
 .rrightlight{
     font-size:14px;
     font-weight:bold;
-    /* color: white; */
+    color: white;
 }
 .rwindowlight{
     font-size:25px;
-    /* color: white; */
+    color: white;
 }
