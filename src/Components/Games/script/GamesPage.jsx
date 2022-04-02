@@ -24,6 +24,66 @@ export const GamesPage = () => {
     })
   }
 
+  function AscTitle(a,b){
+    if(a.title <b.title){
+      return -1;
+    }
+    if(a.title>b.title){
+      return 1;
+    }
+    return 0
+  }
+
+  const SortAscArticle=()=>{
+    let results = products.sort(AscTitle);
+    setProducts([...results])
+  };
+
+  function DescTitle(a,b){
+    if(a.title <b.title){
+      return 1;
+    }
+    if(a.title>b.title){
+      return -1;
+    }
+    return 0
+  }
+  const SortDescArticle=()=>{
+    let results = products.sort(DescTitle);
+    setProducts([...results])
+  };
+
+
+  function DescPrice(a,b){
+    if((+a.price-(+a.price*((+a.discount)/100))) < (+b.price-(+b.price*((+b.discount)/100)))){
+      return 1;
+    }
+    if((+a.price-(+a.price*((+a.discount)/100))) > (+b.price-(+b.price*((+b.discount)/100)))){
+      return -1;
+    }
+    return 0
+  }
+  
+  const SortDescPrice=()=>{
+    let results = products.sort(DescPrice);
+    setProducts([...results])
+  };
+
+  function AscPrice(a,b){
+    if((+a.price-(+a.price*((+a.discount)/100))) > (+b.price-(+b.price*((+b.discount)/100)))){
+      return 1;
+    }
+    if((+a.price-(+a.price*((+a.discount)/100))) < (+b.price-(+b.price*((+b.discount)/100)))){
+      return -1;
+    }
+    return 0
+  }
+  
+  const SortAscPrice=()=>{
+    let results = products.sort(AscPrice);
+    setProducts([...results])
+  };
+
   return (
     <>
 
@@ -322,9 +382,11 @@ export const GamesPage = () => {
             backgroungColor: "#121212"
           }}>
             <div className="ablack">
-              <Dropdown.Item href="#/action-1"> Price:Low to High</Dropdown.Item>
-              <Dropdown.Item href="#/action-2">Price:High to Low</Dropdown.Item>
-              {/* <Dropdown.Item ><button>Price:High to Low</button> </Dropdown.Item> */}
+              <Dropdown.Item href="#/action-1" onClick={()=>{SortAscArticle()}}>Title: A to Z</Dropdown.Item>
+              <Dropdown.Item href="#/action-2" onClick={()=>{SortDescArticle()}}>Title: Z to A</Dropdown.Item>
+              <Dropdown.Item href="#/action-1" onClick={()=>{SortAscPrice()}}>Price: Low to High</Dropdown.Item>
+              <Dropdown.Item href="#/action-2" onClick={()=>{SortDescPrice()}}>Price: High to Low</Dropdown.Item>
+              {/*<Dropdown.Item><button onClick={SortDescPrice}>Price:High to Low</button> </Dropdown.Item>*/}
             </div>
           </Dropdown.Menu>
 
