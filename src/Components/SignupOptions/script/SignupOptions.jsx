@@ -9,7 +9,17 @@ import { SiPlaystation } from "react-icons/si";
 import { BsApple } from "react-icons/bs";
 import { FaSteam } from "react-icons/fa";
 import { SiNintendonetwork } from "react-icons/si";
+import axios from "axios"
+import {useEffect} from "react"
 export const SignupOptions = () => {
+    // useEffect(()=>{
+    //     handleClick()
+    // },[])
+//     const handleClick = () =>{
+//         console.log("hi")
+//         axios.get("https://apple-cupcake-41384.herokuapp.com/auth/google")
+    
+// }
     return (
         <div className="signupOptionsContainer">
             <div className="optionContainer">
@@ -32,7 +42,7 @@ export const SignupOptions = () => {
                     </div>
                     <div className="allowedOption">
                         <FcGoogle className="google"></FcGoogle>
-                        <p className="text">SIGN UP WITH GOOGLE</p>
+                      <p className="text">SIGN UP WITH GOOGLE</p>
                     </div>
                     <div className="option">
                         <IoLogoXbox className="xbox"></IoLogoXbox>
