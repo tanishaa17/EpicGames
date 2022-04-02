@@ -1,23 +1,25 @@
-import React, { Component } from 'react'
-import { render } from 'react-dom';
+import React, { Component } from "react";
+import { render } from "react-dom";
 import { Routes, Route } from "react-router";
-import { GameCart } from '../Components/Cart/script/cart';
-import { Footer } from "../Components/Footer/script/Footer"
+import { GameCart } from "../Components/Cart/script/cart";
+import { Footer } from "../Components/Footer/script/Footer";
 import { Login } from "../Components/Login/script/Login";
 import { Signup } from "../Components/Signup/script/Signup";
-import { LoginOptions } from '../Components/LoginOptions/script/LoginOptions';
+import { LoginOptions } from "../Components/LoginOptions/script/LoginOptions";
 import { SignupOptions } from "../Components/SignupOptions/script/SignupOptions";
-import {IndividualGame} from "../Components/IndividualGame/script/IndividualGame";
-import { Navbar } from '../Components/Navbar/script/Navbar';
+import { IndividualGame } from "../Components/IndividualGame/script/IndividualGame";
+import { Navbar } from "../Components/Navbar/script/Navbar";
 import { GamesPage } from "../Components/Games/script/GamesPage";
-import { HomepageU } from '../Components/Homepage/script/Homepage_U';
+import { HomepageU } from "../Components/Homepage/script/Homepage_U";
+import { BreadCrum } from "../Components/Homepage/script/breadcrum";
 
 export const AllRoutes = () => {
   return (
     <>
-      <Navbar/>
+      <Navbar />
+      <BreadCrum />
       <Routes>
-        <Route exect path="/" element={<HomepageU/>} />
+        <Route exect path="/" element={<HomepageU />} />
         <Route exact path="/cart" element={<GameCart />} />
         <Route exact path="/login" element={<Login />} />
         <Route exact path="/signup" element={<Signup />} />

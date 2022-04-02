@@ -79,8 +79,8 @@ export const PopularCards = () => {
             className="rounded-3 "
             src="https://cdn1.epicgames.com/offer/cbd5b3d310a54b12bf3fe8c41994174f/EGS_VALORANT_RiotGames_S2_1200x1600-726a3c696c29550e1f926c871cc4bcbe?h=854&resize=1&w=640"
           />
-          <Card.Body>
-            <Card.Title className="h6 text-truncate">VALORANT</Card.Title>
+          <Card.Body  >
+            <Card.Title className="h6  text-truncate">VALORANT: THE WORRIORS</Card.Title>
 
             <div className="d-flex gap-3 align-items-baseline">
               <Button variant="primary btn-sm">-50%</Button>
@@ -121,7 +121,7 @@ export const PopularCards = () => {
             src="https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_DEMONSTILT_WIZNWAR_S2_1200x1600-b2171dcb9b7272a6e654f53a093e682d?h=854&resize=1&w=640"
           />
           <Card.Body>
-            <Card.Title className="h6 text-truncate">DEMON'S TILT</Card.Title>
+            <Card.Title className="h6 text-truncate">DEMON'S TILT: FUN GAMES</Card.Title>
 
             <div className="d-flex gap-3 align-items-baseline">
               <Button variant="primary btn-sm">-50%</Button>

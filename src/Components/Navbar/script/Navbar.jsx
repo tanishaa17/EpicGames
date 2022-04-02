@@ -10,43 +10,44 @@ import { OffCanvasExample } from "./Offcanvas";
 import { SiEpicgames } from "react-icons/si";
 import { BsGlobe } from "react-icons/bs";
 import { FaUserAlt } from "react-icons/fa";
+import { DropDown } from "./dropdown";
 
 export const Navbar = () => {
   const [userLogo, setUserLogo] = useState(false);
+
   return (
     <>
       <header>
         <nav className={styles.navbar}>
           <div className={styles.listSection}>
             <Link className="text-light" to={"/"}>
-              
               <SiEpicgames className={styles.branding} />
             </Link>
             <div className={styles.navMenu}>
               <div className={styles.one}>
                 <li className={styles.listItem}>
-                  <Link to={"/store"} className={styles.link}>
+                  <Link to={"/"} className={styles.link}>
                     <b>STORE</b>
                   </Link>
                 </li>
               </div>
               <div className={styles.onemore}>
                 <li className={styles.listItem}>
-                  <Link to={"/FAQ"} className={styles.link}>
+                  <Link to={"/"} className={styles.link}>
                     <b>FAQ</b>
                   </Link>
                 </li>
               </div>
               <div className={styles.onemore}>
                 <li className={styles.listItem}>
-                  <Link to={"/help"} className={styles.link}>
+                  <Link to={"/"} className={styles.link}>
                     <b>HELP</b>
                   </Link>
                 </li>
               </div>
               <div className={styles.onemore}>
                 <li className={styles.listItem}>
-                  <Link to={"/unrealEngin"} className={styles.link}>
+                  <Link to={"/"} className={styles.link}>
                     <b>UNREAL ENGINE</b>
                   </Link>
                 </li>
@@ -58,18 +59,16 @@ export const Navbar = () => {
             <div>
               <BsGlobe />
             </div>
+
             <div className={styles.Alignment}>
-              <div>{userLogo ? <FaUserAlt /> : <FaUserAlt />}</div>
-              {userLogo ? "Name" : "SIGN IN"}
+              <div variant="button">
+                {userLogo ? <FaUserAlt /> : <FaUserAlt />}
+              </div>
+              <DropDown />
             </div>
+
             <div className={styles.downloadbtn}>
-              <Button
-                variant="primary"
-                size="lg  "
-                onClick={() => {
-                  setUserLogo(!userLogo);
-                }}
-              >
+              <Button id={styles.DownloadBtn} variant="primary">
                 Download
               </Button>
             </div>

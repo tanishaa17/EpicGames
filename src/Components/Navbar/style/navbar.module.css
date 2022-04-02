@@ -93,7 +93,12 @@
     justify-content: center;
     align-items:center;
 }
-
+#DownloadBtn{
+    font-size:16px;
+    max-height: 150px;
+ 
+    border-radius: 0px;
+}
 .avatar{
     font-size: 10px;
     padding: 30px;

@@ -1,0 +1,24 @@
+.ProductPageUdit{
+    width: 80%;
+    border: 4px solid green;
+    margin: auto;
+   
+}
+#carausel{
+    display:grid;
+    grid-template-columns: 2fr .5fr;
+    color: #fff;
+}
+#carausel>div{
+    border: 1px solid red;
+}
+#carausel>div:nth-child(2){
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+@media(max-width:768px){
+  .ProductPageUdit{
+      width: 100%;
+  }
+}

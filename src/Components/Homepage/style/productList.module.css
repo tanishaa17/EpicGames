@@ -1,26 +1,45 @@
 #ProductPageUdit{
     width: 80%;
-    padding: 20px;
     margin: auto;
     background-color: #121212;
 }
+.link{
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.1s ease-in-out;
+}
+.link:hover{
+  color: rgb(173, 172, 172);
+}
+#cardContainer{
+
+  list-style: none;
+  margin: 2em;
+  display: grid;
+  gap: 20px;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(auto-fill,minmax(240px, 1fr));
+}
+.productListGrpUdit{
+  display: flex;
+  text-align: start;
+  align-items:flex-start;
+  padding: 0px 5px;
+  gap: 20px;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.productListGrpUdit:hover{
+  opacity: 0.8;   
+}
+.listtags{
+  font-size: 10px;
+  color: #fff;
+}
+
 @media(max-width:768px){
   #ProductPageUdit{
       width: 100%;
   }
-}
-#productListGrpUdit{
- 
- 
-  display: flex;
-  gap: 2px;
-  text-align: start;
-  justify-content: space-between;
-  align-items: center;
-  gap: 5px;
-  
-}
-.listtags{
-align-items: center;
-font-size: 10px;
 }

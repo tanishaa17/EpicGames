@@ -25,7 +25,11 @@ export const CardPoster = () => {
             </p>
           </div>
         </div>
-        <div id={styles.poster2Udit} class="card mb-3">
+        <div
+          id={styles.poster2Udit}
+          class="card mb-3 "
+          data-bs-trigger="hover focus"
+        >
           <img
             src="https://cdn2.unrealengine.com/sp-featured-carousel-desktop-1920x1080px-openbeta20thapril-noepiclogo-1920x1080-86e071b88ee0.png?h=1080&resize=1&w=1920"
             alt="Poster"
