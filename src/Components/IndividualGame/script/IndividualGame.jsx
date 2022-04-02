@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {useState, useEffect} from 'react'
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import styled from "styled-components";
 import "../style/game.css";
 import {RiAddCircleLine} from "react-icons/ri";
@@ -34,17 +34,24 @@ export const IndividualGame =()=>{
 
 
     const addToCart=(id)=>{
-        var cart_data={
-            user_id:currentUser._id,
-            game_id: id
-        };
-        axios.post(`https://apple-cupcake-41384.herokuapp.com/cart/additem/${currentUser._id}`,cart_data).then((res)=>{
-            console.log(res);
-            console.log(res.data)
-            alert("Added Successfully")
-        })
+        if(currentUser==null){
+            alert("You must be logged in to add to cart")
+            // alert("Do you wish to login?")
+            // return <Navigate to={"/loginoptions"}/>
+        }
+        else{
+            var cart_data={
+                user_id:currentUser._id,
+                game_id: id
+            };
+            axios.post(`https://apple-cupcake-41384.herokuapp.com/cart/additem/${currentUser._id}`,cart_data).then((res)=>{
+                console.log(res);
+                console.log(res.data)
+                alert("Added Successfully")
+            })
+        }
     }
-
+    
     var buyprice = Math.floor(game.price-game.price*((game.discount)/100));
     console.log("hey hey",buyprice);
     // document.querySelector("#rcalculation").value=price;

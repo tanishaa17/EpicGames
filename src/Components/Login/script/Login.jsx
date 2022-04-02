@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link , Navigate ,useNavigate } from "react-router-dom";
 import axios from "axios";
 import "../style/login.css"
 import { SiEpicgames } from "react-icons/si";
@@ -9,7 +9,7 @@ export const Login = () => {
         email: "",
         password: "",
     });
-
+    const navigate = useNavigate()
     const handleChange = (e) => {
         let { id, value } = e.target;
         setUserData({ ...userData, [id]: value });
@@ -21,6 +21,7 @@ export const Login = () => {
             console.log(res.data.user_data._id);
             var user = res.data.user_data;
             localStorage.setItem("userData", JSON.stringify(user));
+            navigate("/")
         }).catch((error) => {
             alert("Invalid Credentials. Try Again")
         })
@@ -45,7 +46,7 @@ export const Login = () => {
                             Remember me</label>
                         <span className="forgotPass">Forgot Your Password</span>
                     </div>
-                    <input className="loginbtn" type="submit" value="LOG IN NOW" />
+                   <input className="loginbtn" type="submit" value="LOG IN NOW" />
                     <div className="privacy">Privacy Policy</div>
                 </form>
                 <div className="dontHaveAcnt">Don't have an Epic Games Account? <Link to="/signup"><span className="under">Sign up</span></Link></div>
@@ -54,3 +55,4 @@ export const Login = () => {
         </div>
     )
 }
+
