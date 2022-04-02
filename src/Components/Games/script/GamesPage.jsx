@@ -14,13 +14,43 @@ export const GamesPage = () => {
   const [products, setProducts] = useState([]);
 
   useEffect((() => {
-    getProducts();
-  }), [])
+  getProducts();
+  }),[])
 
-  const getProducts = () => {
+
+  const getProducts = (value) => {
     axios.get(`https://apple-cupcake-41384.herokuapp.com/games`).then((res) => {
-      console.log("res", res.data);
-      setProducts(res.data);
+      if(value === 750){
+        const result = res.data.filter((e)=>{
+          return (+e.price-(+e.price*((+e.discount)/100)))<=750
+        })
+        setProducts([...result])
+      }
+
+      if(value === 1500){
+        const result = res.data.filter((e)=>{
+          return ((+e.price-(+e.price*((+e.discount)/100)))<=1500 && (+e.price-(+e.price*((+e.discount)/100)))>750)
+        })
+        setProducts([...result])
+      }
+
+      if(value === 2500){
+        const result = res.data.filter((e)=>{
+          return ((+e.price-(+e.price*((+e.discount)/100)))<=2500 && (+e.price-(+e.price*((+e.discount)/100)))>1500)
+        })
+        setProducts([...result])
+      }
+
+      if(value===2501){
+        const result = res.data.filter((e)=>{
+          return  (+e.price-(+e.price*((+e.discount)/100)))>2500
+        })
+        setProducts([...result])
+      }
+
+      if(value===undefined){
+        setProducts([...res.data])
+      }
     })
   }
 
@@ -546,11 +576,11 @@ export const GamesPage = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu className="aright">
-                <Dropdown.Item href="#/action-1">Free</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Under 750.00</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Under 1,500.00</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Under 2,550.00</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">1,099.00 and above</Dropdown.Item>
+                <Dropdown.Item href="#/action-2" onClick={()=>getProducts(undefined)}>All</Dropdown.Item>
+                <Dropdown.Item href="#/action-2" onClick={()=>getProducts(750)}>Under 750.00</Dropdown.Item>
+                <Dropdown.Item href="#/action-2" onClick={()=>getProducts(1500)}>Under 1,500.00</Dropdown.Item>
+                <Dropdown.Item href="#/action-2" onClick={()=>getProducts(2500)}>Under 2,500.00</Dropdown.Item>
+                <Dropdown.Item href="#/action-2" onClick={()=>getProducts(2501)}>2,501.00 and above</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
 
