@@ -1,70 +1,111 @@
-# Getting Started with Create React App
+# EPIC GAMES (Clone)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center"><img alt="coding" width="800" src="https://static.techspot.com/images2/news/bigimage/2022/02/2022-02-21-image-2.jpg"></img></p>
 
-## Available Scripts
+Project: Clone of https://store.epicgames.com/en-US/ site
 
-In the project directory, you can run:
+In this project We have tried to make a look alike clone of Epic Games Website. With our efforts and the technology stack, that we have learned till now in Unit-5 in Masai School, we were able to clone the front end, integrated it with backend and added similar looks and features.
 
-### `npm start`
+![alt text](https://github.com/RishabhTG209/epicGames_Database/blob/main/src/gameadmin/EpicGames_Screenshots/epic1.png?raw=true)
+![alt text](https://github.com/RishabhTG209/epicGames_Database/blob/main/src/gameadmin/EpicGames_Screenshots/epic2.png?raw=true)
+![alt text](https://github.com/RishabhTG209/epicGames_Database/blob/main/src/gameadmin/EpicGames_Screenshots/epic3.png?raw=true)
+![alt text](https://github.com/RishabhTG209/epicGames_Database/blob/main/src/gameadmin/EpicGames_Screenshots/epic4.png?raw=true)
+![alt text](https://github.com/RishabhTG209/epicGames_Database/blob/main/src/gameadmin/EpicGames_Screenshots/epic5.png?raw=true)
+![alt text](https://github.com/RishabhTG209/epicGames_Database/blob/main/src/gameadmin/EpicGames_Screenshots/epic6.png?raw=true)
+![alt text](https://github.com/RishabhTG209/epicGames_Database/blob/main/src/gameadmin/EpicGames_Screenshots/epic7.png?raw=true)
+![alt text](https://github.com/RishabhTG209/epicGames_Database/blob/main/src/gameadmin/EpicGames_Screenshots/epic8.png?raw=true)
+![alt text](https://github.com/RishabhTG209/epicGames_Database/blob/main/src/gameadmin/EpicGames_Screenshots/epic9.png?raw=true)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Run Locally
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Clone the project
 
-### `npm test`
+```bash
+  For Front-End
+  git clone https://github.com/RishabhTG209/EpicGames
+  
+  For Back-End
+  git clone https://github.com/RishabhTG209/epicGames_Database
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Deployment link of Database on Heroku
+```bash
+got to https://quiet-fortress-03621.herokuapp.com
+got to https://apple-cupcake-41384.herokuapp.com
+```
 
-### `npm run build`
+## Crud Operations
+```bash
+To fetch all Users data : https://apple-cupcake-41384.herokuapp.com/user
+```
+```bash
+To fetch all games data : https://apple-cupcake-41384.herokuapp.com/games
+```
+```bash
+To fetch Cart Data : https://apple-cupcake-41384.herokuapp.com/cart
+```
+```bash
+To Register : https://apple-cupcake-41384.herokuapp.com/register
+```
+```bash
+To Login : https://apple-cupcake-41384.herokuapp.com/login
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Install npm packages
+```bash
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Run the server
+```bash
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### View in Browser
+```
+go to https://epicgamesclone.vercel.app/
+```
 
-### `npm run eject`
+## Technologies we used
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+In this project we have used the following technologies:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- ReactJs
+- NodeJs
+- ExpressJs
+- MongoDB
+- HTML
+- CSS
+- Bootstrap
+- JavaScript
+- env
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+*All the data got stored in and called from **Mongo Atlas cloud database**.*
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Libraries & Packages Used
 
-## Learn More
+- All the image and icon links have been taken from the main website ( https://store.epicgames.com/en-US ) and  ( https://react-icons.github.io/react-icons )
+- NPM Packages
+    - ### For Backend
+      ejs | express | mongoose | jsonwebtoken | bcryptjs | cors | bodyparser | dotenv | validator | passport-google-ouath2 | passport | uuid
+    - ### For Frontend
+      react | react-bootstrap | react-router-dom | react-icons | axios | bootstrap | styled-components | react-simple-circle-rating | framer-motion | 
+      @chakra-ui/icons | @chakra-ui/react | @emotion/styled | @emotion/react
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Team Members and Contributors :
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Rishabh Gupta
+- Github : https://github.com/RishabhTG209
 
-### Code Splitting
+### siddalinga 
+- Github :  https://github.com/sid283
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Tanisha Gupta
+- Github : https://github.com/tanishaa17
 
-### Analyzing the Bundle Size
+### Udit Kishore
+- Github : https://github.com/Uditkishore
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Ajinkya Aher
+- Github : https://github.com/AjinkyaAher5
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
