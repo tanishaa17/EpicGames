@@ -97,7 +97,7 @@ In this project we have used the following technologies:
 ### Rishabh Gupta
 - Github : https://github.com/RishabhTG209
 
-### siddalinga 
+### Siddalinga G Koudi
 - Github :  https://github.com/sid283
 
 ### Tanisha Gupta
