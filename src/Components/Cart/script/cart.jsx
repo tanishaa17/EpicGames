@@ -1,19 +1,21 @@
 import React, {Component} from 'react'
 import {useState, useEffect} from 'react'
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import "../style/cart.css";
 import {AiFillWindows} from "react-icons/ai";
 import {RiAddCircleLine} from "react-icons/ri";
 import axios from 'axios';
-
+import useRazorpay from 'react-razorpay';
 export const GameCart = () => {
   
   var currentUser = JSON.parse(localStorage.getItem('userData'))
   var final=[]||JSON.parse(localStorage.getItem("finalprice"));
 //   console.log(currentUser);
-
+  const Razorpay = useRazorpay();  
+  const navigate = useNavigate();
   const [game,setGame] = useState([])
+  const [orderId,setOrderId] = useState("")
 
   useEffect(()=>{
       getData();
@@ -43,7 +45,122 @@ game.forEach((e)=>{
     discount += +e.game_id.price*((+e.game_id.discount)/100) 
 })
 
-//   console.log("hey hello",game)
+var totalPrice = Math.floor((sum-discount)*100)
+// RAZORPAY
+
+const handlePayEvent = () => {
+    async function generateOrderId() {
+      try {
+        const res = await fetch(
+          "https://quiet-fortress-03621.herokuapp.com/create/orderId",
+          {
+            method: "POST",
+            body: JSON.stringify({ amount: totalPrice }),
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }
+        );
+
+        let response = await res.json();
+        // console.log(response);
+        setOrderId(response.orderId);
+        console.log(orderId);
+        // document.getElementById("button").style.display = "block";
+        // $("button").show();
+      } catch (e) {
+        console.log("generateOrderId" + e);
+      }
+    }
+
+    generateOrderId();
+
+    //endof Pay Event
+    const saveFn = function (e) {
+      var options = {
+        key: "rzp_test_EjhiL888CKSyUw", // Enter the Key ID generated from the Dashboard
+        amount: totalPrice, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+        currency: "INR",
+        name: "Epic Games Project Masai",
+        description: "Test Transaction",
+        image:
+          "https://www.ikea.com/in/en/static/ikea-logo.f7d9229f806b59ec64cb.svg",
+        order_id: orderId, //This is a sample Order ID. Pass the `id` obtained in the previous step
+        handler: function (response) {
+          // response = JSON.stringify(response);
+          console.log("hello response" + response);
+          // alert(response.razorpay_payment_id);
+          navigate(`/`);
+
+          // alert(response.razorpay_order_id);
+          // alert(response.razorpay_signature);
+          async function saveOrder(response) {
+            try {
+              const res = await fetch(
+                "https://quiet-fortress-03621.herokuapp.com/saveOrderDetails",
+                {
+                  method: "POST",
+                  body: JSON.stringify(response),
+                  headers: {
+                    "Content-Type": "application/json",
+                  },
+                }
+              );
+
+              let saveDetail = await res.json();
+              console.log(saveDetail);
+              // window.location.href = "success.html";
+            } catch (e) {
+              console.log("saveOrderErr" + e);
+            }
+          }
+          saveOrder();
+
+          const settings = async (response) => {
+            try {
+              const res = await fetch(
+                "https://quiet-fortress-03621.herokuapp.com/api/payment/verify",
+                {
+                  method: "POST",
+                  body: JSON.stringify(response),
+                  headers: {
+                    "Content-Type": "application/json",
+                  },
+                }
+              );
+
+              let verifyDetail = await res.json();
+              console.log(verifyDetail);
+            } catch (e) {
+              console.log("saveOrderErr" + e);
+            }
+          };
+          settings();
+        },
+
+        theme: {
+          color: "#343434",
+        },
+      };
+
+      var rzp1 = new Razorpay(options);
+      rzp1.on("payment.failed", function (response) {
+        alert(response.error.code);
+        alert(response.error.description);
+        alert(response.error.source);
+        alert(response.error.step);
+        alert(response.error.reason);
+        alert(response.error.metadata.order_id);
+        alert(response.error.metadata.payment_id);
+      });
+
+      rzp1.open();
+    };
+
+    saveFn();
+  };
+
+
 
   return(
     <div className="rcartcontainer">
@@ -106,7 +223,7 @@ game.forEach((e)=>{
                         <p>Subtotal</p>
                         <p>₹{Math.floor(sum-discount)}</p>
                     </span>
-                    <button className="rcheckoutButton">Check Out</button>
+                    <button className="rcheckoutButton" onClick={()=>handlePayEvent()}>Check Out</button>
                 </div>
             </div>
         </div>
