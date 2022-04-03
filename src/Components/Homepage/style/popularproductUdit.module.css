@@ -19,6 +19,8 @@
  font-size: 10px;   
 }
 
+
+
 .popularProductGrid{
     display: grid;
     grid-template-columns: repeat(5,1fr);

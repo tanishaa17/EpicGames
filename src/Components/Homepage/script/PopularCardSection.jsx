@@ -35,7 +35,7 @@ export const PopularCards = () => {
           />
           <Card.Body>
             <Card.Title className="h6  text-truncate">
-              Grand Theft Auto V preimium
+              Grand Theft Auto V
             </Card.Title>
 
             <div className="d-flex gap-3 align-items-baseline">
@@ -57,7 +57,7 @@ export const PopularCards = () => {
             src="https://cdn1.epicgames.com/salesEvent/salesEvent/Daffodil_1P_Awareness_INT_Epic_1200x1600_1200x1600-356dd4965bde4c5dbd1000f9c97ac4b4?h=854&resize=1&w=640"
           />
           <Card.Body>
-            <Card.Title className="h6 text-truncate">
+            <Card.Title className="h6 text-truncate ">
               Tiny Tina's Wonderlands
             </Card.Title>
 

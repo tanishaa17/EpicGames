@@ -23,7 +23,7 @@ export const Carausel = () => {
           <Carousel.Item interval={500}>
             <img
               className={styles.image}
-              src="https://www.kolpaper.com/wp-content/uploads/2021/05/Resident-Evil-Village-Wallpapers-6.jpg"
+              src="https://wallpaperaccess.com/full/3140714.jpg"
               alt="Second slide"
             />
           </Carousel.Item>
