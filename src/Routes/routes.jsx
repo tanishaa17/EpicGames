@@ -12,14 +12,14 @@ import { Navbar } from "../Components/Navbar/script/Navbar";
 import { GamesPage } from "../Components/Games/script/GamesPage";
 import { HomepageU } from "../Components/Homepage/script/Homepage_U";
 import { BreadCrum } from "../Components/Homepage/script/breadcrum";
-import { Provider } from "react-redux";
-import { store } from "../Components/Redux/store";
+// import { Provider } from "react-redux";
+// import { store } from "../Components/Redux/store";
 export const AllRoutes = () => {
   return (
     <>
-      <Provider store={store}>
+
         <Navbar />
-      </Provider>
+
       <BreadCrum />
       <Routes>
         <Route exect path="/" element={<HomepageU />} />
