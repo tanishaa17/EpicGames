@@ -3,24 +3,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 export const DropDown = () => {
- 
-  let data = JSON.parse(localStorage.getItem("userData"));
-
-  // useEffect(()=>{
-
-  // },[])
-
-//  function dataChange(){
-    // if (data===null){
-  //   setState(false);
-  // } else {
-  //   setState(true);
-  // }
-//  }
-  // console.log(data)
-
+  const data = useSelector((store) => store.credential);
+  //  console.log(data)
   return (
     <>
       <div class="dropdown">
@@ -29,7 +16,7 @@ export const DropDown = () => {
           variant="button"
           to={"/signupoptions"}
         >
-          {data ? `${data.first_name}` : "SIGNUP"}
+          {data.length === 0 ? "SIGNUP" : `${data.first_name}`}
         </Link>
 
         <div class="dropdown-content">

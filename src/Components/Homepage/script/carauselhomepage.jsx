@@ -16,14 +16,14 @@ export const Carausel = () => {
           <Carousel.Item interval={1000}>
             <img
               className={styles.image}
-              src="https://cdn2.unrealengine.com/ghostwire-egs-carousel-1248x702-03-nologo-1248x702-81c794a4e252.jpg?h=1080&resize=1&w=1920"
+              src="https://wallpapercave.com/wp/05Y9wdP.jpg"
               alt="First slide"
             />
           </Carousel.Item>
           <Carousel.Item interval={500}>
             <img
               className={styles.image}
-              src="https://cdn2.unrealengine.com/egs-spring-sale-carousel-desktop-video-still-1248x702-cfc5cea6049f.png?h=1080&resize=1&w=1920"
+              src="https://www.kolpaper.com/wp-content/uploads/2021/05/Resident-Evil-Village-Wallpapers-6.jpg"
               alt="Second slide"
             />
           </Carousel.Item>
@@ -31,6 +31,20 @@ export const Carausel = () => {
             <img
               className={styles.image}
               src="https://cdn2.unrealengine.com/20br-zerobuild-1p-egs-fc-1248x702-1248x702-9f768fc7a811.jpg?h=1080&resize=1&w=1920"
+              alt="Third slide"
+            />
+          </Carousel.Item>
+          <Carousel.Item intarval={1000}>
+            <img
+              className={styles.image}
+              src="https://www.teahub.io/photos/full/99-990011_shadow-of-the-tomb-raider.jpg"
+              alt="Third slide"
+            />
+          </Carousel.Item>
+          <Carousel.Item intarval={1000}>
+            <img
+              className={styles.image}
+              src="https://cdn.wallpapersafari.com/55/50/nuJyKB.jpg"
               alt="Third slide"
             />
           </Carousel.Item>

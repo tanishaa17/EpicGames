@@ -34,7 +34,7 @@ export const PopularCards = () => {
             src="https://cdn1.epicgames.com/0584d2013f0149a791e7b9bad0eec102/offer/GTAV_EGS_Artwork_1200x1600_Portrait%20Store%20Banner-1200x1600-382243057711adf80322ed2aeea42191.jpg?h=854&resize=1&w=640"
           />
           <Card.Body>
-            <Card.Title className="h6 text-truncate">
+            <Card.Title className="h6  text-truncate">
               Grand Theft Auto V preimium
             </Card.Title>
 

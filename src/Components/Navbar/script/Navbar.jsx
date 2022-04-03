@@ -1,6 +1,6 @@
 import styles from "../style/navbar.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import React  from "react";
+import React from "react";
 import { Menu } from "@chakra-ui/react";
 import { useState } from "react";
 import Button from "react-bootstrap/Button";
@@ -11,11 +11,10 @@ import { SiEpicgames } from "react-icons/si";
 import { BsGlobe } from "react-icons/bs";
 import { FaUserAlt } from "react-icons/fa";
 import { DropDown } from "./dropdown";
+// import { useSelector } from "react-redux";
 
 export const Navbar = () => {
   const [userLogo, setUserLogo] = useState(false);
-
-
 
   return (
     <>
