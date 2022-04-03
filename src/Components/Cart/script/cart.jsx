@@ -90,7 +90,7 @@ const handlePayEvent = () => {
           // response = JSON.stringify(response);
           console.log("hello response" + response);
           // alert(response.razorpay_payment_id);
-          navigate(`/`);
+          navigate(`/payment`);
 
           // alert(response.razorpay_order_id);
           // alert(response.razorpay_signature);

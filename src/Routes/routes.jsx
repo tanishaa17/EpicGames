@@ -12,6 +12,7 @@ import { Navbar } from "../Components/Navbar/script/Navbar";
 import { GamesPage } from "../Components/Games/script/GamesPage";
 import { HomepageU } from "../Components/Homepage/script/Homepage_U";
 import { BreadCrum } from "../Components/Homepage/script/breadcrum";
+import { PaymentLast } from "../Components/Payment/script/payment";
 // import { Provider } from "react-redux";
 // import { store } from "../Components/Redux/store";
 export const AllRoutes = () => {
@@ -31,6 +32,7 @@ export const AllRoutes = () => {
         <Route exact path="/loginoptions" element={<LoginOptions />} />
         <Route exact path="/products" element={<GamesPage />} />
         <Route exact path="apple-cupcake-41384.herokuapp.com/auth/google" />
+        <Route exact path="/payment" element={<PaymentLast/>} />
       </Routes>
       <Footer />
     </>
