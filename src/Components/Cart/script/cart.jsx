@@ -84,7 +84,7 @@ const handlePayEvent = () => {
         name: "Epic Games Project Masai",
         description: "Test Transaction",
         image:
-          "https://www.ikea.com/in/en/static/ikea-logo.f7d9229f806b59ec64cb.svg",
+          "/logo.png",
         order_id: orderId, //This is a sample Order ID. Pass the `id` obtained in the previous step
         handler: function (response) {
           // response = JSON.stringify(response);
